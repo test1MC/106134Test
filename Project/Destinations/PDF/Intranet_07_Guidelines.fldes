@@ -2,13 +2,13 @@
 <CatapultDestination
   Version="1"
   Comment=""
-  Host="swdocs.carel.locale"
+  Host=""
   User="MyAccountId"
   Password=""
-  Directory="./PDF/01_c.libraries/7_Guidelines"
+  Directory="C:\Users\jlourash\Desktop\Publishing Root\106034 Pub Test"
   Port=""
   ViewUrl=""
-  Type="ftp"
+  Type="file"
   RemoveStale="false"
   UploadLogFile="false"
   ChangedOnly="false"></CatapultDestination>

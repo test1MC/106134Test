@@ -5,7 +5,7 @@
   Type="PDF"
   Destinations=""
   GlossaryTermConversion="marked"
-  MasterToc="/Project/TOCs/PDF/clibrary/1_CAREL_Basic.fltoc"
+  MasterToc="/Project/TOCs/PDF/clibrary/1_Carel_Basic.fltoc"
   PatchHeadingLevels="false"
   InjectEmptyPages="true"
   UseLocalBuildSettings="true"

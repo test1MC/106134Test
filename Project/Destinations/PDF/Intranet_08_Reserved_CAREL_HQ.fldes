@@ -2,10 +2,10 @@
 <CatapultDestination
   Version="1"
   Comment="This is my publish destination"
-  Host="swdocs.carel.locale"
+  Host=""
   User="MyAccountId"
   Password=""
-  Directory="./PDF/01_c.libraries/8_Reserved_CAREL_HQ/"
+  Directory="C:\Users\jlourash\Desktop\Publishing Root\106034 Pub Test"
   Port=""
   ViewUrl="http://www.madcapsoftware.com/"
-  Type="ftp"></CatapultDestination>
+  Type="file"></CatapultDestination>
