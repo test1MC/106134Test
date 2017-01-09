@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="5378" MadCap:lastWidth="1015" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" MadCap:conditions="Translation.ToDo">
+    <head>
+        <link href="../../../../Resources/TableStyles/03_Input_Output.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>Information above UNIPVLV_DRV </h4>
+        <p class="descriptionshort">How to use the cFB and integrate it inside a function block</p>
+        <p class="descriptionshort">&#160;</p>
+        <p class="descriptionshort">Document version: 1.0</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 20/01/2016 | Native revision -</p>
+        <p>&#160;</p>
+        <p class="CAREL_Internal_Use" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ffffff;&quot; class=&quot;mcFormatColor&quot;&gt;The use of this information should be exclusively internal CAREL Headquaters. &lt;/span&gt;&lt;/b&gt;">&#160;</p>
+        <p>&#160;</p>
+        <p class="descriptionshort">
+            <img src="../../../../Resources/Images/2_CAREL_Devices/EVD_Emb/UNIPVLV_DRV/UNIPVLV_DRV_img.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5 style="mc-locked: unlocked;">TEEV structure definition</h5>
+        <p>
+            <img src="../../../../Resources/Images/2_CAREL_Devices/EVD_Emb/UNIPVLV_DRV/UNIPVLV_DRV_struct.jpg" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5 style="mc-locked: unlocked;">TEEV parameters and their use in EVD_Emb function block</h5>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Name</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Type (c.suite)</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">
+                        <p>Access Type</p>
+                    </th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description (firmware)</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">
+                        <p><span style="font-weight: normal;">where params are shown in</span><span style="font-weight: bold;"> DATA_EVDEMB</span>
+                        </p>
+                    </th>
+                    <th style="mc-locked: unlocked;" class="TableStyle-02_Custom-HeadD-Default-Header2"><span style="font-weight: normal;">where params are shown in</span> EVD_Emb_2 <span style="font-weight: normal;">function block</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25pt;" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Enable</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">BOOL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>
+WriteChange-WriteOnline</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Enable pin R/W  </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">--</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+usato solo in <i style="font-weight: bold;">MachineDriving</i></td>
+                </tr>
+                <tr style="height: 25pt;" class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">PositionToSet</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Position requested R/W  </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">--</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>
+usato in <i style="font-weight: bold;">MachineDriving</i> (controllo disabilitazione)<i style="font-weight: bold;"> MachineController</i> (aggiorno la posizione istantanea)
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">VariationToSet</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">INT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>ReadPoll/WriteChange</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Variation requested R/W  </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">--</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+scritto in <i style="font-weight: bold;">MotorInit
+</i></td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+CurrentEstimatedPosition</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Read only</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>Current position READ ONLY</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Data.EVD.Variables.EEV_PosSteps</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">VariationRemaining</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">INT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Read</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Variation remaining READ ONLY</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">--</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows"><span style="color: #ff0000;">MAI USATO in <i>EVD_Emb_2</i></span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">MaxSteps</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+Max steps R/W  
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Data.EVD.EEV_Config.RegMaxPos</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">MinSteps</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+Min steps R/W  
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Data.EVD.EEV_Config.RegMinPos</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+ClosingSteps
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Steps to close valve R/W  </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Data.EVD.EEV_Config.FullClosSteps</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">
+NominalCurrent
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+Normal valve current R/W  
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Data.EVD.EEV_Config.MoveCurr</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+HoldingCurrent
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Holding valve current R/W  </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Data.EVD.EEV_Config.HoldCurr</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">
+Speed
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+Valve speed R/W  
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Data.EVD.EEV_Config.MoveRate</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+DutyCycle
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+Valve duty cycle R/W  
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Data.EVD.EEV_Config.MoveDuty</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">
+DutyCycleEnable
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">BOOL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Enable duty cycle pin R/W</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">--</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">scritto in <i style="font-weight: bold;">EEVInit</i> e in <i style="font-weight: bold;">MachineController</i></td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+OpeningXSteps
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">BOOL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Steps to open valve R/W </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+Data.EVD.EEV_Config.ExtraOpEn
+</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">
+ClosingXSteps
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">BOOL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Steps to close valve R/W </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+Data.EVD.EEV_Config.ExtraClosEn
+</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+FastClosingSpeed
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+Speed to fast closing R/W  
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+Data.EVD.EEV_Config.FastClosMoveRate
+</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">
+FastClosingSpeedEnable
+</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">BOOL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">WriteChange-WriteOnline</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Enable pin for fast closing R/W</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">--</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">scritto in <b style="font-style: italic;">MachineController</b></td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyB-Default-DarkerRows">
+Alarms
+</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">USINT</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Read only</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Flag to signal if there are some alarms READ ONLY</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">--</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">
+viene usato in <i style="font-weight: bold;">MAIN_WriteMachineParameters_EVDEMB</i> per il calcolo di <i style="font-weight: bold;">Data.EVD.Alarm.Al_EEV.Val</i><![CDATA[
+]]></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Inputs</h5>
+        <p class="InnerTitle" style="mc-locked: unlocked;font-weight: normal;">Block pin list</p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/03_Input_Output.css'); margin-left: 0; margin-right: auto; width: 80%; mc-table-style-original: url('../../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" />
+            <col class="TableStyle-03_Input_Output-Column-Description" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">
+                        <p>Data type</p>
+                    </th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">ValveNum</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BYTE</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">--</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Valve to configure (1 or 2)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-DarkerRows">EEVIN</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-DarkerRows">TEEV</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-DarkerRows">--</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Description-DarkerRows">Configuration that will have to be applied</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5>Outputs</h5>
+        <p class="InnerTitle" style="font-weight: normal;">Block pin list</p>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../../Resources/TableStyles/03_Input_Output.css'); mc-table-style-original: url('../../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" style="width: 94px;" />
+            <col class="TableStyle-03_Input_Output-Column-UM" />
+            <col class="TableStyle-03_Input_Output-Column-Description" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">
+                        <p>Data type</p>
+                    </th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows">EEVOUT</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-LightRows">TEEV</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-LightRows">--</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Description-LightRows">Configuration that has been applied</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5>Structures</h5>
+        <p><b style="font-family: Arial; font-weight: normal;">Description of structures defined and used by the F/FB</b>
+        </p>
+        <table class="TableStyle-03_Input_Output" style="margin-left: 0;margin-right: auto;width: 80%;mc-table-style: url('../../../../Resources/TableStyles/03_Input_Output.css');" cellspacing="0">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" MadCap:pattern="14" />
+            <col class="TableStyle-03_Input_Output-Column-UM" MadCap:pattern="14" />
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-UM" MadCap:pattern="14" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1" colspan="2">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">Data type</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UM</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Description</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-UM-Header1">Valori per CAREL ExV</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td colspan="6" class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">TEEV</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" rowspan="18">&#160;</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">Enable</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Abilita la valvola, sempre a TRUE</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">TRUE</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">PositionToSet</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Indica la posizione da raggiungere in passi</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">VariationToSet</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Variazione mancante per il PositionToSet in passi
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+CurrentEstimatedPosition
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">
+                        <p>Posizione stimata della valvola in passi
+</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">VariationRemaining</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Variation remaining - Non viene usata
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">MaxSteps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Numero passi massimi valvola
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">450</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">MinSteps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Numero passi minimi valvola</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">50</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+ClosingSteps
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Numero di passi per la completa chiusura (comprende extrapassi)
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">500</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+NominalCurrent
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">mA</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Corrente nominale della valvola</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">
+                        <p>450</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+HoldingCurrent
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">mA</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Corrente di holding della valvola</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">100</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+Speed
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Steps/sec</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Velocità di movimento della valvola </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">50</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+DutyCycle
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Indica quanta potenza dedicare alla valvola
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">30</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+DutyCycleEnable
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Se abilitato, smista la potenza tra due valvole in base a DutyCycle
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">TRUE</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+OpeningXSteps
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="text-align: left;">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Abilita gli extrapassi in apertura
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">TRUE</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+ClosingXSteps
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Abilita gli extrapassi in chiusura
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">TRUE</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+FastClosingSpeed
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="text-align: left;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Steps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Se FastClosingSpeedEnable=TRUE, sovrascrive Speed
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">150</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+FastClosingSpeedEnable
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="text-align: left;">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Abilita la chiusura veloce della valvola (chiusura d'emergenza, ad es. con UltraCap)
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">TRUE</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-LightRows">
+Alarms
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-LightRows" style="text-align: left;">USINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows">Allarmi valvola, 0=nessun allarme
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-UM-LightRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+&#160;</p>
+        <p class="suggestion" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Yellow;&quot; class=&quot;mcFormatColor&quot;&gt;Tip &lt;/span&gt;&lt;/b&gt;">In particolare <b>VariationToSet</b> si usa per richiedere al chip EVD una variazione di passi. Serve per allineare (per esempio al power-on) la posizione del ChipEVD con l'OS. Al power-ON l'OS ignora la posizione della valvola, quindi per allineamento richiede una variazione pari al numero massimo di passi in chiusura e chiede al chip EVD di allineare il suo feedback VariationRemaining alla posizione richiesta (in questo caso sarebbe 0).</p>
+        <p class="suggestion" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Yellow;&quot; class=&quot;mcFormatColor&quot;&gt;Tip &lt;/span&gt;&lt;/b&gt;"><b>PositionToSet</b> invece si usa per richiedere una posizione. Il posizionamento è scatenato da una PositionToSet diversa da CurrentEstimatedPosition.</p>
+        <p class="suggestion" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Yellow;&quot; class=&quot;mcFormatColor&quot;&gt;Tip &lt;/span&gt;&lt;/b&gt;">All'avvio all'abilitazione della valvola (TEEV.Enable = TRUE) l'OS&#160;effettua una chiusura forzata per allineare lo stelo.</p>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Info utili per caipre il significato di alcuni registri</h5>
+        <p style="mc-locked: unlocked;">Di seguito si riportano alcuni passi delle "<i>Specifiche del database per il driver valvola unipolare ChipEVD</i>" utili per capire il significato e il fiunzionamento di alcuni parametri contenuti nelle struttura TEEV.</p>
+        <p style="mc-locked: unlocked;">&#160;</p>
+        <h6>Richiesta di una posizione da parte del modulo CPU RX a ChipEVD:</h6>
+        <p>Per richiedere una posizione (numero di passi) al ChipEVD il modulo CPU RX deve impostare sui canali CH1 e CH2:</p>
+        <ol>
+            <li>“Max_passi” ≠ 0 (numero di passi che serve per aprire completamente la valvola);</li>
+            <li>“Velocità motore” ≠ 0 (u.m. 10 passi al secondo, “High_speed” è il bit più significativo ed aggiunge una quota pari a 160 passi/secondo);<br /><b style="font-style: italic;">Nota: non superare come impostazione di velocità i 200 passi/secondo (altrimenti i timer di chipEVD non garantiscono le tempistiche impostate).</b></li>
+            <li>“Duty cycle” ≠ 0 (u.m. 10%)</li>
+            <li>“Variazione rispetto alla posizione richiesta” = 0;</li>
+            <li>“Posizione richiesta valvola” ≠ 0 (posizione, in passi, che viene richiesta a ChipEVD). Il posizionamento è scatenato da una “Posizione richiesta” diversa dal “Feedback sulla posizione reale”, pertanto “Max_passi”, “Velocità morore” e “Duty cycle”, devono essere disponibili prima di iniziare il movimento.</li>
+        </ol>
+        <p>Alla richiesta di posizione, il ChipEVD risponde scrivendo:</p>
+        <ol>
+            <li>“Feedback sulla posizione reale valvola” = valore attuale (in costante aggiornamento);</li>
+            <li>“Feedback sui passi da eseguire” = 0.</li>
+        </ol>
+        <p>Nota: il modulo CPU RX, non può variare velocità e duty cycle finché la valvola è in movimento. Esso può farlo solo quando la valvola sta stazionando, ovvero quando si ha che: “Posizione richiesta” = “Feedback posizione reale”.</p>
+        <p>&#160;</p>
+        <h6>Richiesta di una variazione per allineamento fra ChipEVD e modulo CPU RX:</h6>
+        <p>Per richiedere una variazione (variazione di passi) al ChipEVD, il modulo CPU RX deve impostare sui canali CH1 e CH2:</p>
+        <ol>
+            <li>“Max_passi” ≠ 0 (numero di passi che serve per aprire completamente la valvola);</li>
+            <li>“Velocità motore” ≠ 0 (u.m. 10 passi al secondo, “High_speed” è il bit più significativo ed aggiunge una quota pari a 160 passi/secondo);</li>
+            <li>“Duty cycle” ≠ 0 (u.m. 10%)</li>
+            <li>“Variazione rispetto alla posizione richiesta” ≠ 0 (variazione, in passi, rispetto alla posizione reale in cui si trova ChipEVD) (&gt;0 apre; &lt;0 chiude);</li>
+            <li>“Posizione richiesta valvola” = valore finale (valore, in passi, con cui ChipEVD dovrà aggiornare la propria variabile “Feedback sulla posizione reale valvola” al termine dell’esecuzione della “Variazione richiesta”).</li>
+        </ol>
+        <p>Il posizionamento è scatenato da una “Variazione richiesta” diversa zero, pertanto “Max_passi”, “Velocità morore” e “Duty cycle”, devono essere disponibili prima di iniziare il</p>
+        <p>movimento.</p>
+        <p><b>Questa procedura serve per allineare (per esempio al power-on o in qualche caso particolare gestito dal bios) la posizione del ChipEVD con il modulo CPU RX</b>. Per esempio al power-ON il bios ignora la posizione della valvola, quindi per allineamento potrebbe richiedere una “variazione” pari al numero massimo di passi in chiusura e chiedere a chipEVD di allineare il suo feedback alla “Posizione richiesta” (in questo caso sarebbe 0).</p>
+        <p>Alla richiesta di variazione, il chipEVD risponde scrivendo:</p>
+        <ol>
+            <li>“Feedback sui passi da eseguire” = passi mancanti per completare la variazione;</li>
+            <li>“Feedback sulla posizione reale valvola” = 0;</li>
+            <li>quando il “Feedback sui passi da eseguire” sarà diventato nullo, allora il “Feedback sulla posizione reale valvola” verrà messo al valore “Posizione richiesta”</li>
+        </ol>
+        <p>&#160;</p>
+        <h6>Richiesta della posizione zero (chiusura):</h6>
+        <p>Per forzare un azzeramento della valvola (chiusura) si conviene di fare una richiesta di posizione con il valore convenzionale 0xFFFF.</p>
+        <p>Quindi il modulo CPU RX deve impostare sui canali CH1 e CH2:</p>
+        <ol>
+            <li>“Max_passi” ≠ 0 (numero di passi che serve per aprire completamente la valvola);</li>
+            <li>“Velocità motore” ≠ 0 (u.m. 10 passi al secondo, “High_speed” è il bit più significativo ed aggiunge una quota pari a 160 passi/secondo);</li>
+            <li>“Duty cycle” ≠ 0 (u.m. 10%)</li>
+            <li>“Variazione rispetto alla posizione richiesta” = 0;</li>
+            <li>“Posizione richiesta valvola” = 0xFFFF.</li>
+        </ol>
+        <p>Alla richiesta di posizione zero sopra descritta, il ChipEVD arretra di “Max_passi” + una quota di sicurezza del 20%:</p>
+        <p><i>passi = (1,2 x Max_passi)</i>
+        </p>
+        <p>dopo aver eseguito i passi, ChipEVD scrive:</p>
+        <ol>
+            <li>“Feedback sulla posizione reale valvola” = 0;</li>
+            <li>“Feedback sui passi da eseguire” = 0.</li>
+        </ol>
+        <p>&#160;</p>
+        <h6>Mancata comunicazione fra modulo CPU RX e ChipEVD</h6>
+        <ol>
+            <li>ChipEVD attende il timeout di ricezione (30 secondi), dopo di che attua una chiusura effettuando un numero di passi pari a: <br /><i>Passi_chiusura = [posizione_reale_valvola + (0,2 x Max_passi)]</i></li>
+            <li>Il modulo CPU RX attende il timeout di ricezione (30 secondi), dopo di che darà allarme e andrà in standby forzato. In stato di standby forzato il modulo CPU RX può tentare un reset di ChipEVD abbassando la linea “REST_HW” per qualche secondo.</li>
+            <li>L’allarme si auto-ripristina al ripristino della comunicazione sia sul modulo CPU RX, sia su ChipEVD.</li>
+            <li>In caso di auto-ripristino dell’allarme, il modulo CPU RX eseguirà un allineamento con il ChipEVD comandando una chiusura forzata.</li>
+        </ol>
+        <p>&#160;</p>
+        <h6>Accensione (power-on)</h6>
+        <p>All’accensione ChipEVD non conosce la posizione reale della valvola ed attende che il modulo CPU RX prenda il controllo. <b>Il modulo CPU RX deve effettuare un allineamento comandando la chiusura forzata</b>.</p>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Release notes</h5>
+        <p style="mc-locked: unlocked;">Following are notes on this function/function block released versions:</p>
+        <table class="TableStyle-04_Release_Notes" style="mc-table-style: url('../../../../Resources/TableStyles/04_Release_Notes.css'); width: 80%; margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1" style="mc-unlocked: unlocked;">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Dependecies-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Dependecies-LightRows">• First official release<br /><b><br /></b><br /><br /></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

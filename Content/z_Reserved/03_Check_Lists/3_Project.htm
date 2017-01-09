@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1760" MadCap:lastWidth="1221" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>Project - Check list</h4>
+        <p class="descriptionshort">Questa sezione serve per fare la check-list prima di pubblicare l'help ufficiale.</p>
+        <p class="descriptionshort"><a href="../../Resources/Images/Reserved_CAREL_HQ/Checklist-progetto.png"><img src="../../Resources/Images/Reserved_CAREL_HQ/checklist-628x363.png" style="width: 133px;height: 76px;" /> <img src="../../Resources/Images/Reserved_CAREL_HQ/Checklist-progetto.png" style="width: 116px;height: 77px;" /></a>
+        </p>
+        <h5>Rilasci intermedi</h5>
+        <ul style="list-style-type: square;">
+            <li>Blocchi nuovi, controllare presenza segnaposto release notes per link da KSA a tabella R.N.</li>
+            <li>Controllare con Show Log tutti i commit che ci sono stati e cosa sono andati a modificare.</li>
+            <li>Nel caso di bugfix nel Branch, fare marge.</li>
+        </ul>
+        <p>&#160;</p>
+        <h5>Pre- inserimento in c.strategy help</h5>
+        <p><b>Targhet HTML5</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Conditions doppie, triple, etc generano inserimento nell'output anche se solo 1 di queste è vera. Verificare la correttezza dei contenuti in output</li>
+            <li>Pagina introduttiva al c.library controllare le argomentazioni se sono ok oppure da aggiornare</li>
+            <li>Controllare che in compilazione restituisca 0 errori, 0 waring.</li>
+            <li>Panel Project organizer -&gt; Reports - Generare reports a doc per la checklist e verificarli:<ul style="list-style-type: square;"><li>Bookmarks.flrep</li><li>Conditions_Report.flrep</li><li>NotInToc</li><li>Nwords</li><li>Unused_Images.flrep</li><li>...</li></ul></li>
+            <li>Menù View -&gt; Project analysis controllare cosa restituisce:<ul style="list-style-type: square;"><li>Broken bookmarks</li><li>Broken links</li><li>File with changes</li><li>File with annotations</li><li>Topics not in index</li><li>Topics not in selected tocs.</li></ul></li>
+            <li>Oppure con Madcup Analyzer</li>
+            <li>Controllare il Tocs "c.Library_non-print" siano allineati al Content Explorer.</li>
+            <li>Controllare la presenza di link che puntano a versioni assolute di URL e che devo essere aggiornate (es. How_to_create_library.htm)</li>
+            <li>Targhet c.suite_setup -&gt; fare tutte le prove in locale e non sul server intranet.</li>
+            <li>Targhet c.suitedocs -&gt; fare tutte le prove in ambiente di pre-produzione.</li>
+            <li>View -&gt; File list controllare tutti i Topic, le Conditions, Posizione se ok. Aggiungere la proprietà CAREL INDUSTRIES SpA, lingua EN-US se manca.</li>
+            <li>Controllare la presenza dei marchi © ® ™ dove è necessario</li>
+            <li>Controllare versionamento e data del progetto nei menù dropdown a piè di pagina.</li>
+            <li>Controllare lista dei blocchi ufficiali in KSA e conditions che nascondono i contenuti in beta version.</li>
+            <li>Controllare cartelle images Content Explorer con le relative conditions (es. ppt).</li>
+            <li>Controllare cartelle Outputs via file system (es. se sono rimasti topics old, img non in cartelle predisposte, images riservate, ecc).</li>
+            <li>Controllare "Links" e "Cross references" che siano aggiornati e funzionanti (es. topic Gas types supported)</li>
+            <li>c.suite version e OS da controllare per tutte le librerie di blocchi se allineati all'ultima versione (se necessario).</li>
+            <li>Controllare la presenza del p.warning per blocchi deprecati.</li>
+            <li>Controllare che i blocchi abbiano aggiornato la icona di blocchetto nel menù di output. </li>
+            <li>Project Organizer -&gt; Conditional Text -&gt; tasto dx -&gt; View links  vedere se realmente sono corrette in giro per i vari Topics.<br /></li>
+            <li>Notepad ++ controllare, menu cerca, trova nei file... per tag che non ci devono essere.</li>
+            <li>Test con Search da output (es. riferimenti a uPC, uPC3, OEM+ hws riservati che non deve essere presenti).</li>
+            <li>Aggiornare la pagina di statistiche "Number_of_blocks" con il numero dei blocchi presenti</li>
+            <li>Controllare che i nuovi blocchi inseriti abbiano la demo</li>
+            <li>Fare una prova con più browser (EI, Firefox, Crome, ...)</li>
+            <li>L'anno del Copyright, in piè di pagina, da tenere aggiornato con l'anno corrente.</li>
+            <li>Fare commit della versione su SVN:<ul style="list-style-type: square;"><li>https://svncarel.carel.com/svn/csuite_help/trunk/c.library_ENG</li></ul></li>
+            <li>Fare backup dei binari su:<ul style="list-style-type: square;"><li>\\Backup\Varie\csuite_help_binaries\</li></ul></li>
+            <li>Fare pubblicazione su ftp Intranet</li>
+            <li>FARE&#160;branch di versione in SVN </li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Targhet PDF</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Controllare che i Tocs siano allineati al Content Explorer.</li>
+            <li>Controllare  Tocs che devo avere i capter brek per ogni topic.</li>
+        </ul>
+        <p class="InnerTitle">&#160;</p>
+        <h5>Post-inserimento dentro c.strategy </h5>
+        <ul style="list-style-type: square;">
+            <li>Fare installazione da setup.</li>
+            <li>Controllare presenza help  in nodo corretto.</li>
+            <li>Controllare versionamento.</li>
+            <li>Funzionamento con View-&gt;Block Library-&gt;F1.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

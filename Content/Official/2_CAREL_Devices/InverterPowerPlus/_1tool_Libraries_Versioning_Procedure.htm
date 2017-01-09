@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1414" MadCap:lastWidth="1397" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" MadCap:conditions="CAREL_Hq.Reserved">
+    <head>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>1TOOL How to implement a library </h4>
+        <p>How to implement a stable or beta library</p>
+        <p class="CAREL_Internal_Use" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ffffff;&quot; class=&quot;mcFormatColor&quot;&gt;The use of this information should be exclusively internal CAREL Headquaters. &lt;/span&gt;&lt;/b&gt;">&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Native revision 15/11/2016</p>
+        <h5>INTRODUCTION</h5>
+        <p>The BLDC_Comp_Mng and Inv_Power_Plus_3 modules have an independent versioning. They both are password protected.<br />The libraries are contained in the respective demos. The name of the demo is related to the module version.</p>
+        <p>&#160;</p>
+        <h5>BLDC&#160;LIBRARY</h5>
+        <ol>
+            <li>
+                <p>Open the BLDC_Comp_Mng module. The password is required.</p>
+            </li>
+            <li>
+                <p>Increase the version of the solution. If the version is a Beta, add the letter B after the version. Use the right mouse button on the solution to find the field to be modified.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/1tool/Solution_properties.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Increase the version of the project. If the version is a Beta, add the letter B after the version. Use the right mouse button on the solution to find the field to be modified.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/1tool/Project_properties.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Increase the version of the module in Task_Main_Init. </p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/1tool/Module_properties.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>If entering  a new compressor:</p>
+                <ul>
+                    <li> in the main_init task , Sel_Comp_Type module, create the variable with the new name of the compressor and itsallocation number.</li>
+                    <li>in the main task, create a new folder with the new compressor parameters. Keep the sequence of the folder.</li>
+                </ul>
+            </li>
+            <li>Create a new project library with the  name of the  project and solution version.</li>
+            <li>Save the BLDC_Comp_Mng module project in the new project library created. After  first saving, repeat the process adding the password.<br />This sequence is required to be sure it is password protected. Otherwise  in the strategy the module may be shown with the lock but not be password protected.</li>
+        </ol>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">Before publishing the library, make sure it is password protected.</p>
+        <p>&#160;</p>
+        <h5>Inv_Power_Plus_3 LIBRARY</h5>
+        <ol>
+            <li>
+                <p>Open the Inv_Power_Plus_3 module. The password is required.</p>
+            </li>
+            <li>
+                <p>Increase the version of the project. If the version is a Beta, add the letter B after the version. Use the right mouse button on the solution to find the field to be modified.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/1tool/Project properties.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>If entering  a new compressor:</p>
+                <ul>
+                    <li>in the ST subroutine, create a new folder with the new electrical parameters. Check the ST code. Keep the sequence of the folder.</li>
+                    <li> in the main task, enter the st_call in a folder relating to the family of compressors. Increase the maximum number of compressors that can be selected in the Motor_Type variable.<br /> Keep the sequence of the folder.</li>
+                    <li>in the mask editor, add the name of the new compressor.<br /><img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/1tool/Worksheet.png" class="FiftyPercentThumbnail" /><br /><img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/1tool/Terminal_editor.png" class="FiftyPercentThumbnail" /><br /></li>
+                </ul>
+            </li>
+            <li>Create a new project library with the  name of the  project and solution version.</li>
+            <li>Save the Inv_Power_Plus_3 module project in the new project library created. After first saving, repeat the process adding the password.<br />This sequence is required to be sure it is password protected. Otherwise in the strategy the module may be shown with the lock but not be password protected.</li>
+        </ol>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">Before publishing the library, make sure it is password protected.</p>
+        <p>&#160;</p>
+    </body>
+</html>

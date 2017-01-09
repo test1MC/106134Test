@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    BackgroundColor="#ff00fb"
+    Name="LanceWIP"
+    Comment="Revision by native language WIP, during this status no add other contents" />
+  <ConditionTag
+    Name="ToDo"
+    Comment="To planning the revision by native language"
+    BackgroundColor="#6a5acd" />
+  <ConditionTag
+    BackgroundColor="#c791f5"
+    Name="ToDoInternal"
+    Comment="To planning the revisione by native language (internal release)" />
+</CatapultConditionTagSet>

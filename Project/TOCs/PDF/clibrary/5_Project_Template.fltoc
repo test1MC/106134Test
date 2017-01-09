@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Project_Template">
+    <TocEntry
+      Title="Project Template introductory guide"
+      Link="/Content/Official/5_Project_Template/01_Introduction.htm" />
+    <TocEntry
+      Title="Creating a new solution from Project Template"
+      Link="/Content/Official/5_Project_Template/02_CreateSolution.htm" />
+    <TocEntry
+      Title="Functions"
+      Link="/Content/Official/5_Project_Template/03_Functions.htm"></TocEntry>
+    <TocEntry
+      Title="Menu management"
+      Link="/Content/Official/5_Project_Template/04_MenuMng.htm" />
+    <TocEntry
+      Title="List of variables used"
+      Link="/Content/Official/5_Project_Template/05_UsedVariables.htm" />
+    <TocEntry
+      Title="Data types"
+      Link="/Content/Official/5_Project_Template/06_DataType.htm" />
+    <TocEntry
+      Title="Release notes"
+      Link="/Content/Official/5_Project_Template/07_ReleaseNotes.htm"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue" />
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="Official"
+    Comment="Official documentation (esclude mini Chiller in compilation)" />
+</CatapultConditionTagSet>

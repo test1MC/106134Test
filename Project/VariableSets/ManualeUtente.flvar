@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="Data"
+    Comment="Data pubblicazione del target"
+    Definition="Some text"
+    OriginalName="ITA_manual_date"
+    EvaluatedDefinition="August 2016">August 2016</Variable>
+  <Variable
+    Name="Codice"
+    Comment="Codice o versione manuale utente"
+    Definition="Some text"
+    OriginalName="ITA_manual_code"
+    EvaluatedDefinition="v. 1.6.0">v. 1.6.0</Variable>
+  <Variable
+    Name="Titolo"
+    Comment="Manuale dell'utente - da Microsoft Italian Style Guide"
+    Definition="Some text"
+    OriginalName="ITA_manual_name">User manual</Variable>
+  <Variable
+    Name="Versione"
+    Comment="Codice o versione manuale utente per copertina PDF"
+    EvaluatedDefinition="Version 1.6.0">Version 1.6.0</Variable>
+</CatapultVariableSet>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1523" MadCap:lastWidth="975" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>DevicesRotation_2 Demo</h4>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">Block no longer in use and replaced by module DevicesRotation_3.</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/DevicesRotation/Devices_Rotation_64.jpg" />
+        </p>
+        <p>&#160;</p>
+        <h5>Hardware and software requirements</h5>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 90px;" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">21/04/2015</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">09/02/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite version</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥ 2.0.29</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO family controller</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥ 2.0.002</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices firmware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5>Project description</h5>
+        <p>This demo can be used to:</p>
+        <ol>
+            <li>Manage 2 circuits with 3 step compressors, and maximum 4 devices per circuit</li>
+            <li>Test main block functions (different types of rotations, capacity equalisation, unload sequence, compressor alarms…)</li>
+            <li>
+                <p>Simulate a capacity request and retrieve  a log of the system  from the OS to view as an Excel file</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h5>Notes</h5>
+        <p>The Demo can be uploaded to a c.pCO and will work directly without any manipulation. The default configuration set is:</p>
+        <ul>
+            <li>2 circuit, 3 On/Off compressors</li>
+            <li>FIFO, Equalised, CCpppppp</li>
+            <li>LdUpT, LdDwnT and DTUnld=10s</li>
+        </ul>
+        <p>The demo uses the compressor library. To test device rotation on a compressor with inverter, simply  drag&amp;drop a Comp_STEPLESS block from block library.</p>
+        <p>To speed up the hour counter test, set the “Adjust” variable to a value other than 0 (this is found inside the local variables of POU HoursCounters).</p>
+        <p>The Demo has a log set that can be used to log the simulation for exporting and viewing in an Excel file graphically. Variables logged are <i>PwrReq</i>, <i>DevRot</i> array and <i>ModulPwrReq</i>.</p>
+        <p>&#160;</p>
+        <h5>Release notes</h5>
+        <p>The following are notes on the released versions of this demo:</p>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../../Resources/TableStyles/04_Release_Notes.css');" class="TableStyle-04_Release_Notes" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Library</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">
+                        <p>1.0.8.3</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">
+                        <p>• Blackout 1.1.2</p>
+                        <p>• CAREL_BASIC_LIB 2.2.0</p>
+                        <p>• CheckRetainMem 1.1.0</p>
+                        <p>• COMP_MNG_LIB 1.0.9</p>
+                        <p>• DevicesRotation_2 1.0.10</p>
+                        <p>• VersionChk 1.1.0</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows">• First official release<b style="mc-locked: locked;"><br /><br />Fixed</b><br />-<br /><br /><b style="mc-locked: locked;">Changed<br /></b>-<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-<br /><br /></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

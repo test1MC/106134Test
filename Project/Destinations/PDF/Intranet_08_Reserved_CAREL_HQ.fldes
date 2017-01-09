@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my publish destination"
+  Host="swdocs.carel.locale"
+  User="MyAccountId"
+  Password=""
+  Directory="./PDF/01_c.libraries/8_Reserved_CAREL_HQ/"
+  Port=""
+  ViewUrl="http://www.madcapsoftware.com/"
+  Type="ftp"></CatapultDestination>

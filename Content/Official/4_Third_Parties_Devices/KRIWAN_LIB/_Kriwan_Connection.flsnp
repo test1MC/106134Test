@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="256" MadCap:lastWidth="866">
+    <head>
+    </head>
+    <body>
+        <h6>Physical connections between pCO controller and KRIWAN® gateway</h6>
+        <p>The two hardware devices must be connected via the terminals as shown for the c.pCO controller and KRIWAN™ gateway in order to communicate:</p>
+        <p>
+            <img src="../../../Resources/Images/4_Third_Parties_Devices/KRIWAN_LIB/conn_gtwcpc.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <h6>Changing UART settings</h6>
+        <p>The gateway Modbus protocol  UART settings can be changed using the deep-switches, as reported on the gateway case.</p>
+    </body>
+</html>

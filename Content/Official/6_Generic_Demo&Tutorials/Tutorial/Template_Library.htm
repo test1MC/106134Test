@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" MadCap:lastBlockDepth="4" MadCap:lastHeight="4455" MadCap:lastWidth="909" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>How to create a template library - Tutorial</h4>
+        <p class="descriptionshort">Document version: 1.1</p>
+        <p>(CAREL_Ref Feedback 29/09/2016 14:59)</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 06/10/2016 | Native revision - 29/11/2016</p>
+        <p>&#160;</p>
+        <h5>What is a Library</h5>
+        <p>A library is a collection of data types (Functions, Function Blocks, defined words, structures and arrays) that can be imported into a generic solution as a dependency.</p>
+        <p>&#160;</p>
+        <h5>A library with templates </h5>
+        <p>A Template Library is a common library (.otlib) with a series of templates that can help the software developer enter  a new instance of a data type defined inside the library.</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_1.png" class="FiftyPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5>How to create a Library</h5>
+        <p>The "Export library" procedure stores all the data types present in a solution in an ".otlib"&#160;file.</p>
+        <p>In order to maintain the library as clear as possible, this solution must only contain what you want to save in library and the unused variables, alarms, dependencies or program POUs  must be deleted .</p>
+        <p>To <b>export the library</b>, right click on "project"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportLib.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>explore "Export &gt; Export Library ..."</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportLib_2.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>click "yes"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportLib_3.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>It's possible to change the name and version of the library (these can be different from the file name).</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">If is a CAREL library, use the reserved shot-cut. In this way appear the flag to select CAREL&#160;library.</p>
+        <h5>How to create a Template</h5>
+        <p>In order to create a template, it's necessary to use a new solution, here called "Demo", and import the library into this.</p>
+        <p>Demo is also suitable for testing the use of the F/FBs stored in the library.</p>
+        <p>To <b>import the library</b>, right click on "project"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_AddDepend.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>explore "Add &gt; Add dependency ..."</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_AddDepend_2.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>click "Browse" and select the "otlib" file relating to the library.</p>
+        <p>click "OK"</p>
+        <p>&#160;</p>
+        <p>Now the solution is ready to create the application that uses the library.</p>
+        <p>Add POU program, fill in the alarm table, create the relative screens , fill in the c.design set up.</p>
+        <h6>1. Export Alarm table template</h6>
+        <p>Follow these steps only if the library manages alarms; if not, go to step 2.</p>
+        <p>In c.strategy, open alarm table</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportALRM.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>click "Export"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportALRM_2.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>chose the alarm to save in the template</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">Only select the alarms related to the Library, not the ones used in the Demo application</p>
+        <p>click "Ok"</p>
+        <p>The .txt files must be named <b>NameFB_AlrmTable_.txt </b>(only "NameFB" can be customised)<b><![CDATA[  ]]></b></p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">Remember to put the "_" character after "AlrmTable" words</p>
+        <h6>2. Export demo POUs</h6>
+        <p>In c.strategy, right click on "Resource1 &gt; Export &gt; Export POU'S"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportPOU.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportPOU_2.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>chose the program POU to save in the template</p>
+        <p style="font-weight: normal;">The .txt files must be named <b>NameFB_Programs.pp1 </b>(only "NameFB" can be customised, for example: <i>"EVD_EVO_Programs.pp1</i>") </p>
+        <h6>3. Export Mask template</h6>
+        <p>Before exporting the worksheet, open the properties of a worksheet and temporarily delete the "TIMED_LOOP" function from the "Timed loop" field. Save and build.</p>
+        <p>Open the ST code and temporarily delete the variables that are not used in the library screens/functions. Save the solution.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">These two operations avoid also exporting also "TIMED_LOOP" functions and variables used only for the Demo application. At the end of the procedure, remember to re-enter the "TIMED_LOOP" functions in the field just described above and the previously deleted ST variables.</p>
+        <p>In c.mask,  right click on "Layout &gt; Export &gt; Worksheets template"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportMask.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>select the instance of the program POU where the F/FBs are used.</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportMask_2.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>chose the worksheets to save in the template</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportMask_3.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p style="font-style: normal;">The .wp1 files must be named <b>NameFB_Worksheets.wp1 </b>(only "NameFB" can be customised, for example: <i>"EVD_EVO_Worksheets.wp1"</i>)</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">At the end of the procedure, re-enter the "TIMED_LOOP" functions in the "Timed loop" properties field of the worksheet and the previously deleted ST variables.</p>
+        <h6>4. Export DEV template</h6>
+        <p>In c.design, open the DEV&#160;editor and click on "Export &gt; Template"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportDEV.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>The .txt files must be named <b>NameFB_Dev.txt </b>(only "NameFB" can be customised, for example: <i>"EVD_EVO_Dev.txt</i>") <p>The next step is to choose the instance to export: it's recommended to choose the program POU where the F/FBs are used.</p></p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportDEV_2.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <h6>5. Export tERA template</h6>
+        <p>In c.design, open the tERA&#160;editor and click on "Export &gt; Template"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportTera.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>The .txt files must be named <b>NameFB_tERAcfg.txt </b>(only "NameFB" can be customised, for example: <i>"EVD_EVO_tERAcfg.txt</i>") </p>
+        <p>The next step is to choose the instance to export: it's recommended to choose the program POU where the F/FBs are used.</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportTera_2.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <h6>6. Export Protocol template</h6>
+        <p>In c.design, open the protocol&#160;editor, select the correct master serial line </p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportProt.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>it's possible to create a template for each device: select the device and click "export &gt; template"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportProt_2.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>The .txt files must be named <b>NameFB_ProtocolType_TemplateName.txt </b>("NameFB", "ProtocolType" and "TemplateName" can be customised, for example: <i>"EVD_EVO_MBM_ParamsA.txt</i>") </p>
+        <p>Choose the instance to export: it's recommended to choose the instance of the F/FB.</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_ExportProt_3.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5>How to enter the template in the OTLIB file</h5>
+        <p>Open the .otlib file as a “zip” file and create inside a new folder named "Templates". It must be written like this, with the first letter uppercase.</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_openLib.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/DevLib_openLib_4.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>Inside the new folder, put the necessary template files described above (even just one file):</p>
+        <ul>
+            <li>Alarm table</li>
+            <li>Demo POUs</li>
+            <li>Mask</li>
+            <li>DEV</li>
+            <li>tERA</li>
+            <li>Protocol</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="suggestion" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Yellow;&quot; class=&quot;mcFormatColor&quot;&gt;Tip &lt;/span&gt;&lt;/b&gt;">for more details please refer to  "<b>Guidelines F/FB</b>".</p>
+        <p>&#160;</p>
+        <p class="ExampleHead">Comp_BLDC example:</p>
+        <p class="Example">
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/Template_library/ex.bldc.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5>How to understand if a Template Library has been correctly created</h5>
+        <p>A simple way to understand this is to create a new c.suite solution (starting from the Project Template) and import the library with all the templates (see <a href="http://ksa.carel.com/group/c.suite/documents?p_p_auth=zlcEyb9J&amp;p_p_id=20&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_20_struts_action=%2Fdocument_library%2Fview_file_entry&amp;_20_redirect=http%3A%2F%2Fksa.carel.com%2Fgroup%2Fc.suite%2Fdocuments%3Fp_p_auth%3DzlcEyb9J%26p_p_id%3D20%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_20_entryEnd%3D20%26_20_displayStyle%3Dlist%26_20_viewEntries%3D1%26_20_viewFolders%3D1%26_20_expandFolder%3D0%26_20_folderStart%3D0%26_20_action%3DbrowseFolder%26_20_struts_action%3D%252Fdocument_library%252Fview%26_20_folderEnd%3D20%26_20_entryStart%3D0%26_20_folderId%3D1475062%26%23p_20&amp;_20_fileEntryId=1475072&amp;#p_20">"Library management in c.suite"</a> in KSA, chapter "How to enter a block in a DEVICE LIBRARY").</p>
+        <p>At the end of the import procedure, build the solution in both c.strategy and c.mask: there must be no errors.<br />Also in c.design there must be no errors.<br /></p>
+        <p>&#160;</p>
+        <p>(CAREL_Ref Feedback #148)</p>
+        <p>&#160;</p>
+    </body>
+</html>

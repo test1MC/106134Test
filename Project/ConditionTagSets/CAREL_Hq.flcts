@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    BackgroundColor="#ff001f"
+    Name="Reserved"
+    Comment="Only for intranet content. For example link to server, guide linees" />
+</CatapultConditionTagSet>

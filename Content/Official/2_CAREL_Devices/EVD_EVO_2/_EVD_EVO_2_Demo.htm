@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="3885" MadCap:lastWidth="933" MadCap:ignoredWords="UoM" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="EVD_EVO_2" />EVD_EVO_2 Demo</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/EVD_EVO/EVD_evo twin_072dpi.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <h5>Hardware and software requirements</h5>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" MadCap:conditions="">06/09/2016</td>
+                </tr>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" MadCap:conditions="">29/11/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥ 3.0.41</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥ 3.1.000</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">EVD Evolution - electronic expansion valve driver with valve</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Firmware devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥ 5.6/5.7</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">Modbus Master in FB2</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>Project description</h5>
+        <p>Project aims are to:</p>
+        <p>1. Show how EVD_EVO can be managed inside a c.suite project.</p>
+        <p>2. Test  the main device functions</p>
+        <p>With this demo, it is possible to:</p>
+        <ol>
+            <li>
+                <p>Read probe values and see the circuit overview</p>
+            </li>
+            <li>Allow the driver to start control, by setting a Cooling Capacity in the main loop</li>
+            <li>
+                <p>Understand how to use alarms</p>
+            </li>
+            <li>
+                <p>Understand the default installation logic both by DEV editor and c.strategy (by input pin "InstDefIn_EVD")</p>
+            </li>
+            <li>
+                <p>Import/Export parameters set as Retain with a DEV value</p>
+            </li>
+        </ol>
+        <h5>Main default settings</h5>
+        <h6>Main settings</h6>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Valve type</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Carel EXV</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Main control</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Centralised cabinet/cold room</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Probe S1</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Ratiometric 0-5V</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Probe S2</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">NTC Carel</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Probe S3</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Ratiometric 0-5V</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Probe S4</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">NTC Carel</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Communication settings</h6>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Device address</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Serial port</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Fieldbus 2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Protocol</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Modbus Master</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Baudrate</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">19200</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Data length</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">8</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Stop bits</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Parity</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">None</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Getting started</h6>
+        <p>In order to successfully communicate with the EVD driver and allow the valve to control, verify that:</p>
+        <ul style="list-style-type: square;">
+            <li>"DrvReadyToGo_EVD" goes to TRUE (after more or less 1 minute)</li>
+            <li>There are no communication alarms</li>
+            <li>Probe values are correct</li>
+            <li>The overview screens show correct values</li>
+            <li> Cooling Capacity in the main loop is &gt; 0</li>
+        </ul>
+        <h6>Default configuration</h6>
+        <p>"Demo_EVD_EVO_2" provides templates for the default configuration both from DEV and c.strategy.</p>
+        <p>Also Initial values are present in the Demo POU, to ensure that the EVD_EVO_2 starts from a clean situation.</p>
+        <h6>Manual positioning</h6>
+        <p>Manual control of the valve position.</p>
+        <p>Steps:</p>
+        <ul style="list-style-type: square;">
+            <li>Connect the system</li>
+            <li>When the driver is online, press Prg</li>
+            <li>Select "Manual mng."</li>
+            <li>Enable and set the valve position: the valve follows the request</li>
+        </ul>
+        <h6>Unit of Measure management</h6>
+        <p>As shown in the image , EVD and c.pCO always communicate using International System units; the final user can set their own unit of measure for display only.</p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/EVD_EVO_2/EVD_EVO_2_UoM.png" class="SeventyFivePercentThumbnail" />
+        </p>
+        <h5>Troubleshooting</h5>
+        <ul style="list-style-type: square;">
+            <li>Configuration error: see <i>"How to debug a Configuration error" </i>in EVD_EVO_2 documentation. This error can be caused by a wrong Super parameter configuration or by a parameter out of range. Also check the default assignment.</li>
+            <li>Valve is not controlling:&#160;check Cooling Capacity value in the main loop and if "DrvReadyToGo_EVD" =&#160;TRUE</li>
+            <li>High polling time: probably there's an exception in the line (from the EVD driver) caused by a parameter out of range. The exception usually appears with a Configuration Error, check <i>"How to debug a Configuration error" </i>in EVD_EVO_2 documentation</li>
+            <li>EVD driver offline:&#160;check address (both on c.pCO and EVD driver), baudrate, parity and stop bits. These variables must be retain.</li>
+            <li>Some parameters have the value #####.#: probably the UoM has been set to Imperial System (USA). #####.# means that the value is -777-7 (parameter disabled)</li>
+            <li>Not able to enter the "Configuration" menu: to enter "Configuration",the Function Block needs to be enabled in the main loop</li>
+        </ul>
+        <p>&#160;</p>
+        <h5>Release notes</h5>
+        <p>The following are notes on the released versions of this demo </p>
+        <table class="TableStyle-04_Release_Notes" style="mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); margin-left: 0; margin-right: auto; width: 100%;" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.4.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">- CAREL_BASIC_LIB 2.3.0<br />- CheckRetainMem 1.2.0<br />- VersionChk_2 1.0.0<br />- EVD_EVO_2 1.4.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />•<br /><br /><b style="mc-locked: locked;">Changed<br /></b>• Update to EVD_EVO_2 1.4.0<br /><br /><b style="mc-locked: locked;">Enhanced</b><br />-<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">1.3.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">- CAREL_BASIC_LIB 2.3.0<br />- CheckRetainMem 1.2.0<br />- VersionChk_2 1.0.0<br />- EVD_EVO_2 1.3.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />•<br /><br /><b style="mc-locked: locked;">Changed<br /></b>• Added parameter "VlvA/BIn_EVD.VlvOpenInStBy" in EVD control screen for both valves<br /><br /><b style="mc-locked: locked;">Enhanced</b><br />• Added default values in EVD_EVO_2 POU for default installation by strategy: this is an example, customise it with your own values if  you are using default installation from c.strategy
+	<br />• Added initial values to input structures of EVD_EVO_2: this allows to start from a clean situation in the event of missing default values from DEV<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.2.6.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">- CAREL_BASIC_LIB 2.3.0<br />- CheckRetainMem 1.2.0<br />- VersionChk_2 1.0.0<br />- EVD_EVO_2 1.2.6</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />• Fixed wrong variable in screen "EVD_EVO_Reg_3": valve PrePosition delay incorrectly referred to valve B instead of valve A (Carel_Ref #189)<br /><br /><b style="mc-locked: locked;">Changed<br /></b>-<br /><br /><b style="mc-locked: locked;"><b style="mc-locked: locked;">Enhanced</b><br />-<br /><br />Deprecated</b><br />-<br /><br /></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-DarkerRows">1.2.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-DarkerRows">- CAREL_BASIC_LIB 2.3.0<br />- CheckRetainMem 1.2.0<br />- VersionChk_2 1.0.0<br />- EVD_EVO_2 1.2.0<br /></td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-DarkerRows"><b>First release</b>
+                        <br />Demo_EVD_EVO_2 replaces Demo_EVD_EVO and manages the new functions in EVD driver firmware 5.6/5.7:<ul style="list-style-type: square;"><li>aligned screens and classes to latest FW</li><li>aligned Modbus templates: see "EVD_EVO_2 Structures list" document, paragraph "New EVD_EVO_2 parameters"</li></ul><br />Demo_EVD_EVO_2 has been aligned to the new library management in c.suite ≥ 2.5.6<br /><br /><b style="mc-locked: locked;">Fixed</b><br />• Fixed menu navigation (Carel_Ref Ticket #119)<br />• Fixed alarm management, now it works correctly (screen and strategy)<br />• Fixed CmdDelay in all protocol templates (now set to 4 ms)<br />• Fixed "CarelLogo" screen management at application startup <br /><br /><b style="mc-locked: locked;">Changed<br /></b>• Deleted old default management in c.strategy (constant assigned to variables): now the defaults come from the DEV values in c.design, they are assigned after a "wipe retain"<br />• Added "Debug", "Set" and "Imp/Exp" screens in Main loop, which contains the DevError, PollingDelay (Debug), UoM management screen (UoM_Version) and Import/Export parameters (ImpExpParams)<br />• Moved variables from global to local<br />• Deleted FrequentChanged parameter management, now they depend on the setting of the retain flag.<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced</b><br />• Improved ST screen code management: now the code is more orderly and easier to understand<br />• Moved variables from global to local<br />• Added suffixes to classes in c.mask<br />• Added suffixes to alarms<br />• Added new UoM management: UoM can be changed in the Main loop<br /><br /><b>Documentation<br /></b>-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="EVD_EVO_2" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

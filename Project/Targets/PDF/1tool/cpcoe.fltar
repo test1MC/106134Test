@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[PDF.Output_PDF or Translation.LanceWIP or Wip.Hide]exclude[CAREL_Hq.Reserved or CAREL_World.Reserved or csuite.csuite_spec or Google.Offline_No_GA or Hidden.Hidden_Status or HTML.Output_HTLM]"
+  MasterToc="/Project/TOCs/PDF/1tool/cpcoe.fltoc"
+  OutputFolder="c:\_Flare_Outputs\"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  MasterPageLayout="/Content/Resources/PageLayouts/Copertina_1t.flpgl">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+</CatapultTarget>

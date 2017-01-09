@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" class="topic" MadCap:lastBlockDepth="7" MadCap:lastHeight="4186" MadCap:lastWidth="962">
+    <head>
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>PSALB Demo  </h4>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Hardware and software requirements</h5>
+        <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" MadCap:conditions="">18/12/2015</td>
+                </tr>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" MadCap:conditions="">15/11/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite version</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.0.41</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO family controller</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥1.4.000</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO, c.pCOmini</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices firmware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">2.5</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">Modbus Master</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Project description</h5>
+        <p>PSALB card for auxiliary loads of 400Vdc is designed to be connected to DCbus of a drive Carel Power+ and to operate as an interface toward fans or pumps provided with a speed control integrated, supplied in DC voltage and driven by a signal between 0-10V. </p>
+        <p>Two loads can be controlled independently. Each load is driven by its dedicated signal 0-10V and is provided by an input for a tachometric signal. </p>
+        <p>The communication is performed on serial line RS485 with modbus protocol. </p>
+        <p>By this Demo you can configure PSALB card and send commands via serial line to start,&#160;stop and set speed of loads. Modalities of operations are listed below.</p>
+        <h6>Load enable / disable </h6>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Load</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">enabled</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">the command signal Vsp is generated according to relative parameters</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">disabled</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">the command signal Vsp is forced to 0V (10V if inverse logic is selected)</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Command logic</h6>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Logic</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">direct </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">the command signal Vsp is directly proportional to "speed reference" parameter, that is given as integer 0-1000 corresponding to 0,0 - 100,0% Volt. </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">inverse </td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">the command signal Vsp is inversely proportional to "speed reference" parameter, that is given as integer 0-1000 corresponding to 0,0 - 100,0% Volt. </td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Loads management in case of serial line off-line. </h6>
+        <p>If PSALB card does not receive data for a time longer than the one set as "off-line alarm", loads are managed as follows</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Action</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">no action </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">command signal Vsp is managed normally as set (card does no action)</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">disabled load</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">
+                        <p>command signal Vsp is forced as disabled (see load enable/disable table above)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>For any further detail about the real command signal Vsp, alarms and Modbus command, complete table of parameters please refer to data-sheet card inside Power+ manual.</p>
+        <h5 style="mc-locked: unlocked;">MASKS</h5>
+        <h6>Serial settings</h6>
+        <p>This mask shows serial communication status for PSALB card and displays essential parameters.</p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/PSALB/Mask1_Serial_Settings.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Name</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Range</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Default</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Stop Bit</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">stop bit of serial communication</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">1-2</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">2</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Baudrate</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>Baud-rate for serial line </p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">9600, 19200, 28400</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">19200</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Parity</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Parity for serial communication</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">none, odd, even</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">none</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Address</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Address of PSALB card for serial communication</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">1-247</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">3</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">En. PSALB</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Enables / disables serial line communication </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Enable, Disable</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Disable</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Status</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Actual status of the card</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Online, Offline</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Offline</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Loads enabling</h6>
+        <p>By this mask you can enable / disable loads independently. </p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/PSALB/Mask2_LoadsEnabling.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Name</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Range</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Default</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Enable Load 1</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">enables / disables load 1</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Enable, Disable</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Disable</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Enable Load 2</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">enables / disables load 2</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Enable, Disable</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Disable</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Loads status</h6>
+        <p>This screen displays actual status of loads.</p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/PSALB/Mask4_LoadsStatus.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Name</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Range</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Default</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Voltage </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">voltage to loads (terminals Vdc-0V)</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">0-450</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">-</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Vdc</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Current</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>total current to loads </p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">0-200 (0,00-2,00)</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">-</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">0,01Adc</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Power</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">total power</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">0-900</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">-</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">W</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Voltage Supply</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">supply voltage (to terminals +DC -DC)</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">0-450</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">-</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Vdc</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Freq Load 1</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Measure of input of frequency FG for load 1</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">0-500</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">-</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Hz</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Freq Load 2</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Measure of input of frequency FG for load 2</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">0-500</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">-</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">Hz</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Load 1,2</h6>
+        <p>By these two screens you can command any parameter for each load. </p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/PSALB/Mask3_Loads12.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Name</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Range</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Default</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Logic</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">logic of commands</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">DIRECT, REVERSE</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">DIRECT</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Vsp min</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">minimum value for Vsp command for loads 1,2</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">0-100</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">0</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">%</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Vsp max</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">maximum value for Vsp command for loads 1,2</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">0-100</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">100</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">%</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Vsp set</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">reference of speed for loads 1,2</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">0-1000 (0.0-100.0%)</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">0</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">%</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Frequency</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">measure of input FG frequency for loads 1,2</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">0-500</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">-</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">Hz</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Loads management in case of off-line alarm</h6>
+        <p>This screen allows you to manage loads behavior of the card in case of off-line alarm. </p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/PSALB/Mask5_AlarmMng.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Name</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Range</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Default</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Load 1</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">load management in case of off-line alarm</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">no action, load disabled</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">no action</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Load 2</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">load management in case of off-line alarm</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">no action, load disabled</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">no action</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>Wizard for serial line parameters setting</h5>
+        <p>Parameters related to serial line communication are stored in permanent memory. At starting, their value refreshes to latest set. If you have to modify the serial line configuration of PSALB, pay attention to follow the correct procedure mask by mask in the specific wizard: </p>
+        <ul style="list-style-type: square;">
+            <li>Card writes communication parameters in permanent memory only if both loads are disabled. The first mask warns user about this. <br /><img src="../../../Resources/Images/2_CAREL_Devices/PSALB/Mask6_WizardWarning.png" class="OneHundredPercentThumbnail" /></li>
+            <li>Fill fields with new values. <br />Setting "YES" in "Modify" field and pressing ENTER, card writes and changes the communication parameters. <br />Please wait and do not enable loads or remove power supply until the message "<b>Operation completed!</b>" appears on screen. <br /> <img src="../../../Resources/Images/2_CAREL_Devices/PSALB/Mask7_Configuration.png" class="OneHundredPercentThumbnail" /><br /></li>
+            <li>
+                <table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <thead>
+                        <tr class="TableStyle-02_Custom-Head-Header2">
+                            <th class="TableStyle-02_Custom-HeadE-Default-Header2">Name</th>
+                            <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description</th>
+                            <th class="TableStyle-02_Custom-HeadE-Default-Header2">Range</th>
+                            <th class="TableStyle-02_Custom-HeadE-Default-Header2">Default</th>
+                            <th class="TableStyle-02_Custom-HeadD-Default-Header2">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Timeout</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows">timeout for off-line alarm<br />if card will receive no valid data within timeout, off-line alarm will be activated</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows">0-600<br />(0=disabled timeout)</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows">0</td>
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows">s</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Baudrate</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">serial line baud-rate</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">9600, 19200, 38400</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">19200</td>
+                            <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Dataframe</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows">serial line data frame</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows">8 bit/char data length<br />None, Odd, Even parity<br />1-2 stop bit</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows">8N2</td>
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Address</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Serial line address</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">1-247</td>
+                            <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">3</td>
+                            <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Modify</td>
+                            <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Set "YES" and press ENTER to set new parameters</td>
+                            <td class="TableStyle-02_Custom-BodyB-Default-LightRows">NO, YES</td>
+                            <td class="TableStyle-02_Custom-BodyB-Default-LightRows">NO</td>
+                            <td class="TableStyle-02_Custom-BodyA-Default-LightRows">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <p>
+            <br />
+        </p>
+        <h6>Communication settings</h6>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 378px;" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Device address</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-weight: normal;">1-247 <b>default = 3</b></td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Serial port</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">1=BMS</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Protocol</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows"><b>default Modbus Master</b>, Carel Master</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Baudrate</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">9600, <b>default 19200</b>, 38400</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Data length</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">8</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Stop bits</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">1, <b>default = 2</b></td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Parity</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">None, Even, Odd</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 style="mc-locked: unlocked;">Release notes</h5>
+        <p style="mc-locked: unlocked;">The following are notes on the released versions of this demo:</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1" style="mc-locked: unlocked;">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0.1</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0
+ <br />• CheckRetainMem_1.2.0
+ <br />• VersionChk_2_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows" style="mc-locked: unlocked;">• First official release<br />• Derived from Demo_NameFB_1.1.0.0.<br /><br /><b style="mc-locked: unlocked;">Fixed</b><br />• Fix 1<br />• Fix 2<br />• ...<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>-<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-<br />&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

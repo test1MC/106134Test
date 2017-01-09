@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Generic Demo &amp; Tutorial (senza idx in modo che non crei il pdf)"
+    StartSection="false">
+    <TocEntry
+      Title="Demo (senza idx in modo che non crei il pdf)"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1"
+      ReplaceMergeNode="false">
+      <TocEntry
+        Title="BACnet IP and MS/TP communication between c.pCOs and pGD Touch Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/BACnet_cpco_pGDTouch.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="BACnet IP and MS/TP communication between c.pCOs Demo "
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/BACnet_cpco_cpco.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Carel master - slave Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/Carel_Master_Slave.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Connectivity Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/Connectivity.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Export alarms Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/Export_alarms.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1"></TocEntry>
+      <TocEntry
+        Title="Export logs Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/ExportLogs.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Extra Alarm Log Values Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/Extra_AlrmLogValues.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="File I/O Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/Demo_File_I_O.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Import Export parameters Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/ImpExp_Params.htm"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="reset"
+        AutoEndOnLeftPage="disabled"
+        PageNumber="1" />
+      <TocEntry
+        Title="Modbus master - slave Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/Modbus_Master_Slave.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="pLAN_Shared_pGD1 Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/pLAN_Shared_pGD1.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Unit of measure Demo"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Demo/UoM.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="Tutorials (senza idx in modo che non crei il pdf)"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="Application migration with new library management"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Tutorial/Migration_to_New_Library_Mng.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="How to implement the import/export parameters function in a project"
+        Link="/Content/Official/6_Generic_Demo&amp;Tutorials/Tutorial/Implement_ImpExp_Params_function.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

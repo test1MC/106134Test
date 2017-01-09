@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Intranet"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/HTML5/c.Library_non-print.fltoc"
+  InsertMOTW="true"
+  EnableSitemap="true"
+  IncludeStopWords="false"
+  GenerateWebSafeImages="false"
+  WebSafeFileExtension="png"
+  Skin="/Project/Skins/HTML5 CAREL c.suite.flskn"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  Medium="non-print"
+  PartialWordSearch="false"
+  TargetLanguage="en-us"
+  ExcludeUnreferencedContent="false"
+  OutputFile="index.htm"
+  OutputFolder="C:\_Flare_Outputs"
+  MasterPage="/Content/Resources/MasterPages/MasterPage_GA_swdocs.flmsp"
+  ChunkIndex="false"
+  ExcludeIndexEntriesFromSearch="false"
+  UseCustomTopicFileExtension="false"
+  PreCompileScaledImages="false"
+  MoveOutputContentToRoot="false"
+  SearchFilterSet="/Project/Advanced/SearchFilterSet.flsfs"
+  SitemapWebUrl="http://csuitedocs.carel.com/"
+  SearchDatabaseChunkSize="10000"
+  ChunkSearchDatabase="true"
+  ConditionTagExpression="include[CAREL_Hq.Reserved or CAREL_World.Reserved or clibrary.Official or csuite.csuite_spec or Google.Offline_No_GA or HTML.Output_HTLM or Translation.LanceWIP or Translation.ToDo or Translation.ToDoInternal or Wip.Hide or Wip.Show] exclude[Hidden.Hidden_Status or PDF.Output_PDF or World_Wide.All_Customers] "
+  PreMergeSearchDatabase="false">
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/HTML5/Intranet_03_c.libraries.fldes" />
+  </Destinations>
+  <MetaTags
+    Enabled="true">
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+  </MetaTags>
+</CatapultTarget>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1683" MadCap:lastWidth="1168" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h5>Steps Doubling</h5>
+        <h6>Report incontro 23 aprile</h6>
+        <p><i>(presenti Stefano Zonato, Lorenzo Bolognese e Francesco Roveron)</i>
+        </p>
+        <ul>
+            <li>Serve il chip EVD modificato da Demonte: ad oggi presente solo su uPC3</li>
+            <li>La gestione non deve essere pubblicizzata: non va nel manuale </li>
+        </ul>
+        <p>rendere disponibile i mezzi passi significa dare la possibilità ad alto livello di muoversi in tutto il range di passi disponibili.</p>
+        <p>Se la 480passi può andare a 960, dev'essere raggiungibile ad esempio il 691.</p>
+        <p>Perché questo sia possibile, è necessario sia l'alto livello a gestire il raddoppio dei passi da passare al cFB.</p>
+        <p>Altrimenti il passo "dispari" non sarebbe mai raggiungibile.</p>
+        <p>&#160;</p>
+        <p>Per poter gestire correttamente i passi doppi è necessario lavorare sui seguenti parametri:</p>
+        <ul>
+            <li><b>MaxSteps (RegMaxPos della struttura DATA_EVDEMB)</b> : deve essere raddoppaito</li>
+            <li><b>Speed (MoveRate della struttura DATA_EVDEMB)</b> : è la velocità di funzionamento standard. Raddoppiarla è una scelta funzionale: perdo coppia ma ho una risposta "uguale" a quella con passi standard. Lasciarla invariata implica avere più coppia ma la risposta del sistema sarà più lenta. Sarebbe quindi necessario lavorare sulla scelta della terna PID</li>
+            <li><b>FastClosingSpeed (FastClosMoveRate  della struttura DATA_EVDEMB)</b>: la velocità in chiusura forzata. Necessario raddoppiarla per riuscire a chiudere in tempo. Da verificare se questo significa contenere i consumi e se è fattibile elettronicamente (sopra i 200 passi l'unipolare aveva problemi: il campo magnetico legge troppo velocemente;  Enrico Perazzolo può aiutarci a smarcare il problema)</li>
+        </ul>
+        <p>Lato pratico, <u>su EVD_Emb è necessario</u>:</p>
+        <ul>
+            <li>aggiungere un parametro figlio al tipo valvola del DATA_EVDEMB che abiliti la funzione mezzi passi</li>
+            <li>il bit di abilitazione del RegMaxPos sia scritto solo all'ultimo: passi massimi è un parametro usato ovunque all'interno del FB. La machine resti pulita (valore effettivo, 960). Un attimo prima di passare al cFB i passi fare una maschera (bitfield) che passi giù anche il bit di abilitazione.</li>
+            <li>necessario gestire il default di questo nuovo parametro (aggiungere il descrittore)</li>
+        </ul>
+        <h6>Raddoppio velocità motore</h6>
+        <ul>
+            <li><b>Mattia Bacchin</b>: la velocità NON va raddoppiata di sana pianta. <br />Praticamente la velocità nella vecchia gestione varia in un range 40-200 step/s, la nuova gestione, invece ha un range 90-400 step/s, e già da qua si storce il naso. In pratica per questo dato si ha a disposizione un nibble (4 bit) + 1 bit aggiuntivo (che viene chiamato high-speed) ovvero quindi 31 valori (escludendo lo zero). <br />Nella vecchia gestione di questi 31 valori ne venivano usati 17 (la speed assumeva infatti i valori 4, 5, 6, ... , 20), mentre nella nuova gestione questi 31 valori non bastavano a...</li>
+            <li><b>De Monte</b>: Esso ha scelto giustamente di mantenere il limite max raddoppiato come fondo scala e di conseguenza, per mantenere questa finestra di 31 valori, di alzare il limite minimo. <br />La nuova implementazione quindi prevede che al valore passato viene applicato un offset di +9 per riuscire a coprire il range di valori nuovo (9, 10, 11, ... , 40). <br />Da questa spiegazione (un po' confusionale, purtroppo, ma è difficile da spiegare così, se avete dubbi venite da me che ve la spiego meglio a voce e con uno schema) si evince che quando ci sarà la gestione dei passi doppi, il valore della velocità NON va raddoppiato. <br />La formula per avere la velocità reale doppia, da tenere presente quando mettete le mani al blocco, è la seguente: <br /><i>(velocità doppio step) = (velocità singolo step) * 2 - 9</i></li>
+        </ul>
+        <h6>Figli della struttura TEEV</h6>
+        <p>si riportano di seguito i parametri che EVD_Emb_2 passa al cFB.</p>
+        <ul>
+            <li>la colonna “<b>input</b>” esplicita cosa ci si aspetta venga fatta applicativo per gestire i passi doppi</li>
+            <li>la colonna “<b>a carico di EVD_Emb_2</b>” esplicita cosa dev’essere fatto da EVD_Emb_2 per gestire i passi doppi<br /><span style="color: #ff0000; font-weight: bold;">Le modifiche previste da questa colonna sono visibili solo al cFB: il valore del parametro usato nell’applicativo resta inviariato</span></li>
+        </ul>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/04_Release_Notes.css');mc-table-style-original: url('../../../../Resources/TableStyles/04_Release_Notes.css');margin-left: 0;margin-right: auto;" class="TableStyle-04_Release_Notes" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 110px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Parameter</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Data Type</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Notes-Header1" style="text-align: center;">input</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Release-Header1">a carico di EVD_EBM_2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">
+Enable
+</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">BOOL</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-LightRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">PositionToSet
+</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-DarkerRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">VariationToSet</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">INT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-LightRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">CurrentEstimatedPosition</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-DarkerRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">VariationRemaining</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">INT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-LightRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">MaxSteps</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-DarkerRows" style="text-align: center;">x2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-DarkerRows">maschera 16#4000</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">MinSteps</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-LightRows" style="text-align: center;">x2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-LightRows">nothing</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">ClosingSteps</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-DarkerRows" style="text-align: center;">x2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-DarkerRows">nothing</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">NominalCurrent</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-LightRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">HoldingCurrent</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-DarkerRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">Speed</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-LightRows" style="text-align: center;">x2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-LightRows">.. - 9 * 10</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">DutyCycle</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-DarkerRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">DutyCycleEnable</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">BOOL</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-LightRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">OpeningXSteps</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows" style="text-align: center;">BOOL</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-DarkerRows" style="text-align: center;">/</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-DarkerRows">Not used Parameter</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">ClosingXSteps</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">BOOL</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-LightRows" style="text-align: center;">/</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-LightRows">Not used Parameter</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">FastClosingSpeed</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows" style="text-align: center;">UINT</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Notes-DarkerRows" style="text-align: center;">x2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Release-DarkerRows">.. - 9 * 10</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">FastClosingSpeedEnable</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows" style="text-align: center;">BOOL</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Notes-LightRows" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Release-LightRows">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Chiusura d’emergenza forzata</h6>
+        <p>Nel caso di chiusura forzata d’emergenza dev’essere l’applicativo a disattivare la gestione StepsDoubling per chiudere più velocemente. <br />Ciò è necessario per riuscire a chiudere in tempo e restare dentro le specifiche dell’ultracap</p>
+    </body>
+</html>

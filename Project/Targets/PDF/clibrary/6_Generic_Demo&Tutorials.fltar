@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="6_Generic_Demo&amp;Tutorials"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/PDF/clibrary/6_Generic_Demo&amp;Tutorial.fltoc"
+  PatchHeadingLevels="false"
+  InjectEmptyPages="true"
+  UseLocalBuildSettings="true"
+  IgnoredCompilerWarnings="20032,20033,20034,20035,20036,20037,20038,20039,20040,20041"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  TargetLanguage="en"
+  OutputFolder="c:\_Flare_Outputs\"
+  Medium="print"
+  ConditionTagExpression="include[clibrary.Official or csuite.csuite_spec or PDF.Output_PDF or Translation.LanceWIP or Wip.Show or World_Wide.All_Customers]exclude[CAREL_Hq.Reserved or CAREL_World.Reserved or Google.Offline_No_GA or Hidden.Hidden_Status or HTML.Output_HTLM or Wip.Hide]"
+  MasterPageLayout="/Content/Resources/PageLayouts/Copertina_F_FB_Demo.flpgl"
+  AutoSizeCaptureCaptions="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    MultiDocOutput="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <DocumentProperties
+    Title=""
+    Author="Carel Industries S.p.A." />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="75"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="false"
+    PageMode="UseNone"
+    DownsampleImages="false"
+    ImagePPIThreshold="500" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF/Intranet_06_Demo&amp;Tutorials.fldes" />
+  </Destinations>
+</CatapultTarget>

@@ -1,0 +1,983 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" MadCap:lastBlockDepth="8" MadCap:lastHeight="8417.667" MadCap:lastWidth="1450">
+    <head MadCap:changes="47">
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/03_Input_Output.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/01_Technical_Features.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="COMP_MNG_LIB" />EnvPwr</h4>
+        <p class="descriptionshort">Manages compressor power request, fan set point and electronic expansion valve MOP values to be sent to the EVD function block to maintain and return the working point within envelope limits; it also manages the cooling capacity value to be sent to the EVD to control the electronic expansion valve.</p>
+        <p class="descriptionshort">
+            <img src="../../../Resources/Images/3_CAREL_Advanced/COMP_MNG_LIB/EnvPwr7.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5>Technical features</h5>
+        <table class="TableStyle-TechFeatures" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/01_Technical_Features.css'); mc-table-style-original: url('../../../Resources/TableStyles/01_Technical_Features.css');">
+            <col class="TableStyle-TechFeatures-Column-Feature" />
+            <col class="TableStyle-TechFeatures-Column-Value" />
+            <col class="TableStyle-TechFeatures-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-TechFeatures-Head-Header1">
+                    <th class="TableStyle-TechFeatures-HeadE-Feature-Header1">Feature</th>
+                    <th class="TableStyle-TechFeatures-HeadE-Value-Header1">Value</th>
+                    <th style="mc-locked: locked;" class="TableStyle-TechFeatures-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25pt;" class="TableStyle-TechFeatures-Body-Row1" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Row1">Last update</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">10/06/2016</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">Native revision 09/02/2016</td>
+                </tr>
+                <tr style="height: 25pt;" class="TableStyle-TechFeatures-Body-Body1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Body1">Program Organization Unit of type</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">Function block</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr style="height: 25pt;" class="TableStyle-TechFeatures-Body-Row1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Row1">c.suite version</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">≥ 3.0.41</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Body1">Hardware</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">c.pCO family</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Row1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Row1">O.S.</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">≥ 3.0.001</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Body1">Compatibility with other F/FB</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1"> EnvAlrm, CompStep, CompStepless, EVD_EVO</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Row1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Row1">Dependencies on other libraries</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Body1">Device manual</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Row1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Row1">Device firmware</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Body1">Password</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">Yes</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Row1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyE-Feature-Row1">Protocols</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td style="mc-locked: locked;" class="TableStyle-TechFeatures-BodyB-Feature-Body1">Footprint</td>
+                    <td class="TableStyle-TechFeatures-BodyB-Value-Body1">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-TechFeatures-BodyA-Notes-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="mc-locked: locked;">General operations</h5>
+        <p>EnvPwr contains an advanced algorithm, developed by CAREL and password protected.</p>
+        <p>EnvPwr runs the following functions based on the working zone defined by the input pin ZoneEnv coming from EnvAlrm FB:</p>
+        <ol>
+            <li>checks compressor variation speed according to distance from edge</li>
+            <li>corrects power request to return within envelope or discharge temperature operating limits</li>
+            <li>provides a set point limit for condenser fan modulating control in chiller and heat pump modes</li>
+            <li>corrects the fan control limit when needed to prevent the working point from exiting the envelope</li>
+            <li>checks electronic expansion valve start and opening sending the MOP and cooling capacity values to the EVDEVO function block</li>
+        </ol>
+        <p>In the start phase, EnvPwr checks the pressure differential value and keeps the electronic expansion valve closed until the minimum pressure differential between discharge and suction is reached to guarantee lubrication; the valve is activated in any case if, during the start phase, the minimum evaporation pressure threshold is reached before the nominal pressure difference is reached.</p>
+        <p>Normal power limitation management in zone 9 is disabled during the start phase and for the entire period set by pin StartupDT. This allows working conditions to be quickly reached (see generic envelope illustration).</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/COMP_MNG_LIB/EnvelopeArea.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>The controlled zones are described in the following table with reference to the illustration above:</p>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Zone</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">1</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Zone within operating limits</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">2</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">High compression ratio</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">3</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">High discharge pressure</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">3 Eco</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">High discharge pressure with Eco on</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">4</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">High motor current</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">5</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">High suction pressure</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">5 Eco</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">High suction pressure with Eco on</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">6</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Low compression ratio</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">7</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Low differential pressure</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">8</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Low discharge pressure</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">9</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">Low suction pressure</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>&#160;</h6>
+        <h6>Inhibition limit management for MOP protection</h6>
+        <p>The MOP protection limit is entered as a saturation temperature value to easily compare it with the compressor manufacturers' technical specifications. Protection triggers to prevent too high evaporation temperatures from causing an excessive work load for the compressor with consequent motor overload and possible thermal overload protection triggering. Inhibiting this limit and changing the MOP value in real-time, the algorithm can correctly manage the compressor operating zones. Pin MOPThrshFastChg must be linked to EVDEVO.</p>
+        <h6>&#160;</h6>
+        <h6>High discharge temperature management</h6>
+        <p>The compressor working zone is also limited by high discharge temperature which typically occurs when refrigerant flow is poor due to low suction pressure and high discharge pressure (meaning when the compressor working zone is near the maximum compression ratio limit, near zone 2).</p>
+        <p>Similar to envelope limit control, temperature is controlled at discharge by a specific algorithm that initially slows acceleration to inhibit it when set by control. If the temperature continues to climb, the control algorithm gradually and slowly manages speed reduction to imitate the compressor's heat inertia behaviour.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/COMP_MNG_LIB/EnvPwr1.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>Figure 3: compressor high discharge temperature management diagram</p>
+        <p>&#160;</p>
+        <h5>Preventive actions</h5>
+        <p>The actions run by the function block control algorithm are listed below to:</p>
+        <p>1. Check that the working point is inside the envelope;</p>
+        <p>2. Manage return within the envelope if the limits are exceeded, based on the zone specific to the indicated limit.</p>
+        <p>&#160;</p>
+        <h6>High compression ratio prevention (via discharge temperature control)</h6>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Compressor</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <ol>
+                            <li>Reduction in power increase speed (progressive)</li>
+                            <li>Power reduction</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">ExV</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Fan</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>High discharge pressure prevention</h6>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Compressor</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <ol>
+                            <li>Reduction in power increase speed (progressive)</li>
+                            <li>Power reduction</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">ExV</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Fan</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>High motor current prevention</h6>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Compressor</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <ol>
+                            <li>Reduction in power increase speed (progressive)</li>
+                            <li>Power reduction</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">ExV</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">MOP with specific algorithm </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Fan</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>High suction pressure prevention</h6>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Compressor</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Reduction in power decrease speed (progressive)</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">ExV</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">MOP</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Fan</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>Low differential pressure prevention</h6>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Compressor</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <ol>
+                            <li>Reduction in power decrease speed (progressive)</li>
+                            <li>Power increase</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">ExV</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Variable MOP</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Fan</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">Condensing set point increase / Evaporation set point decrease</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>Low compression ratio prevention</h6>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Compressor</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <ol>
+                            <li>Reduction in power decrease speed (progressive)</li>
+                            <li>Power increase</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">ExV</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Variable MOP</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Fan</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">Condensing set point increase / Evaporation set point decrease</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>Low discharge pressure prevention</h6>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Compressor</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <ol>
+                            <li>Reduction in power decrease speed (progressive)</li>
+                            <li>Power increase</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">ExV</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Fan</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>Low suction pressure prevention</h6>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Compressor</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <ol>
+                            <li>Reduced compressor power request acceleration speed</li>
+                            <li>Capacity limitation</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">ExV</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Fan</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5>Condenser fan control set point management in chiller mode</h5>
+        <p>The fan control set point can be obtained by adding an offset to the CondRegLimSetTemp output pin value, which corresponds to the minimum envelope condensation limit (low limit in the illustration below).</p>
+        <p>To optimise envelope control and compressor efficiency, this minimum value is increased, adding a correction, when the compressor working point is near the envelope zone 6 or zone 7 limit (see following diagram), within 5°C of the vertical projection on the limit. Within this zone, the set point increases at a rate of 1.2°C/min; if the compressor working point exits the envelope in zone 6 or 7, the offset increases at a rate of 3.6 °C/min; as soon as the working point returns above the specified increase zone, any offset decreases at a rate of 1.2°C/min until it cancels itself out.</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/COMP_MNG_LIB/EnvPwr2.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5>Evaporator fan control set point management in heat pump mode</h5>
+        <p>The fan control set point can be obtained by subtracting an offset from the EvapRegLimSetTemp output pin value, which corresponds to the maximum envelope evaporation limit (High limit in the illustration below).</p>
+        <p>To optimise envelope control and compressor efficiency, this maximum value is reduced subtracting a correction, when the compressor working point is near the envelope zone 6 or zone 7 limit (see following diagram), within 5°C of the horizontal projection on the limit. Within this zone, the set point decreases at a rate of 1.2°C/min; if the compressor working point exits the envelope in zone 6 or 7, the offset increases at a rate of 3.6 °C/min; as soon as the working point returns above the specified increase zone, any offset increases at a rate of 1.2°C/min until it cancels itself out.</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/COMP_MNG_LIB/EnvPwr3.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5>Special functions: compressor positioning at the requested capacity</h5>
+        <p>To allow reverse cycle or other operations to start, required capacity at block input can be forced using pin GotoPwrReq: switching pin value to TRUE inhibits block capacity control and the value at input is copied to the output, with the only limit or meeting any maximum capacity limit (signalled by pin MaxCapZone).</p>
+        <p>&#160;</p>
+        <h5>RfrgTyp pin</h5>
+        <p>This pin is used to convert the P-T values acquired by the probe in high resolution; the value refers to the list accessible in the PressToTemp_REAL help, consistent with the envelope data in the input list.</p>
+        <p>&#160;</p>
+        <h5>EnvP_X and  EnvP_Y</h5>
+        <p>The envelope vertex coordinates calculated and used by the function block are read in the EnvP_X and EnvP_Y input lists from position 0 to 7 as x and y values corresponding to the points indicated in the envelope examples shown in the following illustrations. The envelope on the right shows how values are assigned to the coinciding points (P1=P2 and P6=P7) due to lack of the relevant segment.</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/COMP_MNG_LIB/Env1.png" class="OneHundredPercentThumbnail" />
+            <img src="../../../Resources/Images/3_CAREL_Advanced/COMP_MNG_LIB/Env2.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5>Inputs</h5>
+        <p class="InnerTitle">Block pin list</p>
+        <table class="TableStyle-03_Input_Output" cellspacing="0" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css'); mc-table-style-original: url('../../../Resources/TableStyles/03_Input_Output.css');">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" />
+            <col class="TableStyle-03_Input_Output-Column-Description" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variables</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Type</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UOM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">PreventInfoIn</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">PREVENT_INFO_COMP - Array [0..31]</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Prevent array</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CircIdx</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">DINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Circuit index</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">PwrReq
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Capacity/Power request</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">PwrRun
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Running capacity/power</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">SuctP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">bar</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Suction pressure. Typically from S1 of the EVD </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">DscgP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">bar</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Discharge pressure.  Typically from S3 of the EVD </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">DscgTemp</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">°C</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Discharge temperature.  Typically from S4 of the EVD  </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">PhRun
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">USINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">
+                        <p>Compressor Phase</p>
+                        <p>0: Off</p>
+                        <p>1: Startup 1</p>
+                        <p>2: Startup 2</p>
+                        <p>3: Step 1</p>
+                        <p>4: Step 2</p>
+                        <p>5: Step 3</p>
+                        <p>6: Step 4</p>
+                        <p>7: Shut down 1</p>
+                        <p>8: Shut down 2</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">IsStep
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">
+                        <p>FALSE: Stepless</p>
+                        <p>TRUE: Step</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">GotoPwrReq</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Go to the requested capacity using the maximum acceleration or deceleration bypassing the prevention action</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">ZoneEnv</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope zone</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CtrlEnvLimDstn</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">&#160;</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Control envelope limit distance</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">StartupVal</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Startup value</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">StartUpPwr_Perc</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Startup capacity percentage</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CompMinPwr</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor minimum capacity</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">MaxPwrDecr
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">rps/sec</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Maximum capacity reduction speed</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">MaxPwrIncr
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">rps/sec</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Maximum capacity increase speed</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">DscgHiTempPwrDecr</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Capacity reduction value for high discharge temperature reduction cycles</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">DscgTempActPause</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">second</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Time between capacity reduction cycles in the high discharge temperature zone</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">PreventT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">second</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Prevent time</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">DT_InhibLowSuctP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">second</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Start delay to inhibit capacity limitation for low suction pressure</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">RfrgType</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Refrigerant type</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CfgEnv</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">CFG_ENV_COMP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope configuration</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">EnvP_X</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">ENV_COORDINATES_COMP - Array [0..7]</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex points X coordinate</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">EnvP_Y</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">ENV_COORDINATES_COMP - Array [0..7]</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex points Y coordinate</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CfgCompStep</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">CFG_STEP_COMP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor step configuration</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">HeatMode</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Cooling-heating</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-DarkerRows">En_EnvPwr</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Description-DarkerRows">Enable envelope capacity control</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5>Structure inputs</h5>
+        <p>Description of structures defined and used by the F/FB</p>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; width: 80%; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th colspan="2" class="TableStyle-02_Custom-HeadE-Default-Header2">
+                        <p class="p_3">Variable</p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Data Type</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">UOM</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td colspan="2" class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p class="p_23">CFG_STEP_COMP</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>StepNo</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">-</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-weight: normal;">Step number</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>StartUpT</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">second</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-weight: normal;">Startup time</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>ShOffT</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">REAL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>second</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-weight: normal;">Shutdown time</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>StartStopPwr</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">REAL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">%</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-weight: normal;">Start/Stop capacity</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>Step1_Pwr</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">REAL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">%</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-weight: normal;">Step 1 capacity</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>Step2_Pwr</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">REAL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">%</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-weight: normal;">Step 2 capacity</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>Step3_Pwr</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">REAL</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">%</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-weight: normal;">Step 3 capacity</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>DTBtwStep1_2</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>UINT</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">second</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-weight: normal;">Delay time between step 1 and 2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>DTBtwStep2_3</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">second</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-weight: normal;">Delay time between step 2 and 3</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>DTBtwStep3_4</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">second</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-weight: normal;">Delay time between step 3 and 4</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>MinMinT_On</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">second</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-weight: normal;">Min value for minimum on time</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>MinMinT_Off</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">second</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-weight: normal;">Min value for minimum off time</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">
+                        <p>MinMinT_OnOnSame</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">UINT</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">second</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows" style="font-weight: normal;">MIn value for minimum time between the same compressor on</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5>Outputs</h5>
+        <p class="InnerTitle">Block pin list</p>
+        <table class="TableStyle-03_Input_Output" cellspacing="0" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css'); mc-table-style-original: url('../../../Resources/TableStyles/03_Input_Output.css');">
+            <col style="width: 171px;" class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" />
+            <col class="TableStyle-03_Input_Output-Column-Description" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variables</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Type</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UOM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">PreventInfo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">PREVENT_INFO_COMP - Array [0..31]</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Prevent array</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CtrldPwrReq
+</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Outlet capacity request</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CoolCap_EVD</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">%</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Cooling capacity sent to EVD</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">MOPThrshFastChg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">°C</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Fast change MOP threshold</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">RunPrevent</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Prevent running</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CondRegLimTempSetP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">°C</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Condensing temperature control set point limit</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">EvapRegLimTempSetP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">°C</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Evaporation temperature control set point limit</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">DeltaP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">bar</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Pressure delta</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">DeltaMinP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">bar</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Minimum pressure delta</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">RatioP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Pressure ratio</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">ZoneDscgTemp</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Discharge temperature zone</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">ZoneMaxCap</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Maximum capacity zone</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows">InterceptErr</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Description-LightRows">Error in intercept calculation between sides of the envelope</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5>Examples</h5>
+        <p>See the image in the documentation for<MadCap:xref href="_COMP_MNG_LIB_Demo.htm#top">"COMP_MNG_LIB Demo"</MadCap:xref>.</p>
+        <p>&#160;</p>
+        <h5><a name="Release_Notes"></a>Release notes</h5>
+        <p>The following are notes on the released versions of this function/function block:</p>
+        <table class="TableStyle-04_Release_Notes" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../../Resources/TableStyles/04_Release_Notes.css');">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 157px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependences</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.2.3</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows">
+                        <p><b style="mc-locked: locked;">Fixed</b>
+                        </p>
+                        <p>-</p>
+                        <p><b style="mc-locked: locked;">Changed</b>
+                        </p>
+                        <p>-</p>
+                        <p><b style="mc-locked: locked;">Deprecated</b>
+                        </p>
+                        <p>-</p>
+                        <p><b style="mc-locked: locked;">Enhanced</b>
+                        </p>
+                        <p class="p_1">-&#160;</p>
+                        <p><b style="mc-locked: locked;">Documentation</b>
+                        </p>
+                        <p>• Updated documentation: changed from compressor capacity into compressor power request, in order to don't confuse it with EVD&#160;EVO cooling capacity request. (CAREL_Ref Feedback #129)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">1.2.3</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows">
+                        <p><b style="mc-locked: locked;">Fixed</b>
+                        </p>
+                        <p>-</p><b style="mc-locked: locked;">Changed</b>
+                        <p>• Password protection: the function block has been password protected (CAREL_Ref #409)</p>
+                        <p>&#160;</p><b style="mc-locked: locked;">Deprecated</b>
+                        <p>-</p><b style="mc-locked: locked;">Enhanced</b>
+                        <p class="p_1">-</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.2.2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows">• First official release<b style="mc-locked: locked;"><br /></b><p><b style="mc-locked: locked;"><br />Fixed</b></p><p>-</p><b style="mc-locked: locked;">Changed</b><p>-</p><b style="mc-locked: locked;">Deprecated</b><p>-</p><b style="mc-locked: locked;">Enhanced</b><p class="p_1">-</p></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="COMP_MNG_LIB" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

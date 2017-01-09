@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4749" MadCap:lastWidth="1558" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <MadCap:change MadCap:changes="8">3</MadCap:change>
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="Comp_BLDC_PowerPlus" />Comp_BLDC Demo</h4>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/Comp_BLDC/_Demo_CompBLDC.jpg" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5 style="mc-locked: unlocked;">Hardware and software requirements</h5>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" MadCap:conditions="">06/10/2016</td>
+                </tr>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" MadCap:conditions="">09/02/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite version</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.0.41</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">3.1.000</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices firmware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">Modbus Master</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Project description</h5>
+        <p>This demo can be used to:</p>
+        <ol>
+            <li>Manage the operation of the compressor, piloting  the Evd -Evo driver and the Power + inverter with the Modbus protocol.</li>
+            <li>See examples of using alarms</li>
+            <li>Start a project to implement with other functions</li>
+        </ol>
+        <p>Common functions are grouped on the same strategy page in order to allow better focus and to prepare that page for exporting.</p>
+        <p>&#160;</p>
+        <h5>IO configuration c.pCO</h5>
+        <p style="font-weight: bold;">Digital output</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 276px;" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Channel</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">NO1</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">Enable Comp_BLDC function block </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5>IO configuration EVD EVO</h5>
+        <p style="font-weight: bold;">Configurable input</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 202px;" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Channel</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">S1</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Suction pressure</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">0-5V</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">S2</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Suction temperature</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">NTC</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">S3</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Discharge pressure</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">0-5V</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">S4</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Discharge temperature</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">NTC-HT</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Main default settings</h5>
+        <p>The following steps are necessary in order to use the demo:</p>
+        <p>&#160;</p>
+        <h6>Main settings</h6>
+        <p style="font-weight: bold;"><b>Step 1:</b>
+        </p>
+        <p style="font-weight: bold;"><span style="font-weight: normal;">Select the correct models of compressor to be used. This parameter is available in the main menu under item Power +</span>
+        </p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/Comp_BLDC/BLDC_image_1.png" />
+        </p>
+        <p style="font-weight: bold;">Step 2:</p>
+        <p style="font-weight: normal;">Write the default parameters.</p>
+        <p style="font-weight: normal;"><b>Step 3:</b>
+        </p>
+        <p style="font-weight: normal;">Switch on the unit.</p>
+        <p style="font-weight: normal;"><b>Step 4:</b>
+        </p>
+        <p style="font-weight: normal;">Check the input probe values: the working point must be inside the envelope (refer  to the Envelope document). This parameter is available in the main menu under item Comp. BLDC</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/Comp_BLDC/BLDC_image_3.png" />
+        </p>
+        <p><b>Step5:</b>
+        </p>
+        <p>Set required capacity from the main screen.</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/Comp_BLDC/BLDC_image_41.png" />
+        </p>
+        <p>&#160;</p>
+        <h6>Communication settings</h6>
+        <p style="font-weight: bold;">Power+:</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 236px;" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Device address</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">1</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Serial port</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Fieldbus2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Protocol</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows"><b><b style="font-weight: normal;">Modbus Master</b></b>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Baudrate</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">19200</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Data length</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">8</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Stop bits</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Parity</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">None</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-weight: bold;">&#160;</p>
+        <p style="font-weight: bold;">EVD-EVO:</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 237px;" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Device address</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Serial port</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Fieldbus2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Protocol</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows"><b><b style="font-weight: normal;">Modbus Master</b></b>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Baudrate</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">19200</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Data length</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">8</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Stop bits</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>2</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Parity</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">None</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The BLDC control analyses the variation in pressure when the Power + is running. If the pressure values do not vary within 15 seconds (default), the cycle is stopped. This condition causes a "Start up failure controls" alarm. The system attempts to restart 5 times (default), after which it stops.</p>
+        <p class="suggestion" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Yellow;&quot; class=&quot;mcFormatColor&quot;&gt;Tip &lt;/span&gt;&lt;/b&gt;">If Demo_Comp_BLDC is uploaded to the simulator, when the Power + is running, vary the pressures connected to the simulator to avoid it stopping.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The BLDC control analyses the differential between the suction and discharge  pressure. If the pressure difference exceeds the set point, the system starts the equalisation function, and displays the message "Max PD prevent start".</p>
+        <p class="suggestion" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Yellow;&quot; class=&quot;mcFormatColor&quot;&gt;Tip &lt;/span&gt;&lt;/b&gt;">If Demo_Comp_BLDC is loaded on the simulator, at the request to run the PowerPlus, vary the discharge pressure and bring it closer to the suction pressure. Afterward, when the PowerPlus is running, restore the discharge pressure  to the value required for the envelope.</p>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;"><a name="Release_Notes"></a>Release notes</h5>
+        <p style="mc-locked: locked;">Following are notes on this demo of released versions</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1" style="mc-locked: unlocked;">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">2.0.8.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0<br />• InverterPowerPlus_2.0.8<br />• VersionChk_2_1.0.0<br />• CheckRetainMem_1.2.0<br />• Blackout_3_1.0.0<br />• COMP_BLDC_2.0.8<br />• EVD_EVO_2_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />-<br /><br /><b style="mc-locked: locked;">Changed<br /></b>-<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">2.0.5.2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">• CAREL_BASIC_LIB_2.3.0<br />• InverterPowerPlus_2.0.5<br />• VersionChk_2_1.0.0<br />• CheckRetainMem_1.2.0<br />• Blackout_3_1.0.0<br />• COMP_BLDC_2.0.5<br />• EVD_EVO_2_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />• Delete screens not linked to strategy variables (02_EVD_EVO, 03_InverterPowerPlus,04_COMP_BLDC) that don't allow the project to be built. It can now be compiled.<br /><br /><b style="mc-locked: locked;">Changed<br /></b>-<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">2.0.5.1</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0<br />• InverterPowerPlus_2.0.5<br />• VersionChk_2_1.0.0<br />• CheckRetainMem_1.2.0<br />• Blackout_3_1.0.0<br />• COMP_BLDC_2.0.5<br />• EVD_EVO_2_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />-<br /><br /><b style="mc-locked: locked;">Changed<br /></b>• c.suite compatibility: ≥ 3.0.41<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">2.0.5.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">• CAREL_BASIC_LIB_2.3.0<br />• InverterPowerPlus_2.0.5<br />• VersionChk_2_1.0.0<br />• CheckRetainMem_1.2.0<br />• Blackout_3_1.0.0<br />• COMP_BLDC_2.0.5<br />• EVD_EVO_2_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />-<br /><br /><b style="mc-locked: locked;">Changed<br /></b>• c.suite compatibility: ≥ 2.7.12<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">2.0.2.3</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">
+                        <p>• CAREL_BASIC_LIB_2.3.0<br />• InverterPowerPlus_2.0.2<br />• VersionChk_2_1.0.0<br />• CheckRetainMem_1.2.0<br />• Blackout_3_1.0.0<br />• COMP_BLDC_2.0.2<br />• EVD_EVO_2_1.2.0</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />• Fixed missing retain flags.<br /><br /><b style="mc-locked: locked;">Changed<br /></b>-<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>• Updated dependencies list</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-DarkerRows">2.0.1.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-DarkerRows">• CAREL_BASIC_LIB_1.2.0<br />• COMP_BLDC_1.4.-<br />• EVD_EVO_2_1.0.17<br />• InverterPowerPlus_1.4.-<br />• VersionChk_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-DarkerRows">• First official release.<br /><br /><br /><b style="mc-locked: locked;">Fixed</b><br />-<br /><br /><b style="mc-locked: locked;">Changed<br /></b>-<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-<br />&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="Comp_BLDC_PowerPlus" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

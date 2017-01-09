@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1708" MadCap:lastWidth="746" MadCap:ignoredWords="CAREL" xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <meta name="Originator" content="ImportDoc" />
+        <meta name="OriginalFile" content="Project_Template.doc" /><title></title>
+        <link rel="stylesheet" href="../../Resources/Stylesheets/styles.css" />
+        <style>/*<![CDATA[*/
+a:link
+{
+	color: #0000ff;
+}
+a:visited
+{
+	color: #0000ff;
+}
+
+/*]]>*/</style>
+        <link href="../../Resources/PageLayouts/CAREL.flpgl" rel="pagelayout" MadCap:pagelayoutType="temporary" />
+        <link href="../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body lang="EN-US">
+        <h4>
+            <MadCap:concept term="Project Template" />Creating a new solution from Project Template</h4>
+        <h5 MadCap:conditions="">First case: creating a new solution in c.strategy</h5>
+        <ol>
+            <li MadCap:conditions="">From c.strategy, in the <b>File</b> menu, select <b>New, </b><b>Project</b></li>
+            <li MadCap:conditions="">Select <b>Carel project Template</b>, enter the new project properties (Name, Path) and click<b> OK  </b>to confirm</li>
+        </ol>
+        <p MadCap:conditions="">
+            <img src="../../Resources/Images/5_Project_Template/NewSolution.jpg" style="width: 132px;height: 77px;" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5>Second case: import the Project Template into another project</h5>
+        <h6>
+            <img src="../../Resources/Images/5_Project_Template/c_strategy.png" style="width: 29px;height: 29px;" /> c.strategy</h6>
+        <ol>
+            <li>In the new project, add Dependencies “CAREL_BASIC_LIB”, “VersionChk_2”, “Blackout_3”, "CheckRetainMem" and "TZ_MNG"LIB" (right click on “ProjectName”, add --&gt; add dependency)</li>
+            <li>Export POUs from c.strategy and import them into the new project</li>
+            <li>	From “Global variables” in Project Template<ol><li>click“Export”</li><li>	in the new project, click“Import” and then “Import Flags” giving the same file (always from “Global variables”)</li></ol></li>
+            <li>Export the alarm table and import it into the new project</li>
+            <li>Build the solution</li>
+        </ol>
+        <h6>
+            <img src="../../Resources/Images/5_Project_Template/c_mask.png" style="width: 28px;height: 28px;" /> c.mask</h6>
+        <ol>
+            <li>	In the new project, delete the empty worksheet</li>
+            <li>Export worksheets from the Project Template and import them into the new project</li>
+            <li>	From the Project Template<ol><li>open code.st</li><li>select all (ctrl+A)</li><li>copy (ctrl+C)</li><li>paste into the new code.st project (ctrl+V), overwriting all the code</li></ol></li>
+            <li>In the new project, open a worksheet, click in the white field and, in the “KeyBinding Editor” set<ol><li>for ALARM key --&gt; “CheckActiveAlarm”</li><li>for ESC key --&gt; “GlobalEsc”</li><li>for PRG key --&gt; “GotoMainMenu”</li></ol></li>
+            <li>Export translation Excel file (right click on Layout (PGD1) --&gt; Export --&gt; Translations) and, before importing it into the new project<ol><li>In the new project, right click on Layout (PGD1) --&gt; Languages</li><li>Add, in order: English [EN], Italian [IT], German [DE], French [FR], Spanish [ES]</li><li>Save and import the Excel file into the new project (right click on "Layout (PGD1)" --&gt; Import --&gt; Translations)</li></ol></li>
+            <li>In the “Properties” of a worksheet (any one), at item “BeginFromMask” select “CarelLogo”</li>
+            <li>Save, close both c.strategy and c.mask, reopen and rebuild all: no error should appear</li>
+        </ol>
+        <h6>
+            <img src="../../Resources/Images/5_Project_Template/c_design.png" style="width: 29px;height: 29px;" /> c.design</h6>
+        <ol>
+            <li>Export c.design configuration (on “Select configuration” page), open c.design for the new project, click cancel (for the new configuration) and then import.</li>
+        </ol>
+        <h5>Third case: start from the latest version of the Project Template</h5>
+        <p>This can be useful if needing to start a new project from the Project Template, however c.suite does not have the latest version of the template.<br />Then:</p>
+        <ol>
+            <li>Go to the <b>KSA</b> website at the following <a href="http://ksa.carel.com/group/c.suite/templates">link</a> and download the latest version of the Project Template</li>
+            <li>Open the project, change the <b>solution</b> and <b>project</b> name<br /></li>
+        </ol>
+        <h5>Update the template or add your own template</h5>
+        <p>To update the template with the last version or to add your own template to c.suite follow the steps below:</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">If you have to update the Project Template download the last version from KSA  at the following <a href="http://ksa.carel.com/group/c.suite/templates">link</a></p>
+        <ol>
+            <li>Open the template you want to add</li>
+            <li>In "File" --&gt; press "Export Template"</li>
+            <li>In "File" --&gt; press "Import Template" and select the file exported before</li>
+            <li>Reboot c.suite </li>
+        </ol>
+        <p>If you need to remove the template, remove the files at the following paths:</p>
+        <ul>
+            <li>
+                <p>C:\Users\("user name"\AppData\Roaming\CAREL\Acp\("c.suite version")\ProjectTemplatesCache</p>
+            </li>
+            <li>
+                <p>C:\Users\("user name")\Documents\Carel c.strategy\Templates\ProjectTemplates</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="Project Template" />
+        </p>&#160;</body>
+</html>

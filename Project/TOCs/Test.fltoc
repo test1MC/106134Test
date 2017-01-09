@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Cover_c.library"
+    Link="/Content/_Print_Only_Topics/Cover_c.library.htm"
+    BreakType="none"
+    PageType="title"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/CAREL.flpgl"></TocEntry>
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/_Print_Only_Topics/Copyright.htm"
+    BreakType="none"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/CAREL.flpgl"></TocEntry>
+  <TocEntry
+    Title="Summary"
+    Link="/Content/_Print_Only_Topics/Summary.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/CAREL_sommario.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="Summary"
+    Link="/Content/_Print_Only_Topics/Summary_2.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/CAREL_sommario.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="cpCOe_2"
+    Link="/Content/Official/2_CAREL_Devices/cpCOe_2/cpCOe_2.htm"></TocEntry>
+  <TocEntry
+    Title="cpCOe_2_AddrChangeWizard"
+    Link="/Content/Official/2_CAREL_Devices/cpCOe_2/cpCOe_2_AddrChangeWizard.htm" />
+  <TocEntry
+    Title="cpCOe_2_UIMng"
+    Link="/Content/Official/2_CAREL_Devices/cpCOe_2/cpCOe_2_UIMng.htm" />
+  <TocEntry
+    Title="cpCOe_2 Demo"
+    Link="/Content/Official/2_CAREL_Devices/cpCOe_2/_cpCOe_2_Demo.htm" />
+  <TocEntry
+    Title="cpCOe Supervisor"
+    Link="/Content/Official/2_CAREL_Devices/cpCOe_2/_cpCOe_Supervisor_Table.htm" />
+</CatapultToc>

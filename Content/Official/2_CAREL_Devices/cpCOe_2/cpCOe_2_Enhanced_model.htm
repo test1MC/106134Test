@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="1392" MadCap:lastWidth="972">
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="cpCOe_2" /><a name="top"></a>cpCOe_2 Enhanced model</h4>
+        <p class="descriptionshort">Use c.pCOe Enhanced external devices.</p>
+        <p class="descriptionshort">&#160;</p>
+        <p class="descriptionshort">Document version: 1.0</p>
+        <table class="TableStyle-02_Custom" cellspacing="0" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" MadCap:conditions="">07/04/2015</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" MadCap:conditions="">29/11/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">c.pCOe Enhanced</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Firmware devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">3.1</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">Modbus Master</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5><a name="Technical_features"></a><span style="font-family: Verdana;">Technical features</span>
+        </h5>
+        <p>See <MadCap:xref href="cpCOe_2.htm#top">"cpCOe_2
+      "</MadCap:xref> table.</p>
+        <h5>Useful information</h5>
+        <p>To manage the c.pCOe Enhanced model, the<MadCap:xref href="cpCOe_2.htm#top">"cpCOe_2
+      "</MadCap:xref>FB is used . There are no parameters to set that distinguish the Basic model from the Enhanced model, it is the FB that recognises which device is connected.</p>
+        <p>This new model can work in a Modbus network and can replace a Basic model with the same functions and, in addition, the connection of an unipolar electronic expansion valve.</p>
+        <p>&#160;</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">c.pCOe Enhanced devices works in Modbus slave protocol, not in Carel Slave protocol. Also, the supported Baudrates are 19.2k, 38.4k and 57.6k.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">c.pCOe Enhanced devices cannot manage the valve, it only sends information to the valve driver.</p>
+        <h5>Valve management</h5>
+        <p>c.pCOe Enhanced model manages only unipolar electronic expansion valves, such as Carel E2Vu, according the<a href="../EVD_Emb_2/EVD_Emb_2.htm">"EVD_Emb_2"</a>FB supported valves. Through ExtPosit pins, the information is shared between cpCOe_2 and EVD_Emb_2 function blocks.</p>
+        <h5>Polling Time</h5>
+        <p>The output pin <i>ThrshWarnPollTime_CPCOE</i> of <MadCap:xref href="cpCOe_2.htm#top">"cpCOe_2
+      "</MadCap:xref>FB warns that the Polling Time exceeds 10 seconds.</p>
+        <p>This function works only with the Enhanced model because a polling time greater than 10 seconds makes control performed by the valve inaccurate.</p>
+        <h5>Application example</h5>
+        <p>The picture below shows an example of a simple application.</p>
+        <p>The EVD_Emb_2 FB manages the valve and the cpCOe_2 FB sends data, contained in the ExtPosit_1 variable, to c.pCOe Enhanced. The EVD_Emb_2 FB receives feedback on the Online status of c.pCOe.</p>
+        <p>The FBs can be in two different POUs, in this case the required variables (ExtPosit, ExtPositOnline and Al_ExtPositmust) have to be defined as global variable.s</p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/cpCOe_2/cpCOe_2_EnhancedApplicationEx.png" class="OneHundredPercentThumbnail" style="mc-thumbnail: popup;" />
+        </p>
+        <p>In c.strategy the ExtPosit_1 variable has been flagged as a Protocol variable:</p>
+        <p>&#160;</p>
+        <p>While in c.design, the ExtPositTable template has to be used:</p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/cpCOe_2/cpCOe_2_EnhancedApplicationEx2.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">It is possible to use only the cpCOe_2 function block to send the required information to the unipolar valve management:<br />- with EVD_Emb_2, this FB&#160;is in charge of valve parameters and algorithm<br />- without EVD_Emb_2 FB, the application is in charge of valve parameters and algorithm.</p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="cpCOe_2" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

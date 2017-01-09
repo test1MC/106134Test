@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="587" MadCap:lastWidth="1384" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="Comp_BLDC_PowerPlus" />Appendix 1 : custom parameter management </h4>
+        <p class="descriptionshort">How to create a custom compressor.</p>
+        <p>&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Native revision 15/11/2016</p>
+        <h5>Introduction</h5>
+        <p>The <b>InverterPowerPlus</b> function block allows a compressor’s electrical parameters o be modified and saved to the c.pCO memory, thus creating a custom compressor.</p>
+        <p>&#160;</p>
+        <h5>Procedure</h5>
+        <p>The procedure for creating a custom compressor is as follows:</p>
+        <ol>
+            <li>
+                <p>From the list in the <b>InverterPowerPlus</b> function block, select the compressor with the features that most closely resembles the custom compressor being created.</p>
+            </li>
+            <li>
+                <p>Start the procedure to download the default parameters. This operation sets a value for all the Power+ parameters.</p>
+            </li>
+            <li>
+                <p>Modify the compressor’s electrical parameters. The modified parameters are not yet saved to the c.pCO memory.</p>
+            </li>
+            <li>
+                <p>Save the new compressor configuration in the Custom configuration menu.</p>
+            </li>
+            <li>
+                <p>If entering  a new compressor:</p>
+                <ul>
+                    <li> in the main_init task , Sel_Comp_Type module, create the variable with the new name of the compressor and its allocation number.</li>
+                    <li>in the main task , createa new folder with the new compressor parameters. Keep the sequence of the folder.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>After having saved the configuration as described in point 4, the list of compressors in the <b>InverterPowerPlus</b> function block will now show the new configuration under the CUSTOM model.</p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="Comp_BLDC_PowerPlus" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

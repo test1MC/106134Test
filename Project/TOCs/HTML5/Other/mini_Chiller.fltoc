@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="OSSTDmCHBE Manual">
+    <TocEntry
+      Title="General terms of manual use" />
+    <TocEntry
+      Title="1. Release notes"></TocEntry>
+    <TocEntry
+      Title="2. Introduction"></TocEntry>
+    <TocEntry
+      Title="3. Hardware installation"></TocEntry>
+    <TocEntry
+      Title="4. Start up"></TocEntry>
+    <TocEntry
+      Title="5. User inteface"></TocEntry>
+    <TocEntry
+      Title="6. Functions"></TocEntry>
+    <TocEntry
+      Title="7. Parameters table"></TocEntry>
+    <TocEntry
+      Title="8. Supervisor table"></TocEntry>
+    <TocEntry
+      Title="9. Alarms" />
+  </TocEntry>
+</CatapultToc>

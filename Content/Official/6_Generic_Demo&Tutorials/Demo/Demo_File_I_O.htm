@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="3046" MadCap:lastWidth="975" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" class="topic">
+    <head>
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>File I/O Demo</h4>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Demo/File_IO_c-pCO.jpg" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5 style="mc-locked: unlocked;">Hardware and software requirements</h5>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 91px;" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" MadCap:conditions="">08/07/2016</td>
+                </tr>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" MadCap:conditions="">11/04/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite version</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.0.41</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO family  controller</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥ 3.0.000</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices firmware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Project description</h5>
+        <p style="mc-locked: unlocked;">This demo shows how to create, read and write files in the public memory or on USB stick from the application</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The public memory is a 96 Mb partition of flash memory available to the user,  this public filesystem can be accessed via USB cable or via FTP.</p>
+        <p>&#160;</p>
+        <h6>Cases when used</h6>
+        <p>Practical uses of these C FBs can be:</p>
+        <ul>
+            <li>Create a unit configuration (such as a DEV) file</li>
+            <li>Create your own Log file management</li>
+            <li>Create your own "license" file in order to activate some special features</li>
+        </ul>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">Since the files are in the public memory, make sure  to encrypt the license in some way.</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">Write operations are computationally heavy. Thus, the number of file write operations should be limited in order to avoid disturbing  the application execution flow. An empirical test determines the safe threshold as 50 write operations within the same program cycle.</p>
+        <p>&#160;</p>
+        <h6>Features</h6>
+        <p>This demo can be used to test file IO management and related C FBs provided by the OS:</p>
+        <ul>
+            <li>FILE_INFO: provide some info regarding the specified file: creation date, last access date, last modification date, size (in bytes), write permission</li>
+            <li>FILE_REMOVE: delete the specified file</li>
+            <li>FILE_READ: read at most 2048 bytes starting from a specified offset</li>
+            <li>FILE_WRITE: write at most 2048 bytes starting from a specified offset, it can create new files, modify files or overwrite them.</li>
+        </ul>
+        <p>With these C FBs you can perform basic operations on files in the root of the public memory or on USB stick.</p>
+        <p>FILE_READ and FILE_WRITE C FB will read and write data in binary format, so you have to manage the data: this includes file encoding, data format and position.</p>
+        <p>See also : <a href="http://csuitedocs.carel.com/">http://csuitedocs.carel.com/</a> -&gt; c.strategy -&gt; CAREL Automation Model -&gt; C Function Block -&gt; File I/O</p>
+        <p>&#160;</p>
+        <h6>FILE_INFO</h6>
+        <p>The file info will search for a file called "IOTestFile" in the public memory or on the USB stick, if present it will load its information.</p>
+        <ol>
+            <li>Access the FILE INFO screen in the MAIN LOOP</li>
+            <li>Set UPDATE&#160;INFO to YES</li>
+        </ol>
+        <p>&#160;</p>
+        <h6>FILE_REMOVE</h6>
+        <p>The file remove will delete a file called "IOTestFile", if present, in the public memory or on the USB stick.</p>
+        <ol>
+            <li>Access the FILE DELETE screen in the MAIN LOOP</li>
+            <li>Set DELETE FILE to YES</li>
+        </ol>
+        <p>&#160;</p>
+        <h6>FILE_READ</h6>
+        <p>The file read will search for a file called "IOTestFile" in the public memory or on the USB stick, if present it will read its first 252 bytes and store the content in a string variable called BYTES_TO_STRING_1.</p>
+        <ol>
+            <li>Access the FILE READ screen in the MAIN LOOP</li>
+            <li>Set READ&#160;FILE to YES</li>
+            <li>Check the contents of the BYTES_TO_STRING_1 variables</li>
+        </ol>
+        <p>&#160;</p>
+        <h6>FILE_WRITE</h6>
+        <p>The file write will create or overwrite a file called "IOTestFile"  in the public memory or on the USB stick, this file will be loaded with values from 0 to 255.</p>
+        <ol>
+            <li>Access the FILE WRITE screen in the MAIN LOOP</li>
+            <li>Set WRITE&#160;FILE to YES</li>
+        </ol>
+        <p>&#160;</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">It is possible to change the file name used in this demo, modifying the initial value of the "filename" variable.</p>
+        <p>&#160;</p>
+        <h5>Troubleshooting</h5>
+        <p>Following are some tips for finding the possible causes of malfunctions in this demo:</p>
+        <table class="TableStyle-02_Custom" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Problem</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2" style="mc-locked: unlocked;">Possible cause</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Suggested correction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="2"><span style="font-weight: normal;">File info doesn't load data</span>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">No file to check</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Check that a file named to match the "IOTestFile" variable exists </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">USB cable connected</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="mc-locked: unlocked;">Unplug the USB cable, check file system after or do it via FTP</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="2" style="font-weight: normal;">File delete doesn't delete data</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">No file to delete</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="mc-locked: unlocked;">Check that a file named to match the "IOTestFile" variable exists </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">USB cable connected</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="mc-locked: unlocked;">Unplug the USB cable, check file system after or do it via FTP</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="2"><span style="font-weight: normal;">File write doesn't produce anything</span>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Strange characters in the file</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="mc-locked: unlocked;">If you are using the default windows editor, use one that can display other encoding, use UTF-8</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">USB cable connected</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="mc-locked: unlocked;">Unplug the USB cable, check file system after or do it via FTP</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="4"><span style="font-weight: normal;">File read doesn't read anything</span>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Can't read anything</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="mc-locked: unlocked;">Go online with simulation and check BYTES_TO_STRING_1 value</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Strange characters read</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="mc-locked: unlocked;">Check the encoding of the file, you must use UTF-8</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">No file to read</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="mc-locked: unlocked;">Check that a file named to match the "IOTestFile" variable exists </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">USB cable connected</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows" style="mc-locked: unlocked;">Unplug the USB cable, go online via ETHERNET</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5 style="mc-locked: unlocked;">Release notes</h5>
+        <p style="mc-locked: unlocked;">The following are notes on the released versions of this demo:</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1" style="mc-locked: unlocked;">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0
+ <br />• CheckRetainMem_1.2.0
+ <br />• VersionChk_2_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows" style="mc-locked: unlocked;">• First official release<br /><br /><b style="mc-locked: unlocked;">Fixed</b><br />-<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>-<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-<br />&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

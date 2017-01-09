@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us" MadCap:lastBlockDepth="9" MadCap:lastHeight="2172" MadCap:lastWidth="1358">
+    <head>
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="Comp_BLDC_PowerPlus" /><a name="Release_Notes"></a> InverterPowerPlus Release notes</h4>
+        <p class="descriptionshort">The following are notes on the released versions of this function/function block.</p>
+        <p class="descriptionshort">&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update - 06/10/2016 | Native revision - 15/11/2016</p>
+        <p>&#160;</p>
+        <table class="TableStyle-04_Release_Notes" style="mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); margin-left: 0; margin-right: auto; width: 80%;" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Version</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">2.0.8</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />• Fixed the parameter "motor base frequency" compressor 77 SAMSUNG UX8TH5140FJU.  From 20Hz to 200Hz.&#160;<br /><br /><b style="mc-locked: locked;">Changed</b><br />• Renamed the compressor 36 from SIAM ANB42FU to SIAM ANB42FUEMTS<br /><br />• Changed the electrical parameters for the compressor: <br />36 SIAM ANB42FUEMTS 400V R410. Only for PSD1.<br />53  THOSHIBA DA330A3FJH-10C1 230V R410<br />54 THOSHIBA DA420A3FJH-10C1 230V R410<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /><br /></b>• Added new compressors:<br />93 - LG GKT141MAD 230V R410A<br />94 - LG GPT442MBB 400V R410A<br />95 - LG ABA051MAA 230V R410A<br />96 - PANASONIC 5JD420XAA22 230V R410A<br />97 - SIAM ADB33FU-MTS 400V R404<br />98 - RESERVED 4<br />99 - SAMSUNG DS-GB070FAV 400V R410A<br />100 - MITSUBISHI LNB42FSCMC 230V R410A<br /><br />•	Added the units of measurement, compatible with the new features of c.suite&#160;<br /><br /><b>Documentation</b><br />• Updated documentation&#160;<br /><br /></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">2.0.5</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />- <br /><br /><b style="mc-locked: locked;">Changed</b><br />-<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /><br /></b>• Add new compressors:<br />73 - PANASONIC 80443070 230v R744<br />74 - PANASONIC 80459480 230v R744<br />75 - SAMSUNG UX5T250FNBJX 230V R134a<br />76 - RESERVED 3<br />77 - SAMSUNG UX8TH5140FJU 230v R134a<br />78 - SAMSUNG UG8T300FUBJU 230V R410A<br />79 - TOSHIBA DS130A1FJ-24F 230v R404A<br />80 - SIAM SNB110FGYMT 230V R410A<br />81 - LG APA026DAA 230V R410A<br />82 - LG ABA051DAA 230V R410A<br />83 - PANASONIC 80466070 230V R744<br />84 - RESERVED 2<br />85 - SIAM ADB66F1-MTS 400V R404A<br />86 - SIAM ADB78F1-MTS 400V R404A<br />87 - MHI LNB53FCAMC 400V R410A<br />88 – SIAMADB33F1-MTS 400V R404A<br />89 – SAMSUNGUG5T520FUBJX 230V R410A<br />90 – SIAMANB42FBSMT 230V R410A<br />91 – SIAMANB66FVAMTS 400V R410A<br />92 – SIAMANB87FVLMT 400V R410A&#160;<br /><br />•	Add compressors for PSD1:<br />21 - TOSHIBA DA550A3F-11M 400V R410A<br />22 - TOSHIBA DA422A3F-27M 400v R410A<br />56 - RESERVED 1&#160;<br /><br />•	Changed compressor compatibility with PSD three phase:06 - SAMSUNG UG5T520F 400V R410A&#160;<br /><br />• Implemented delay offline alarm with PSD in run state. <br />The time is in the parameter HR29_DataCommunicationTimeout. The variables delayed, are: ReadyToGo and Offline status.<br /><br />• Added the follow variables in Info_PWRP structure:<br />Info_PWRP.Info_InputVoltage as input register modbus address 158<br />Info_PWRP.Info_InputVoltageRS as input register modbus address 160<br />Info_PWRP.Info_InputVoltageST as input register modbus address 161<br /><br />• Modbus template improved by optimising the polling times&#160;<br /><br />•	Implemented new support for PS2*&#160;<br /><br /><b>Documentation</b><br />• Updated documentation<br /><br /></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">2.0.2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows">• First official release.<br /><br /><b style="mc-locked: locked;">Fixed</b><br />-<br /><br /><b style="mc-locked: locked;">Changed</b><br />-<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced<br /><br /></b>-<br /><b>Documentation<br /></b>-<br /><br /></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="Comp_BLDC_PowerPlus" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

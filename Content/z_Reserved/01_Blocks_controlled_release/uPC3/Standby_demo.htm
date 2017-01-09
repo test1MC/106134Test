@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1606" MadCap:lastWidth="1222" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>Stand-by mode Demo</h4>
+        <p>
+            <img src="../../../Resources/Images/Reserved_CAREL_HQ/01_Blocks_in_controlled/uPC3/Standby_demo/µPC3_072dpi.jpg" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5 style="mc-locked: unlocked;">Hardware and software requirements</h5>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">25/02/2016</td>
+                </tr>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite version</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥2.7.12</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">uPC3</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥2.7.001</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices firmware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Project description</h5>
+        <p>This demo shows how to manage the Stand-by function of the uPC3 either from the stand-by DIN or from the PLDpro display.</p>
+        <p>&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">For more information about standby mode, see enrico.perazzolo@carel.com</p>
+        <p>&#160;</p>
+        <p>The demo uses the following C Function Blocks:</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');margin-left: 0;margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="font-weight: bold;">C Function Block name</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="font-weight: bold;">Parameter</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-weight: bold;">Use for</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">SYS_READ</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">SYS_PARAM_GET_JST_INPUT</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Read the input from DIN</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">SYS_WRITE</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">SYS_PARAM_SYSTEM_POWERDOWN</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">181818 to switch off from PDLPro<br />191919 to swicth off from DI</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>Main settings</h6>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Standby_CommandReceived</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">This variable must be managed by your application, if TRUE a stand-by command has been received either from the dedicated DIN or from mask, use the status of this variable to secure the machine (i.e. disable all devices)</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Standby_ProcedureCompleted</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">This variable must be managed by your application, set this variable to TRUE once the machine is secured, when TRUE the uPC3 will go in stand-by</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Standby_Mng.Standby_UI</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">This variable is used to request the stand-by procedure from the UI.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">If the uPC3 is put in stand-by from the stand-by DIN, the uPC3 can be waked up only from the DIN, the same behavior applies to the stand-by from mask.</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">The stand-by from mask is available only with PLDPro with codes: PLD**GFP00.</p>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Release notes</h5>
+        <p style="mc-locked: unlocked;">The following are notes on the released versions of this demo:</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1" style="mc-locked: unlocked;">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0
+ <br />• CheckRetainMem_1.2.0
+ <br />• VersionChk_2_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows" style="mc-locked: unlocked;">• First official release<br /><br /><b style="mc-locked: unlocked;">Fixed</b><br />-<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>-<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-<br />&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

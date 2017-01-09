@@ -1,0 +1,2004 @@
+/* MadCap Table Style: */
+
+/*<meta Version="9" />*/
+
+mcTableStyle
+{
+	border-collapse: separate;
+	border-spacing-y: 0;
+	border-spacing-x: 0;
+	name: TechFeatures;
+	cell-padding-left: 5px;
+	cell-padding-right: 5px;
+	cell-padding-top: 5px;
+	cell-padding-bottom: 5px;
+	max-id: 10;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	overflow: hidden;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #ffffff;
+	name: Feature;
+	id: 0;
+	size: 10em;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	id: 8;
+	name: Value;
+	type: Automatic;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #ffffff;
+	size: 30em;
+	font-size: 0.9em;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	id: 9;
+	name: Notes;
+	type: Automatic;
+	size: 40em;
+	font-size: 0.9em;
+}
+
+mcTableHeadStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #ffffff;
+	background-color: #bed230;
+	name: Header1;
+	id: 2;
+	font-style: normal;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 1px;
+	separator-color: #ffffff;
+	name: Row1;
+	id: 1;
+	background-color: #edf0f1;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	id: 10;
+	name: Body1;
+	background-color: #e1e4e6;
+}
+
+mcTableFootStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-widte: 1px;
+	separator-color: #ffffff;
+	name: Footer1;
+	id: 3;
+	separator-width: 1px;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-TechFeatures
+{
+	border-collapse: separate;
+	overflow: hidden;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-spacing: 0px 0px;
+}
+
+.TableStyle-TechFeatures-Column-Feature
+{
+	width: 10em;
+}
+
+.TableStyle-TechFeatures-Column-Value
+{
+	width: 30em;
+}
+
+.TableStyle-TechFeatures-Column-Notes
+{
+	width: 40em;
+}
+
+.TableStyle-TechFeatures-Head-Header1
+{
+	
+}
+
+.TableStyle-TechFeatures-HeadI-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadI-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadE-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadE-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadF-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadF-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadH-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadH-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadD-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadD-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadC-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadC-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadB-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadB-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadA-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadA-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadG-Feature-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadG-Feature-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadI-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadI-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadE-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadE-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadF-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadF-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadH-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadH-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadD-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadD-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadC-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadC-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadB-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadB-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadA-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadA-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadG-Value-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadG-Value-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadI-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadI-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadE-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadE-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadF-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadF-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadH-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadH-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadD-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-TechFeatures-HeadD-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadC-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadC-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadB-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadB-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadA-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadA-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-HeadG-Notes-Header1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: normal;
+	background-color: #bed230;
+}
+
+.TableStyle-TechFeatures-HeadG-Notes-Header1 p
+{
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.TableStyle-TechFeatures-Foot-Footer1
+{
+	
+}
+
+.TableStyle-TechFeatures-FootI-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootI-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootE-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootE-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootF-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootF-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootH-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-FootH-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootD-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootD-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootC-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootC-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootB-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-FootB-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootA-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootA-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootG-Feature-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootG-Feature-Footer1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-FootI-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootI-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootE-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootE-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootF-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootF-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootH-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-FootH-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootD-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootD-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootC-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootC-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootB-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-FootB-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootA-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootA-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootG-Value-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootG-Value-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootI-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootI-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootE-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootE-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootF-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootF-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootH-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootH-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootD-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+	border-top-width: 1px;
+	border-top-color: #ffffff;
+	border-top-style: solid;
+}
+
+.TableStyle-TechFeatures-FootD-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootC-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootC-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootB-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootB-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootA-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootA-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootG-Notes-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-FootG-Notes-Footer1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-Body-Row1
+{
+	
+}
+
+.TableStyle-TechFeatures-BodyI-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyI-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyE-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyE-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyF-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyF-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyH-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyH-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyD-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyD-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyC-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyC-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyB-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyB-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyA-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyA-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyG-Feature-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyG-Feature-Row1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyI-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyI-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyE-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyE-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyF-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyF-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyH-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyH-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyD-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyD-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyC-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyC-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyB-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyB-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyA-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyA-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyG-Value-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyG-Value-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyI-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyI-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyE-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyE-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyF-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyF-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyH-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyH-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyD-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyD-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyC-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyC-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyB-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyB-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyA-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyA-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyG-Notes-Row1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #edf0f1;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyG-Notes-Row1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-Body-Body1
+{
+	
+}
+
+.TableStyle-TechFeatures-BodyI-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyI-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyE-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyE-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyF-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyF-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyH-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyH-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyD-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyD-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyC-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyC-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyB-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyB-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyA-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyA-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyG-Feature-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyG-Feature-Body1 p
+{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.TableStyle-TechFeatures-BodyI-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyI-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyE-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyE-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyF-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyF-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyH-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyH-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyD-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyD-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyC-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyC-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyB-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+	border-right-width: 1px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+}
+
+.TableStyle-TechFeatures-BodyB-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyA-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyA-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyG-Value-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyG-Value-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyI-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyI-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyE-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyE-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyF-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyF-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyH-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyH-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyD-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyD-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyC-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyC-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyB-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyB-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyA-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyA-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyG-Notes-Body1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #e1e4e6;
+	font-size: 0.9em;
+}
+
+.TableStyle-TechFeatures-BodyG-Notes-Body1 p
+{
+	font-size: 0.9em;
+}
+
+

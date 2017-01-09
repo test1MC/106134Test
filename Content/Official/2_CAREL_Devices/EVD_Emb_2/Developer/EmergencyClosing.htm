@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1030" MadCap:lastWidth="1181" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h5>EmergencyClosing</h5>
+        <h6>PREMESSE</h6>
+        <p>il FB <b>EVD_Emb</b> ha il parametro <b style="font-style: italic;">DC_SupplyEn</b> che influisce sul funzionamento della chiusura forzata d’emergenza.<br />A seconda del tipo di alimentazione, il FB abilita o meno la chiusura di emergenza forzata:</p>
+        <table style="mc-table-style: url('../../../../Resources/TableStyles/04_Release_Notes.css');mc-table-style-original: url('../../../../Resources/TableStyles/04_Release_Notes.css');margin-left: 0;margin-right: auto;" class="TableStyle-04_Release_Notes" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 110px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Controller</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">AC</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1" style="text-align: center;">DC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">c.pCO&#160;Mini</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows" style="text-align: center;">chiusura forzata <span style="background-color: #7cfc00;font-weight: bold;">SI</span></td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows" style="text-align: center;">chiusura forzata <span style="background-color: #ff0000;font-weight: bold;">NO</span></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-DarkerRows">uPC3</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-DarkerRows" style="text-align: center;">chiusura forzata <span style="background-color: #7cfc00; font-weight: bold;">SI</span></td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-DarkerRows" style="text-align: center;">chiusura forzata <span style="background-color: #ff8c00; font-weight: bold;">FORZATO</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>nel <b>cpCOmini</b> il riconoscimento del buco di tensione funziona solo in AC (zero crossing) quindi se imposto DC_SUpplyEn = TRUE disabilito la gestione della chiusura forzata, altrimenti la abilito, a prescindere dalla presenza o meno dell’ultracap</li>
+            <li>il <b>uPC3</b> è in grado di riconoscere il buco di tensione sia in AC che in DC. Al momento non esiste ultracap per tale hardware.<br />Lato software forziamo la chiusura d’emergenza in entrambi i casi.</li>
+        </ul>
+        <h6>PROBLEMA RISCONTRATO</h6>
+        <p>In Aermec troviamo un sistema uPC3 small 24v + PSD2<br />Capita che durante il normale funzionamento della macchina l’EVD_Emb inizi la procedura di chiusura forzata di emergenza.</p>
+        <p>sembra che il problema sia dovuto a un calo di tensione riconosciuto da uPC3 ma non sufficientemente lungo da riavviarlo. Di fatto la regolazione (uPC3) continua inalterata rispetto al calo di tensione ma l’EVD chiude d’emergenza</p>
+        <h5>REPORT incontro 27/10/2015</h5>
+        <p><i>presenti: Enrico Perazzolo, Valentina Cellini, Lorenzo Bolognese, Mirco Temporin, Stefano Zonato, Francesco Roveron</i>
+        </p>
+        <h6>AZIONI CORRETTIVE LATO SOFTWARE</h6>
+        <ul>
+            <li>il parametro <b style="font-style: italic;">DC_SupplyEn</b> dovrebbe diventare indicativo della presenza dell’ultracap e non del tipo di alimentazione. Con questo parametro informo l’EVD_Emb se abilitare o meno la chiusura forzata di emergenza</li>
+            <li>in caso di utilizzo dell’ultracap e quindi di abilitazione di chiusura di emergenza forzata, è necessario gestire lato applicativo lo stato dei vari dispositivi spegnendoli/fermandoli dove necessario.<br />Promuovere, consigliare e inserire nelle linee guida la gestione dell’allarme di chiusura di emergenza forzata</li>
+            <li>raccogliere feedback dalle macchine in uso in laboratorio circa i valori della frequenza istantanea.</li>
+            <li>Potrebbe essere usata la macchina T009 per i test sul PSD2: installare i log</li>
+        </ul>
+        <h6>ISSUE</h6>
+        <p>nel bios è presente una variabile di sistema per l’informazione del tipo di alimentazione: AC o in DC.</p>
+        <p>L’ OS ha qualcosa di simile?</p>
+        <ul>
+            <li>nel sistema operativo è presente l’informazione sullo stato dell’alimentazione. All’avvio viene rilevato se l’alimentazione è AC o DC. Durante il funzionamento vengono rilevati buchi di rete e lo stato viene quindi modificato in FAIL_AC o FAIL_DC. Nel caso AC viene rilevata ogni secondo la frequenza di rete. A 50Hz sono attesi 100 impulsi al secondo, se ne vengono rilevati meno di 70 viene dato l’allarme (quindi il minimo buco rilevabile è di 300ms). Queste variabili sono disponibili per l’applicativo mediante CFB sys_read.<br /><img src="../../../../Resources/Images/2_CAREL_Devices/EVD_Emb/EmergClos.png" class="OneHundredPercentThumbnail" /></li>
+            <li>Come reagisce l’inverter ai buchi di tensione? Quali parametri sono impostabili a riguardo? Quali feedback dall’hardware?</li>
+        </ul>
+    </body>
+</html>

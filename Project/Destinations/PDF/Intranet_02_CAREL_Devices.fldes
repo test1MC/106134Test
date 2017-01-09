@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment=""
+  Host="swdocs.carel.locale"
+  User="MyAccountId"
+  Password=""
+  Directory="./PDF/01_c.libraries/2_CAREL_Devices"
+  Port=""
+  ViewUrl=""
+  Type="ftp"
+  UploadLogFile="false"
+  RemoveStale="false"
+  ChangedOnly="false"></CatapultDestination>

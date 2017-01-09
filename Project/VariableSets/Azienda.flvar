@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment="Nel caso di aziende con nomi corti  e completi"
+    Name="NomeCompleto">CAREL INDUSTRIES S.p.A.</Variable>
+  <Variable
+    Name="NomeCorto"
+    Comment="usata solo in pie pagina e indirizzi"
+    Definition="Some text">CAREL</Variable>
+  <Variable
+    Name="Tel.Fax"
+    Comment=""
+    Definition="Some text"
+    OriginalName="Tel.Fax">Fax +39 049 97 16 600</Variable>
+  <Variable
+    Name="Copyright"
+    Comment="da aggiornare a ogni pubblicazione"
+    Definition="Some text"
+    EvaluatedDefinition="COPYRIGHT ©2014-2017">COPYRIGHT ©2014-2017</Variable>
+  <Variable
+    Name="NomeRagioneSociale"
+    Definition="Some text"
+    Comment="usata solo in pie pagina e indirizzi">CAREL INDUSTRIES S.p.A.</Variable>
+  <Variable
+    Name="Operativa_IndirizzoLinea1"
+    Comment=""
+    Definition="Some text">Via dell'Industria, 11</Variable>
+  <Variable
+    Name="Operativa_IndirizzoLinea2"
+    Comment=""
+    Definition="Some text">35020 Brugine (PD)</Variable>
+  <Variable
+    Name="Operativa_IndirizzoLinea3"
+    Comment=""
+    Definition="Some text">Italy</Variable>
+  <Variable
+    Name="emailGenerale"
+    Definition="Some text"
+    Comment="email aziendale">carel@carel.com</Variable>
+  <Variable
+    Name="emailAssistenza"
+    Comment="email per richieste post vendita"
+    Definition="Some text">aftersales@carel.com</Variable>
+  <Variable
+    Name="www"
+    Comment="sito web aziendale"
+    Definition="Some text">www.carel.com</Variable>
+  <Variable
+    Name="Copyright_short"
+    Comment="da aggiornare a ogni pubblicazione"
+    Definition="Some text"
+    EvaluatedDefinition="©2014-2017">©2014-2017</Variable>
+  <Variable
+    Name="Tel.Commerciale"
+    Comment=""
+    Definition="Some text"
+    OriginalName="Tel.Commerciale">Tel. +39 049 97 16 611</Variable>
+  <Variable
+    Name="Legale_IndirizzoLinea1"
+    Comment=""
+    Definition="Some text"
+    OriginalName="Legale_IndirizzoLinea1">Via dell'Industria, 11</Variable>
+  <Variable
+    Name="Legale_IndirizzoLinea2"
+    Comment=""
+    Definition="Some text"
+    OriginalName="Legale_IndirizzoLinea2">35020 Brugine (PD)</Variable>
+  <Variable
+    Name="Legale_IndirizzoLinea3"
+    Comment=""
+    Definition="Some text">Italy</Variable>
+  <Variable
+    Name="emailAssistenzaProdotto"
+    Comment="email per comunicare errori nel manuale o del Service">c.suitesupport@carel.com</Variable>
+  <Variable
+    Name="AddressKSA"
+    Comment="">http://ksa.carel.com/</Variable>
+  <Variable
+    Name="AddressLib"
+    Comment="">http://ksa.carel.com/group/c.suite/librariesf/fb</Variable>
+</CatapultVariableSet>

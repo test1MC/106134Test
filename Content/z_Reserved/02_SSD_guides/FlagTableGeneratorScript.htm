@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="930" MadCap:lastWidth="1236" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h4>Flag Table Generator Script</h4>
+        <p>&#160;</p>
+        <p>This script will allow you to create a table that contains all flag from a variable export of a POU, the generated table can be copied in flare in Text Editor mode.</p>
+        <p>The files can be found in <a href="https://svncarel.carel.com/svn/csuite_help/trunk/c.library_ENG/script/datatypeTableCreator">https://svncarel.carel.com/svn/csuite_help/trunk/c.library_ENG/script/datatypeTableCreator</a></p>
+        <h5>Prerequisites</h5>
+        <ul>
+            <li>Python 2.7.x freely available from <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>, remember to flag the add to PATH option during the installation customization</li>
+            <li>Dominate python library <a href="https://github.com/Knio/dominate">https://github.com/Knio/dominate</a> for more information on how to add a library go to  <a href="https://docs.python.org/2/install/">https://docs.python.org/2/install/</a> and <a href="https://pypi.python.org/pypi">https://pypi.python.org/pypi</a>, or more simply open windows cmd and paste:<br /><code><br />pip install --proxy=https://haproxy.carel.locale:8080 dominate</code></li>
+            <li>Classes python library</li>
+        </ul>
+        <p>&#160;</p>
+        <h5>Settings</h5>
+        <p>Open the script with a text editor and change the path of:</p>
+        <ul>
+            <li> projectFile variable to your project isaxml (i.e. Desktop\cpCOe_2\cpCOe_2\cpCOe_2\cpCOe_2.isaxml), use the one from the library solution not the demo</li>
+            <li>
+                destinationFile variable to  a desired path      </li>
+        </ul>
+        <p>Once these variables are properly set simply launch the script, you will see "finished" once the script has ended.</p>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Release notes</h5>
+        <table class="TableStyle-04_Release_Notes" style="mc-table-style: url('../../Resources/TableStyles/04_Release_Notes.css'); width: 80%; margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1" style="mc-unlocked: unlocked;">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1" style="mc-unlocked: unlocked;">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.6</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">
+                        <p>• dominate 2.1.12</p>
+                        <p>• classes 1.0.2</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows">
+                        <p>• First official release<br /><br /><b style="mc-locked: unlocked;">Fixed</b><br />-<br /><b style="mc-locked: unlocked;"><br />Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br />-<br /><br /></b><b>Documentation<br /></b>-<br /><br /></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

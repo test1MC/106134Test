@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1303" MadCap:lastWidth="1384" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4 style="mc-locked: unlocked;">
+            <MadCap:concept term="Imp_Exp_Parameters" />How to implement the import/export parameters function in a project - Tutorial</h4>
+        <p class="descriptionshort">Document version: 1.0</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 22/10/2015 | Native revision 22/10/15</p>
+        <p>&#160;</p>
+        <p>This tutorial describes how to implement the import/export parameters function from the Demo_ImpExp_Params to a project.</p>
+        <p>&#160;</p>
+        <h5>Steps</h5>
+        <h6>c.strategy</h6>
+        <ol>
+            <li>Open Demo_ImpExp_Params </li>
+            <li>Right click to "Resource" &gt; "Export" &gt; "Export POU's"</li>
+            <li>Tick the POU "ImpExp" and click "OK"; save the .pp1 file in a directory</li>
+            <li>Import the .pp1 file in the new project, selecting "Import" or "Import with new name"</li>
+            <li>POU "ImpExp" and his local variables are now in "Programs"</li>
+        </ol>
+        <p>&#160;</p>
+        <h6>c.mask</h6>
+        <ol>
+            <li>Open Demo_ImpExp_Params</li>
+            <li>Right click to "Layout" &gt;"Export" &gt; "Worksheet as Template"</li>
+            <li>Tick "03_ImpExp" to export and click "OK"</li>
+            <li>Select the instance ImpExp to export  and save the .wp1 file in a directory</li>
+            <li>Import the Worksheet as Template in the new project</li>
+            <li>Select the instance "ImpExp"</li>
+            <li>Select "Import" or "Import with new name" of worksheet "03_ImpExp"</li>
+            <li>Select "Import" of all the classes and click "Next"</li>
+            <li>Select "Do Nothing" of all the ST functions except "ParamImpExp"<br /><br /><img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/ST_Selection.png" style="width: 403px;height: 272px;" /><br /><br /></li>
+            <li>Select "Import" of "Arrows.bmp" and click "Finish"</li>
+            <li>Worksheet "03_ImpExp" is now in "Layout" </li>
+            <li>Change the IMPEXP loop according to the use of it (it is present a Test mask that can be deleted from the loop)</li>
+        </ol>
+        <p>&#160;</p>
+        <h5>Conclusion</h5>
+        <p>In the project is now present the import/export parameters function that allows to import/export in USB or internal flash memory the DEV variables that have a user value.</p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="Imp_Exp_Parameters" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

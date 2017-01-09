@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment=""
+  Host="swdoc.carel.locale"
+  User="MyAccountId"
+  Password=""
+  Directory="./HTML5/03_c.libraries"
+  Port=""
+  ViewUrl=""
+  Type="ftp"
+  UploadLogFile="false"
+  RemoveStale="false"
+  ChangedOnly="false"></CatapultDestination>

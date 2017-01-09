@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="4741" MadCap:lastWidth="972" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="cpCOe_2" />Appendix: c.pCOe's Functionality</h4>
+        <p>&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 09/06/2016 | Native revision - 29/11/2016</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">&#160;</p>
+        <p>c.pCOe is an I/O expansion module compatible with the c.pCO and pCO sistema platforms. </p>
+        <p>&#160;</p>
+        <p>The module features:</p>
+        <ul>
+            <li>10 universal inputs/outputs that can be configured in the application program to connect active and passive probes, digital inputs, analogue and PWM outputs.</li>
+            <li>6 relay digital outputs, divided into 3 groups</li>
+            <li>Power supply terminals for ratiometric probes and active probes</li>
+            <li>Built-in BMS serial interface</li>
+            <li>Dipswitches for configuring the communication protocol and serial address</li>
+            <li>Unipolar expansion valve driver (only c.pCOe enhanced model)</li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/cpCOe_2/Appendix_1_board_cpCOe.png" />
+        </p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/cpCOe_2/Appendix_1_IO_cpCOe.png" />
+        </p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/cpCOe_2/Appendix_1_switch_cpCOe.png" />
+        </p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/cpCOe_2/Appendix_1_switch_2_cpCOe.png" />
+        </p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">Power supply must only be connected between G and G0. The Vbat terminal is only used for connection to the Ultracap module as emergency power supply in the event of power failures.</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;"><b>Enhanced model</b> only supports Modbus protocol with baud rate greater than or equal to 19.2kb/s. Carel protocol is not supported.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The green LED indicates communication status on the BMS port. If there is communication on the BMS port (online) the green LED flashes, if there is no communication (offline) the LED stays on steady.</p>
+        <p>&#160;</p>
+        <h5>c.pCOe Configuration</h5>
+        <p>The dipswitches can be used to set the expansion card serial address (from 1 to 15), protocol (Modbus or Carel) and baud rate. The serial connection can only be used to modify the electrical configuration of the line and assign a serial address from 16 to 247 (207 if using the Carel protocol).</p>
+        <h6>Setting the baud rate and communication protocol</h6>
+        <p>The card’s default configuration is baud rate 19.2 Kbps and Modbus protocol. The “Baud” and “Prot” dipswitches (see Fig. 2) can be used to set the baud rate and the communication protocol used by the expansion card. The unit must be switched off before making the settings on the dipswitches.</p>
+        <p>&#160;</p>
+        <p class="Important">If the baud rate and protocol settings are changed on the dipswitches while the unit is on, this must be restarted to activate the new settings.</p>
+        <p>&#160;</p>
+        <h6>Address and serial communication mode settings</h6>
+        <p><b>To assign the serial card an address from 1 to 15</b>, simply set the dipswitches as shown in Figure 2. The “Ext” dipswitch must be set to “OFF”. The unit must be switched off before making the settings on the dipswitches.</p>
+        <p>&#160;</p>
+        <p class="Important">If the settings are changed on the dipswitches while the unit is on, this must be restarted to activate the new settings.</p>
+        <p>&#160;</p>
+        <p><b>To assign the serial card an address from 16 to 247</b> and to configure the serial communication settings, an offset needs to be sent to the expansion card via serial communication, which is then added to the “Address” dipswitch configuration, and the variable corresponding to the serial transmission parameters needs to be set, as follows:</p>
+        <p class="Example_1_HeadSection">Example<br /></p>
+        <p class="Example_2_MiddleSection"> Address setting N=87, serial communication 8, Even, 1:<br /><br />1. Set the “Address” dipswitches and move the “Ext.” dipswitch to OFF (see Figure 3).<br /><br />2. Restart the unit. The c.pCOE will go into “Set Mode”. 
+		<br /><br /><strong>Activating this mode resets both the address offset and the serial communication settings. In this mode, the card’s serial address will be 207 and the serial configuration will be 8 bits, no parity and 2 stop bits (8 bits, None, 2). The yellow LED flashes.</strong><br /><br />3. To set the communication parameters, the “Serial Transmission Configuration” variable needs to be set via serial communication (see Table 1). In this example, the variable is set to 5 (configuration 8, Even, 1).<br /><br />4. To set the serial address, the “Address Extension” offset variable needs to be set via serial communication (the offset must be greater than 14, see Table 2). In this example, it can be set to 86.<br /><br />5. Move the “Ext” dipswitch to ON. Set the “Address” dipswitches to a value greater than 0. In this example, the value is set to 1.<br /><br />6. Restart the unit. After restarting, the expansion card will be configured with the serial address represented by the sum of the value set for the “Address Extension” variable and the value set on the “Address” dipswitches (in this example 86 + 1 = 87). After restarting, the expansion card will have the serial communication configuration 8, Even, 1.</p>
+        <p class="Example_3_EndSection">&#160;</p>
+        <p>&#160;</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">If using the Carel protocol, the maximum settable offset is 192.</p>
+        <p>&#160;</p>
+        <p class="Important">The following configurations are not allowed:<br /><br />- The “Ext” dipswitch cannot be ON with an offset equal to 0 (“Address Extension” variable = 0). In this case, the card will signal a configuration error, with the yellow LED on steady. The green LED remains on, indicating that the card is offline.<br /><br />- The “Ext” dipswitch cannot be ON with an offset other than 0 and the “Address” dipswitches set to 0 (all OFF). The “Ext” dipswitch cannot be ON with an offset.<br /><br /></p>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0" summary="Table 1">
+            <caption>Table 1</caption>
+            <col class="TableStyle-02_Custom-Column-Custom_cen" MadCap:pattern="14" />
+            <col class="TableStyle-02_Custom-Column-Custom_cen" MadCap:pattern="14" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadD-Custom_cen-Header2" colspan="2">Serial Transmission Configuration</th>
+                </tr>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Custom_cen-Header2">Value</th>
+                    <th class="TableStyle-02_Custom-HeadD-Custom_cen-Header2">Configuration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-LightRows">0</td>
+                    <td class="TableStyle-02_Custom-BodyD-Custom_cen-LightRows">8, None, 2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-DarkerRows">1</td>
+                    <td class="TableStyle-02_Custom-BodyD-Custom_cen-DarkerRows">8, None, 2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-LightRows">2</td>
+                    <td class="TableStyle-02_Custom-BodyD-Custom_cen-LightRows">8, Odd, 2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-DarkerRows">3</td>
+                    <td class="TableStyle-02_Custom-BodyD-Custom_cen-DarkerRows">8, Odd.1</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-LightRows">4</td>
+                    <td class="TableStyle-02_Custom-BodyD-Custom_cen-LightRows">8, Even, 2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Custom_cen-DarkerRows">5</td>
+                    <td class="TableStyle-02_Custom-BodyA-Custom_cen-DarkerRows">8, Even, 1</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; width: 80%;" class="TableStyle-02_Custom" cellspacing="0" summary="Table 2">
+            <caption>Table 2</caption>
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Custom_cen" MadCap:pattern="14" />
+            <col class="TableStyle-02_Custom-Column-Custom_cen" MadCap:pattern="14" />
+            <col class="TableStyle-02_Custom-Column-Custom_cen" MadCap:pattern="14" />
+            <col class="TableStyle-02_Custom-Column-Custom_cen" MadCap:pattern="14" />
+            <col class="TableStyle-02_Custom-Column-Custom_cen" MadCap:pattern="14" />
+            <col class="TableStyle-02_Custom-Column-Custom_cen" MadCap:pattern="14" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Variable</th>
+                    <th class="TableStyle-02_Custom-HeadE-Custom_cen-Header2">Carel Address (Integer)</th>
+                    <th class="TableStyle-02_Custom-HeadE-Custom_cen-Header2">Min. Carel value</th>
+                    <th class="TableStyle-02_Custom-HeadE-Custom_cen-Header2">Max. Carel value</th>
+                    <th class="TableStyle-02_Custom-HeadE-Custom_cen-Header2">Modbus Address (Holding Register)</th>
+                    <th class="TableStyle-02_Custom-HeadE-Custom_cen-Header2">Min. Modbus value</th>
+                    <th class="TableStyle-02_Custom-HeadD-Custom_cen-Header2">Max. Modbus value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Address Extension</td>
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-LightRows">14</td>
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-LightRows">15</td>
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-LightRows">192</td>
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-LightRows">14</td>
+                    <td class="TableStyle-02_Custom-BodyE-Custom_cen-LightRows">15</td>
+                    <td class="TableStyle-02_Custom-BodyD-Custom_cen-LightRows">232</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Serial Transmission Configuration</td>
+                    <td class="TableStyle-02_Custom-BodyB-Custom_cen-DarkerRows">17</td>
+                    <td class="TableStyle-02_Custom-BodyB-Custom_cen-DarkerRows">0</td>
+                    <td class="TableStyle-02_Custom-BodyB-Custom_cen-DarkerRows">5</td>
+                    <td class="TableStyle-02_Custom-BodyB-Custom_cen-DarkerRows">17</td>
+                    <td class="TableStyle-02_Custom-BodyB-Custom_cen-DarkerRows">0</td>
+                    <td class="TableStyle-02_Custom-BodyA-Custom_cen-DarkerRows">5</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="cpCOe_2" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

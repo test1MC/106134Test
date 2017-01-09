@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="6638.667" MadCap:lastWidth="975" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/01_Technical_Features.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/03_Input_Output.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h4><a name="top"></a>PID_Adv</h4>
+        <p class="descriptionshort">Manages the PID control loop </p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">Block no longer in use and replaced by module PID_Adv_2.</p>
+        <p class="descriptionshort">
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv1.png" class="FiftyPercentThumbnail" />
+        </p>
+        <h5>Technical features</h5>
+        <table class="TableStyle-TechFeatures" style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/01_Technical_Features.css'); mc-table-style-original: url('../../../Resources/TableStyles/01_Technical_Features.css');" cellspacing="0">
+            <col class="TableStyle-TechFeatures-Column-Feature" />
+            <col class="TableStyle-TechFeatures-Column-Value" />
+            <col class="TableStyle-TechFeatures-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-TechFeatures-Head-Header1">
+                    <th class="TableStyle-TechFeatures-HeadE-Feature-Header1">Feature</th>
+                    <th class="TableStyle-TechFeatures-HeadE-Value-Header1">Value</th>
+                    <th class="TableStyle-TechFeatures-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 25pt;" class="TableStyle-TechFeatures-Body-Row1" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Row1">Last update</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">16/07/2014</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">Native revision - 09/02/16</td>
+                </tr>
+                <tr style="height: 25pt;" class="TableStyle-TechFeatures-Body-Body1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Body1">
+                        <p style="mc-locked: locked;">Program Organization Unit type</p>
+                    </td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">Function block</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr style="height: 25pt;" class="TableStyle-TechFeatures-Body-Row1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Row1" style="mc-locked: locked;">c.suite version</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">≥ 2.0.8</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Body1" style="mc-locked: locked;">Hardware</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">c.pCO family controller</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Row1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Row1" style="mc-locked: locked;">O.S.</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">≥ 2.0.2</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Body1" style="mc-locked: locked;">Compatibility with other F/FB</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Row1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Row1" style="mc-locked: locked;">Compatible CAREL device P/Ns</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Body1" style="mc-locked: locked;">Device manual</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Row1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Row1" style="mc-locked: locked;">Device firmware</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Body1" style="mc-locked: locked;">Password</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Body1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Body1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Row1">
+                    <td class="TableStyle-TechFeatures-BodyE-Feature-Row1" style="mc-locked: locked;">Protocols</td>
+                    <td class="TableStyle-TechFeatures-BodyE-Value-Row1">-</td>
+                    <td class="TableStyle-TechFeatures-BodyD-Notes-Row1">-</td>
+                </tr>
+                <tr class="TableStyle-TechFeatures-Body-Body1">
+                    <td class="TableStyle-TechFeatures-BodyB-Feature-Body1" style="mc-locked: locked;">Footprint</td>
+                    <td class="TableStyle-TechFeatures-BodyB-Value-Body1">Data memory
+: 180 bytes<br />Retain:
+-<br />Program cycle time:
+0 ms<br />Carel Master polling time:-<br />Modbus Master polling time:-</td>
+                    <td class="TableStyle-TechFeatures-BodyA-Notes-Body1">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5><a name="General"></a>General operations</h5>
+        <p>This block is used to calculate the capacity request for a device in order to reach the control set point. The algorithm uses <i>Proportional</i>, <i>Integral</i> and <i>Derivative</i> terms (all of them, or only some) to achieve the best performance.  </p>
+        <p><span style="font-weight: bold;">PID</span><i style="font-style: normal;"><span style="font-weight: bold;">_Adv</span></i> is designed to  be compliant with IEC 61131 - 3 standard rules and algorithms.</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID.jpg" class="FiftyPercentThumbnail" />
+        </p>
+        <p>This function blocks implements PID control with ancillary functions. Specifically, <i style="font-style: normal; font-weight: bold;">PID_Adv</i> can:</p>
+        <ul>
+            <li>enable the Anti-Bump function;</li>
+            <li>check output saturation limits.</li>
+        </ul>
+        <p>The integral or derivative part can be inhibited by setting the relevant action time to zero (<i>Ti</i>=0 to avoid integral, <i>Td</i>=0 to avoid derivative).</p>
+        <h6>Proportional action</h6>
+        <p>As shown in the graph below, a stationary steady state error always occurs with  proportional control  only, which tends to reduce with increasing gain used. In the graph, the feedback to a <b>P</b> control system unit step, as <i>Kp</i> changes (example from literature):</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_Kp2.png" class="FiftyPercentThumbnail" />
+        </p>
+        <p>The proportional gain is sent directly to the pin. The proportional contribution, as the name indicates, is directly proportional to the extent of the error</p>
+        <p><i>Output = Kp [ SetP - Input]</i>
+        </p>
+        <p>&#160;</p>
+        <h6>Integral action</h6>
+        <p>The integral action contribution increases and the <i>Ti</i> coefficient decreases. The integral action is proportionate to the integral at the time of error. The graph shows that, using the integral component, the steady state error disappears. In fact, this term integrates the time error and thus a constant error increases the control action until the error is fully cancelled out.</p>
+        <p>In the graph, the feedback to a <b>PI</b> control system unit step as <i>Ti</i> changes (example from literature)</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_Ti.png" class="FiftyPercentThumbnail" />
+        </p>
+        <h6>Derivative action</h6>
+        <p>The derivative action represents the signal movement speed. This action is to compensate for the deviation due to its change speed, without waiting for the error to become significant (proportional action) or that it persists for a certain amount of time (integral action).</p>
+        <p>The purpose of the derivative action is to introduce an action that is proportional as the error changes, thus providing a correction that "anticipates" the error trend in time.</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">systems do no always need this action, they often have simple <b>P</b> or <b>PI</b> controllers. In fact, derivative action controllers have the problem of amplifying signals with harmonic contribution at high frequencies such as, for example, noise overlapping the working signal.</p>
+        <p>In the graph, the feedback to a <b>PID</b> control system unit step as <i>Td</i> changes (example from literature)</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_Td.png" class="FiftyPercentThumbnail" />
+        </p>
+        <h6>Control band</h6>
+        <p><i style="font-style: normal; font-weight: bold;">PID_Adv</i> uses <i>Kp</i> (proportional gain) for setting the proportional action as in the IEC 61131-3 standard .</p>
+        <p><i>Kp</i>has no unit of measure.</p>
+        <p>The set  point is in the middle of the control band; for instance, if the setpoint is 20.0°C and the control band is 4.0°C, the Output will be equal to <i>HighLim</i> when temperature is 22.0 °C and will be equal to <i>LowLim</i> when temperature is 18.0 °C.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The formula to calculate <i>Kp</i> is <i>Kp</i> = 200.0 / <i>CtrlBand</i>. Example: if control band is 4.0°C the corresponding <i>Kp</i> will be 50.0.</p>
+        <h6>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_band1.png" class="FiftyPercentThumbnail" />
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_Schema.png" class="FiftyPercentThumbnail" />
+        </h6>
+        <h6>Cycle time</h6>
+        <p><i>Cycle</i> is used to reduce wastedpCO processing power by executing the algorithm only one time every <i>Cycle</i> milliseconds. Values lower than 500 ms can cause <b>PID</b> behaviour to be highly dependent on application cycle loop time. </p>
+        <h6>Antibump (bumpless transfer)</h6>
+        <p>This function acts when <b>PID</b> working mode passes from manual to automatic mode or when a control parameteris changed. Normally, in one of these cases, the <i>Output</i> will have a bump. Antibump avoids this behavior by modifying the integral part to ensure that the <i>Output</i> initially remains the same and reaches the right value slowly.</p>
+        <p>The function is normally disabled and can be enabled using input pin <i>En_AntiBump</i>.</p>
+        <h6>Deadband</h6>
+        <p>The function intends to keep the output value stable as long as the input remains within the <i>DeadBand</i>. <i>DeadBand</i> is the range between <i>[Setpoint+(DeadBand/2)]</i> and <i>[Setpoint-(DeadBand/2)]</i>. The function is usually disabled and can be enabled by setting the <i>DeadBand</i> input pin to 1.</p>
+        <p>When the Input is in deadband, the integral error is frozen.</p>
+        <p><i>Example:</i>
+        </p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_ex.png" class="FiftyPercentThumbnail" />
+        </p>
+        <p>Orange band is the deadband (2.0°C). </p>
+        <p>When the temperature (green line) enters the deadband, the output (white line) remains constant.</p>
+        <p>Instead, when temperature exits from the band, the PID continues with normal control.  </p>
+        <h6>Output limitations</h6>
+        <p>With <i>LimLow</i> and <i>LimHigh</i> is possible to limit the <i>Output</i> to a range of values. The default values of these inputs must be set to -100.0 and 100.0 if no limitations are required.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The function block uses these values for the <i>antiwind-up</i> function, so putting a limit on <i style="font-style: italic;">Output</i> outside the function block instead of using these inputs can be unsafe. In this case, it cannot  be ensured that wind-up phenomena will be avoided.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The limits act only on the <i>Output</i>, not on the internal calculation. This means that the real output values are still based on the control parameters even if the limits are different from -100.0 and 100.0.</p>
+        <p><i>Example:</i>
+        </p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_ex2.png" class="FiftyPercentThumbnail" />
+        </p>
+        <p style="font-style: normal;">Orange band is the limitation of the <i>Output</i> with <i>LowLim</i> = 30.0 and <i>HighLim</i> = 80.0. <i>Output</i> never goes out of this band (except when En_PID is false, in that case Output is 0.0).</p>
+        <h6>Antiwind-up</h6>
+        <p><i style="font-style: normal; font-weight: bold;">PID_Adv</i> checks the relationship between the proportional and integral error in run time. Without Anti-Windup, when the saturated <b>PID</b> output reaches the maximum limit set by the pin, the integral action continues to integrate the error. When the output reaches the set point, it waits until the integral term discharges before it starts to lower towards the set point, thus generating over-elongation.</p>
+        <p>The Anti-Windup blocks the ntegral error calculation and forces the difference between the maximum limit and proportional term. If the latter is higher than the maximum limit, the integral is brought to zero. If <i>Ti</i> is zero, Anti-Windup is automatically disabled.</p>
+        <p>The following diagram illustrates the feedback to the step without Anti-Windup. The <i style="font-style: italic;">y</i> process output, <i>y<span style="vertical-align: sub;">sp</span></i> set point, PID output <i>u</i> and integral term <i>I</i> (example from literature):</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_windup.png" class="FiftyPercentThumbnail" />
+        </p>
+        <h6>Manual mode</h6>
+        <p>When <i>ManMode</i> is TRUE, the algorithm is bypassed and the <i>Output</i> takes exactly the same value as <i>ManOut</i> in accordance with the maximum and minimum limits. When the <b>PID</b> works in manual mode, the integral error is reset as in the IEC 61131-3 specifications. If <i>En_PID</i> is false, the <b>Output</b> is 0.0 also if in manual mode. </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">It is strongly recommend to enable the antibump function when using manual mode.</p>
+        <h6>Enable and reset</h6>
+        <p>If <i>En_PID</i> = FALSE, the <i>Output</i> is always 0.0 and the entire algorithm is bypassed to avoid wasting pCO processing power. All internal errors and temporary variables are reset.</p>
+        <p>This input can be used to reset the <b>PID</b>.</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">To disable the <b>PID</b>, it is not sufficient to avoid calling it (in ST language), because this way it is not reset and all errors continue to increase; only <i>En_PID</i> can be used to disable or reset the function.</p>
+        <h5>Inputs</h5>
+        <p class="InnerTitle">Block pin list</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css'); margin-left: 0; margin-right: auto; width: 80%; mc-table-style-original: url('../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Data type</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-UM-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Input</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+                        <p>REAL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">
+                        <p>Input value from probe</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">
+                        <p>SetP</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+                        <p>REAL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">
+                        <p>Control set point </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">
+                        <p>DeadBand</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+                        <p>REAL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">
+                        <p>Deadband centered on the set  point</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">
+                        <p>Kp</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+                        <p>REAL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">
+                        <p>Proportional gain (Kp≥0)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">
+                        <p>Ti</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+                        <p>UINT</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">
+                        <p>Integral time expressed in seconds</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">
+                        <p>Td</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+                        <p>UINT</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">
+                        <p>Derivative time expressed in seconds</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">
+                        <p>Cycle</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+                        <p>TIME</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">
+                        <p>Algorithm execution rate</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">
+                        <p>LowLim</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+                        <p>REAL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">
+                        <p>Minimum Output value</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">
+                        <p>HighLim</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+                        <p>REAL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">
+                        <p>Maximum Output value</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">
+                        <p>ManMode</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+                        <p>BOOL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">
+                        <p>Enable manual mode</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">
+                        <p>ManOut</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">
+                        <p>REAL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows">
+                        <p>Output value in manual mode</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">
+                        <p>EnAntiBump</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">
+                        <p>BOOL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows">
+                        <p>Enable Antibump function</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows">
+                        <p>En_PID</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-LightRows">
+                        <p>BOOL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyA-UM-LightRows">
+                        <p>Enable function block</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>Outputs</h5>
+        <p class="InnerTitle">Block pin list</p>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css'); margin-left: 0; margin-right: auto; width: 80%; mc-table-style-original: url('../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Data type</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-UM-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-LightRows">
+                        <p>REAL</p>
+                    </td>
+                    <td class="TableStyle-03_Input_Output-BodyA-UM-LightRows">
+                        <p>Calculated capacity request</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>&#160;</h5>
+        <h5>Example 1: PID  setup </h5>
+        <p>Example of PID settings:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML">
+                    <math>
+                        <mrow>
+                            <mi>S</mi>
+                            <mi>e</mi>
+                            <mi>t</mi>
+                            <mi>P</mi>
+                            <mo>⁢</mo>
+                            <mo>=</mo>
+                            <mtext><![CDATA[ ]]></mtext>
+                            <mn>30</mn>
+                        </mrow>
+                    </math>
+                </MadCap:equation>
+            </li>
+            <li>
+                <MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML">
+                    <math>
+                        <mrow>
+                            <msub>
+                                <mrow>
+                                    <mi>K</mi>
+                                </mrow>
+                                <mrow>
+                                    <mi>P</mi>
+                                </mrow>
+                            </msub>
+                            <mo>=</mo>
+                            <mn>5</mn>
+                        </mrow>
+                    </math>
+                </MadCap:equation>
+                <ul style="list-style-type: square;">
+                    <li>the band, centered on the set  point: <MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML"><math><mrow><mi>B</mi><mi>a</mi><mi>n</mi><mi>d</mi><mo>=</mo><mfrac><mrow><mn>200</mn></mrow><mrow><msub><mrow><mi>K</mi></mrow><mrow><mi>P</mi></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>200</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>=</mo><mn>40</mn></mrow></math></MadCap:equation></li>
+                </ul>
+            </li>
+            <li>
+                <MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML">
+                    <math>
+                        <mrow>
+                            <mi>L</mi>
+                            <mi>i</mi>
+                            <mi>m</mi>
+                            <mi>M</mi>
+                            <mi>a</mi>
+                            <mi>x</mi>
+                            <mo>⁢</mo>
+                            <mo>=</mo>
+                            <mtext><![CDATA[ ]]></mtext>
+                            <mn>100.0</mn>
+                        </mrow>
+                    </math>
+                </MadCap:equation>
+            </li>
+            <li>
+                <MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML">
+                    <math>
+                        <mrow>
+                            <mi>L</mi>
+                            <mi>i</mi>
+                            <mi>m</mi>
+                            <mi>M</mi>
+                            <mi>i</mi>
+                            <mi>n</mi>
+                            <mo>⁢</mo>
+                            <mo>=</mo>
+                            <mtext> </mtext>
+                            <mo>−</mo>
+                            <mn>50.0</mn>
+                        </mrow>
+                    </math>
+                </MadCap:equation>
+            </li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_kp.png" class="FiftyPercentThumbnail" />
+        </p>
+        <h5>Example 2: PID  sequence </h5>
+        <p>If needing  to use two different PID settings, one for startup and one for running, a single PID instance can be used, changing  the setting values during operation.</p>
+        <p>This procedure is possible if the input is the same between startup and running.</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_Change.png" class="FiftyPercentThumbnail" />
+        </p>
+        <p>If the input can change with the PID settings, it is necessary to use two different instances, connected as show in the image, and consider the output of the second PID.</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_sequence.png" class="FiftyPercentThumbnail" />
+        </p>
+        <h5>Example 3: cooling / heating management  </h5>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_CoolingHeating.png" class="FiftyPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5>Example 4</h5>
+        <p>Freezing the Output value: it is possible to disable PID control and freeze the last Output value using the ManMode input as shown in the following example; when the ‘’Freeze’’ variable becomes TRUE, the Output is forced to the last calculated value:</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/PID_Adv/PID_Adv_ex3.png" class="FiftyPercentThumbnail" />
+        </p>
+        <h5><a name="Release_Notes"></a>Release notes</h5>
+        <p>The following are notes on the released versions of this function/function block:</p>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../../Resources/TableStyles/04_Release_Notes.css');" class="TableStyle-04_Release_Notes" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependences</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows" MadCap:conditions="">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">2.1.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />- <br /><br /><b style="mc-locked: locked;">Changed</b><br />• Modified some PIN descriptions<br /><br /><b style="mc-locked: locked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: locked;">Enhanced</b><br />-<br /><br /><b>Documentation</b><br />-<br /><br /></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows" MadCap:conditions="">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">2.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b style="mc-locked: locked;">Fixed</b>
+                        <br />• Modifies management of initial condition in case of Manual Mode (added error calculation also in manual mode and cleaning of old samples of derivative terms)<br /><b style="mc-locked: locked;"><br />Changed</b><br />-<br /><b style="mc-locked: locked;"><br />Deprecated</b><br />-<br /><b style="mc-locked: locked;"><br />Enhanced</b><br />-<br /><b><br />Documentation</b><br />-<br /><br /></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows">• First official release<b style="mc-locked: locked;"><br /><br />Fixed<br /></b>-<b style="mc-locked: locked;"><br /><br />Changed<br /></b>-<b style="mc-locked: locked;"><br /><br />Deprecated<br /></b>-<b style="mc-locked: locked;"><br /><br />Enhanced</b><br />-<b><br /><br />Documentation<br /></b>-<br /><br /><br /></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

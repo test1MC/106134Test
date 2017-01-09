@@ -1,0 +1,1222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="7554" MadCap:lastWidth="1235" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us" MadCap:conditions="Translation.ToDo">
+    <head>
+        <link href="../../../Resources/TableStyles/03_Input_Output.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <MadCap:pageBreak />
+        <h4>
+            <MadCap:concept term="EVD_EVO_2" />INT600_Gateway and INT600_LOG data types list</h4>
+        <p class="descriptionshort">Complete data types list of INT600_Gateway and INT600_LOG blocks</p>
+        <p class="CAREL_Draft" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ffffff;&quot; class=&quot;mcFormatColor&quot;&gt;This document is in &#160;DRAFT VERSION with validation at present in progress. CAREL INDUSTRIES S.p.A. does not guarantee the contents. and is not liable for any loss or damages caused by the user by direct or indirect document use. &lt;/span&gt;&lt;/b&gt;">&#160;&#160;&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update xx/11/2016 | Native revision - </p>
+        <h5>Structures list</h5>
+        <table cellspacing="0" class="TableStyle-03_Input_Output" style="margin-left: 0;margin-right: auto;width: 80%;mc-table-style-original: url('Resources/TableStyles/03_Input_Output.css');mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css');">
+            <col class="TableStyle-03_Input_Output-Column-Variable" style="width: 27pt;" />
+            <col class="TableStyle-03_Input_Output-Column-Type" style="width: 112pt;" />
+            <col class="TableStyle-03_Input_Output-Column-UM" />
+            <col class="TableStyle-03_Input_Output-Column-Description" style="width: 27pt;" />
+            <col class="TableStyle-03_Input_Output-Column-Variable" style="width: 447pt;" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1" colspan="2">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">Data Type</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Description-Header1">UoM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Variable-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows" colspan="4">MBM_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Kriwan DM-Gatway INT600 modbus input registers</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9728_VisuID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">LB: S - part number (S) | HB:vVisu-ID (I)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9729_PartNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">reserved R | High 12bit: part number (A)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9730_9731_SerNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">DINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">serial number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9734_ErrMsg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">error Messages</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9735_RelayStat</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Status relay</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9742_SW_Rev</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Software-Revision</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9746_ArtcNoAnnex</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Article number-Annex</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9747_Vkey</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Voltage key (22=DualVoltage 115-230VAC 31=2VAC 13=24V)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9752_CurrHourPeriod_s</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Current hour period (s)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9764_DayT_h</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Time of day in hours</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9768_DP1_Dev1_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP1 device1 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9769_DP1_Dev1_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP1 device1 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9770_DP1_Dev2_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP1 device2 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9771_DP1_Dev2_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP1 device2 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9772_DP1_Dev3_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP1 device3 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9773_DP1_Dev3_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP1 device3 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9774_DP2_Dev1_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP2 device1 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9775_DP2_Dev1_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP2 device1 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9776_DP2_Dev2_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP2 device2 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9777_DP2_Dev2_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP2 device2 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9778_DP2_Dev3_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP2 device3 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9779_DP2_Dev3_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP2 device3 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9780_DP3_Dev1_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP3 device1 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9781_DP3_Dev1_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP3 device1 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9782_DP3_Dev2_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP3 device2 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9783_DP3_Dev2_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP3 device2 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9784_DP3_Dev3_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP3 device3 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9785_DP3_Dev3_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP3 device3 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9786_DP4_Dev1_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP4 device1 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9787_DP4_Dev1_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP4 device1 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9788_DP4_Dev2_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP4 device2 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9789_DP4_Dev2_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP4 device2 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9790_DP4_Dev3_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP4 device3 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9791_DP4_Dev3_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP4 device3 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9792_DP5_Dev1_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP5 device1 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9793_DP5_Dev1_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP5 device1 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9794_DP5_Dev2_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP5 device2 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9795_DP5_Dev2_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP5 device2 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9796_DP5_Dev3_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP5 device3 DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9797_DP5_Dev3_ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP5 device3 article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9805_UpT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Uptime</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9812_DP1_MsgCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP1 telegram counter</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9813_DP1_FrameErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP1 error counter frame error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9814_DP1_ChcksmErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP1 error counter checksum</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9815_DP1_DPIDerrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP1 error counter DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9816_DP2_MsgCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP2 telegram counter</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9817_DP2_FrameErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP2 error counter frame error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9818_DP2_ChcksmErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP2 error counter checksum</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9819_DP2_DPIDerrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP2 error counter DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9820_DP3_MsgCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP3 telegram counter</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9821_DP3_FrameErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP3 error counter frame error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9822_DP3_ChcksmErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP3 error counter checksum</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9823_DP3_DPIDerrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP3 error counter DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9824_DP4_MsgCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP4 telegram counter</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9825_DP4_FrameErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP4 error counter frame error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9826_DP4_ChcksmErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP4 error counter checksum</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9827_DP4_DPIDerrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP4 error counter DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9828_DP5_MsgCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP5 telegram counter</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9829_DP5_FrameErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP5 error counter frame error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9830_DP5_ChcksmErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">DP5 error counter checksum</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9831_DP5_DPIDerrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">DP5 error counter DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9838_DevNotSendErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Sum of errors device not sending</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9856_PwrResShtdwnCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Sum of shutdowns due to power reset</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9872_HourMinLastErrT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Time since last error in minutes / hours</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9873_DayLastErrT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Time since last error in days</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9885_InternalErrWrnsCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Sum of warnings due to internal error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" colspan="4">MBM_INT600_LOG</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">INT600 Error memory log modbus input registers</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9888_LastErrMemMsg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index last, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9889_LastErrMemTdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index last</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9892_ErrMemIdx1_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index -1, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9893_ErrMemIdx1_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 1</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9896_ErrMemIdx2_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 2, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9897_ErrMemIdx2_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 2</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9900_ErrMemIdx3_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 3, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9901_ErrMemIdx3_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 3</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9904_ErrMemIdx4_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 4, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9905_ErrMemIdx4_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 4</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9908_ErrMemIdx5_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 5, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9909_ErrMemIdx5_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 5</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9912_ErrMemIdx6_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 6, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9913_ErrMemIdx6_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 6</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9916_ErrMemIdx7_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 7, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9917_ErrMemIdx7_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 7</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9920_ErrMemIdx8_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 8, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9921_ErrMemIdx8_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 8</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9924_ErrMemIdx9_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 9, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9925_ErrMemIdx9_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 9</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9928_ErrMemIdx10_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 10, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9929_ErrMemIdx10_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 10</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9932_ErrMemIdx11_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 11, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9933_ErrMemIdx11_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 11</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9936_ErrMemIdx12_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 12, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9937_ErrMemIdx12_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 12</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9940_ErrMemIdx13_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 13, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9941_ErrMemIdx13_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 13</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9944_ErrMemIdx14_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 14, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9945_ErrMemIdx14_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 14</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9948_ErrMemIdx15_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 15, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9949_ErrMemIdx15_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 15</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9952_ErrMemIdx16_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 16, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9953_ErrMemIdx16_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 16</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9956_ErrMemIdx17_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 17, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9957_ErrMemIdx17_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 17</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9960_ErrMemIdx18_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 18, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9961_ErrMemIdx18_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 18</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">IR_9964_ErrMemIdx19_Msg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error-memory index - 19, error number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">IR_9965_ErrMemIdx19_Tdiff</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error-memory time difference index - 19</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows" colspan="4">MBM_TEMPLATEINFO_KRIWAN_LIB</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Modbus Master Template information</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">DevErr</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Device Error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DevErrCode</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Device Error code</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">ErrID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UDINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Errors ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">PollsID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UDINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Polls ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">EnTemplate</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Enable Template</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DevAddr</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UDINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Device serial address</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" colspan="4">READ_MODULESTATUS</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Module status read data</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">ErrMsg</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">USINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error message status</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">Bit0_Active</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Bit 0 = Active </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">Bit1_Warning</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Bit 1 = Warning</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">Bit2_Error</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Bit 2 = Error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">Bit3_TimeDelayActive</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Bit 3 = time delay active</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">Bit4_LockedOut</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Bit 4 = Locked out</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">ErrStatMsg_MSK</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">USINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows"> Mask variable for show the bitX values</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" colspan="4">INFO_DATA_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">INT600 data (device status, errors, etc.)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">VISU_ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Visu ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">PartNoS</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">USINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Part Number S</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">PartNoA</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Part Number A</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">SerNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UDINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Serial Number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">SwRev</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">SWREV_KRIWAN_LIB</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">SW revision</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">NoAnnex</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Article Annex number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">Vkey</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">V</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Voltage Key</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">CurrHourPeriod_s</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">s</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Current hour period (s)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DayT_Hour</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">h</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Day time (h)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UpT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Uptime</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DevNotSendErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Sum of errors device not sending</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">PwrResShtdwnCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Sum of shutdowns due to power reset</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">LastErrT_HourMin</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">HOURMIN_KRIWAN_LIB</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Time since last error in minutes / hours</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">LastErrT_Day</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">d</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Time since last error in days</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">InternalErrWrnsCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Sum of warnings due to internal error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">ErrStat</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error status (FALSE = no error, TRUE = error)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows" colspan="4">DP_DEVICE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Diagnose device information</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">ID</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">0 - no device, 1-9, a-z</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">ArtcNo</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Article number</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" colspan="4">DP_LINE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Diagnose protocol line information</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">Dev1</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">DP_DEVICE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Device 1</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">Dev2</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">DP_DEVICE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Device 2</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">Dev3</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">DP_DEVICE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Device 3</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">MsgCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Telegram counter</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">FrameErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error counter: frame error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">ChcksmErrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Error counter: checksum</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DPIDerrCnt</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Error counter: DP-ID</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" colspan="4">NETWORK_DATA_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">INT600 network data</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DP1</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">DP_LINE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Diagnose protocol line DP1</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">DP2</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">DP_LINE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Diagnose protocol line DP2</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DP3</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">DP_LINE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Diagnose protocol line DP3</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">DP4</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">DP_LINE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Diagnose protocol line DP4</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DP5</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">DP_LINE_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Diagnose protocol line DP5</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" colspan="4">COM_ERR_KRIWAN_LIB</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Communication error (Device error, Error code, Active template)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">DevErr</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Modbus Template Device Error</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">ErrCode</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Modbus Template Error code </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">MBM_Template_Active</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">USINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Active Modbus Template (-1 = Disable, 0 = VISU ID CHK/Enable, 1-15 VISU ID)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" colspan="4">EN_MSK_INT600</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Enable mask field for INT600 variables</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">En_DP1_Line</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Enable DP1 line masks</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">En_DP2_Line</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Enable DP2 line masks</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">En_DP3_Line</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Enable DP3 line masks</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">En_DP4_Line</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-DarkerRows">Enable DP4 line masks</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">En_DP5_Line</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Variable-LightRows">Enable DP5 line masks</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-DarkerRows"> </td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-DarkerRows">En_VISU_ID_1_Vars</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Description-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Variable-DarkerRows">Enable mask field VISU ID 1</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5><a name="Arrays"></a>Arrays list</h5>
+        <p>
+            <MadCap:conceptLink term="EVD_EVO_2" />
+        </p>
+        <table cellspacing="0" class="TableStyle-03_Input_Output" style="margin-left: 0;margin-right: auto;width: 80%;mc-table-style-original: url('Resources/TableStyles/03_Input_Output.css');mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css');">
+            <col class="TableStyle-03_Input_Output-Column-Variable" style="width: 146pt;" />
+            <col class="TableStyle-03_Input_Output-Column-Type" style="width: 148px;" />
+            <col class="TableStyle-03_Input_Output-Column-UM" style="width: 92px;" />
+            <col class="TableStyle-03_Input_Output-Column-Description" style="width: 120px;" />
+            <col class="TableStyle-03_Input_Output-Column-Variable" style="width: 57px;" />
+            <col class="TableStyle-03_Input_Output-Column-Type" style="width: 400px;" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1" colspan="2">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">Data Type</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Description-Header1">Dimension</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">UoM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Type-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows" colspan="2">ERRLOG_KRIWAN_LIB</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows" style="font-style: normal;text-align: center;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-LightRows" style="font-style: normal;text-align: center;">0..19</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Type-LightRows" style="font-style: normal;">Array of integers for INT69_LOG funbtion block</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" colspan="2">SWREV_KRIWAN_LIB</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows" style="font-style: normal;text-align: center;">USINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Description-DarkerRows" style="font-style: normal;text-align: center;">0..1</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Type-DarkerRows" style="font-style: normal;">SW revision (1 = high part, 0 = low part, H.L)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows" colspan="2">HOURMIN_KRIWAN_LIB</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-LightRows" style="font-style: normal;text-align: center;">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Description-LightRows" style="font-style: normal;text-align: center;">0..1</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows" style="font-style: normal;">1=h<br style="font-style: normal;" />0=min</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Type-LightRows" style="font-style: normal;">1 = Hour, 0 = Min</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

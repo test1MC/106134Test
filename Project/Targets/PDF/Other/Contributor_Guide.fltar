@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/PDF/Other/Contributor_Guide.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/CAREL.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  OutputFolder="c:\_Flare_Outputs\"
+  ConditionTagExpression="include[CAREL_World.Reserved or csuite.csuite_spec or PDF.Output_PDF or Translation.LanceWIP or Wip.Hide]exclude[CAREL_Hq.Reserved or Google.Offline_No_GA or Hidden.Hidden_Status or HTML.Output_HTLM]"
+  InjectEmptyPages="true"
+  TargetLanguage="en">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body" />
+  <PDF
+    ShowUsedBookmarks="false"
+    PageMode="UseNone"
+    InitialMagnification="75"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true" />
+  <DocumentProperties
+    Author="Carel Industries S.p.A." />
+</CatapultTarget>

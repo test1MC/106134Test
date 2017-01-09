@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment=""
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="C:\Users\jlourash\Desktop\Publishing Root\106034 Pub Test"
+  Port=""
+  ViewUrl=""
+  Type="file"
+  ChangedOnly="false"
+  UploadLogFile="false"
+  RemoveStale="false"></CatapultDestination>

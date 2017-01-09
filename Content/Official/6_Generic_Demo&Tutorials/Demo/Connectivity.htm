@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1951" MadCap:lastWidth="1168" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>1toolTouchEditor and c.pco Modbus communication Demo</h4>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Demo/pGDTouch_series.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5 style="mc-locked: locked;">Hardware and software requirements</h5>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">10/06/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">05/10/15</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="3">c.pco</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">PGD1 terminal. Not necessary if pCO has the built-in terminal</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">BT: Version &gt;= 3.0.001</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">OS: Version &gt;= 3.0.001</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">pGDTocuh 4.3”</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Runtime: Version &gt;= 1.80.2.91</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">BSP: Version &gt;= 1.61C</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">c.Suite</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.Strategy 3.0.x</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">c.Mask 3.0.x</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">&#160;</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.design 3.0.x</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: locked;" class="TableStyle-02_Custom-BodyB-Default-LightRows">1toolTouch Edior</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">1toolTouchEditor 1.80.2.91</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Demo/Test application for communication in Modbus protocol between c.pCO and pGDTouch:</p>
+        <ul>
+            <li>ModBus protocol management on 485</li>
+            <li>ModBus protocol management over TCP/IP</li>
+            <li>Manage of Integer 16/32 bit, real, bool</li>
+        </ul>
+        <h5>Project aims</h5>
+        <p>1.	Show how a c.PCO can communicate in Modbus with a pGDTocuh.</p>
+        <p>2.	Highlight the different names of the variables between the two different development tools (C.suite and 1toolTouch Editor)</p>
+        <p>3.	Show the different management of the registers to show the “real” variables</p>
+        <p>&#160;</p>
+        <h5>Project description</h5>
+        <p>The project manages communication between the c.PCO and PGDtouch viaModbus; this Demo includes an example for Modbus 485 and Modbus over TCP/IP</p>
+        <p>Here the four Modbus data types are managed:“Holding registers, Input Registers, Input Bits and Output Coils”, as well as the followingdata types: “Real, 16-bit  integer, 32-bit integer and Boolean"</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Demo/cpco_connectivity_1.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>On the Modbus over TCP/IP page, there is also the possibility to set the c.PCO IP-address using a specific tag type provided by the pGDTouchEditor, called NOIP (Node Override IP); this allows  the IP-address that the tags/variables point to, to be modified dynamically and at runtime .</p>
+        <p>For more information on usingNOIP use, please refer to the 1toolTouchEditor help under the section: Communication protocols -&gt; Node Override IP.</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Demo/cpco_connectivity_2.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>Regarding the “Real” tags/variables, there is different management between the c.Suite and pGDTouchEditor ofthe “endianess” property.</p>
+        <p>The two systems, in order to correctly communicate the data with each other, inc.Suite  modify the “Endianess” property (available under c.design Line-&gt; LineName-&gt; Settings -&gt; advanced), to“Little Endian Swapped (2,1,4,3)”</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Demo/cpco_connectivity_3.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5 style="mc-locked: locked;"><a name="Release_Notes"></a>Release notes</h5>
+        <p style="mc-locked: locked;">Following are notes on this demo of released versions</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.0.0.1</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b>Fixed</b>
+                        <br />-<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>- Updated Demo for c.suite version 3.0.41<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-DarkerRows">1.0.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-DarkerRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-DarkerRows">
+                        <p>• First official release</p>
+                        <p style="mc-locked: locked;"><b style="mc-locked: unlocked;">Fixed</b>
+                        </p>
+                        <p>-</p><b style="mc-locked: locked;">Changed</b>
+                        <p>-</p><b style="mc-locked: locked;">Deprecated</b>
+                        <p>-</p><b style="mc-locked: locked;">Enhanced</b>
+                        <p class="p_1">-</p>
+                        <p class="p_1"><b>Documentation<br /></b>-</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

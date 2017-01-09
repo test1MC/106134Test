@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="3053" MadCap:lastWidth="988" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>BACnet IP and MS/TP communication between c.pCOs Demo</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Demo/BACnet-Logo-New.gif" class="FiftyPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Hardware and software requirements</h5>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 114px;" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">10/06/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">05/10/15</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite version</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.0.41</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO family controller</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.0.001</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO - c.pCO mini</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices firmware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">BACnet</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Project description</h5>
+        <p>This demo shows how to define the communication settings, to provide in a c.pCO application, for having a Client-Server connection via BACnet TCP/IP and MS/TP. </p>
+        <p>The demo application shares the same c.strategy (variable declaration only) and c.mask part for both the c.pCO, Client and Server; c.design, on the other hand, contains two different configurations, one for the Client and one for the Server c.pCO. Once the device instance and the operating mode has been entered in the "Client or Server"network, the client or server configuration screen will be shown. </p>
+        <p>When using the MS/TP protocol, the station address setting is necessary.</p>
+        <p>The application can read/write 3 variables, one binary, one analogue and one integer.</p>
+        <p>&#160;</p>
+        <p><b>c.mask</b>
+        </p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/c.mask_1.JPG" style="width: 225px;height: 110px;" /> <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/c.mask_2.JPG" style="width: 220px;height: 110px;" /> <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/c.mask_3.JPG" style="width: 228px;height: 110px;" /></p>
+        <p>&#160;</p>
+        <p><b>c.design</b>
+        </p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/c.design_config.JPG" />
+        </p>
+        <p>Server protocol configuration</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/c.design_server_1.JPG" style="width: 597px; height: 147px;" />
+        </p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/c.design_server_2.JPG" style="width: 344px; height: 156px;" />
+        </p>
+        <p>Client protocol configuration</p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/c.design_client_1.JPG" style="width: 609px; height: 150px;" />
+        </p>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Tutorials/c.design_client_2.JPG" style="width: 609px; height: 127px;" />
+        </p>
+        <p>NOTE: The MS/TP protocol configuration also requires the Station address setting</p>
+        <p>&#160;</p>
+        <h6>Communication settings</h6>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 316px;" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Device address</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Device instance for the BACnet network</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">pGD1 configuration</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Serial port</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">Ethernet ports (DHCP or Fixed IP address settingfor TCP/IP) - RS485 ports (for MS/TP)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="suggestion" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Yellow;&quot; class=&quot;mcFormatColor&quot;&gt;Tip &lt;/span&gt;&lt;/b&gt;">The c.pCO must have the BACnet plug-in installed. Please refer to <a href="http://ksa.carel.com/group/c.suite/documents?p_p_auth=Mya5Ymo8&amp;p_p_id=20&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_20_struts_action=%2Fdocument_library%2Fview_file_entry&amp;_20_redirect=http%3A%2F%2Fksa.carel.com%2Fgroup%2Fc.suite%2Fdocuments%3Fp_p_auth%3DMya5Ymo8%26p_p_id%3D20%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_20_entryEnd%3D20%26_20_displayStyle%3Dlist%26_20_viewEntries%3D1%26_20_viewFolders%3D1%26_20_expandFolder%3D0%26_20_folderStart%3D0%26_20_action%3DbrowseFolder%26_20_struts_action%3D%252Fdocument_library%252Fview%26_20_folderEnd%3D20%26_20_entryStart%3D0%26_20_folderId%3D1149648%26%23p_20&amp;_20_fileEntryId=1496367&amp;#p_20">c.pCO plugin activation procedure.pdf</a> document, available in KSA.</p>
+        <p>&#160;</p>
+        <h5 style="page-break-before: always;"><a name="Release_Notes"></a>Release notes</h5>
+        <p style="mc-locked: unlocked;">The following are notes on this demo of released versions</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1" style="mc-locked: unlocked;">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.3.0.1</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b>Fixed</b>
+                        <br />-<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>- Updated Demo for c.suite version 3.0.41<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">1.3.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">&#160;</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b style="mc-locked: unlocked;">Fixed</b>
+                        <br />-<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>- Updated Demo for c.suite version 2.7.12<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-<br /></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">• CAREL_BASIC_LIB_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows">&#160;• First official release<br /><b style="mc-locked: unlocked;"><br />Fixed</b><br />-<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>-<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-<br /></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

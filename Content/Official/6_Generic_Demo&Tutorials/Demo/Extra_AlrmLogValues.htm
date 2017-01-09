@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="1874" MadCap:lastWidth="868" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" class="topic">
+    <head>
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>Extra Alarm Log Values Demo</h4>
+        <p>&#160;</p>
+        <p>
+            <p>
+                <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Demo/demo_extra_alarm_log.png" class="OneHundredPercentThumbnail" />
+            </p>
+        </p>
+        <h5 style="mc-locked: unlocked;">Hardware and software requirements</h5>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" MadCap:conditions="">20/06/2016</td>
+                </tr>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" MadCap:conditions="">04/11/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite version</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.0.41</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO family</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.1.000</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices firmware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Project description</h5>
+        <p>This demo shows how to improve the behavior of standard alarm management by logging an additional 10 variables for every alarm</p>
+        <p>This demo contains:</p>
+        <ol>
+            <li>An improved AlarmMng c.strategy POU</li>
+            <li>2 FBs to manage logging, AlrmLogValues and AlrmLogValTrig</li>
+            <li>Some test alarms</li>
+            <li>A global variable used to load the additional logged variables</li>
+            <li>An improved Alrms_Log_Values screen in the 01_Alrms worksheet in c.mask in order to show the additional logged variables</li>
+            <li>A change in the functions used to scroll the alarm log in c.mask in order to manage the global variable</li>
+        </ol>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">How to include this function in a project</h5>
+        <p>The following steps are necessary in order to include this function in a project based on the ProjectTemplate:</p>
+        <ol>
+            <li>Import AlrmLogValues and AlrmLogValTrig FBs into your project</li>
+            <li>Import the GlobalVariables into your project</li>
+            <li>Replace the AlarmMng program with the one in this demo</li>
+            <li>Replace the 01_Alrms worksheet with the one in this demo (pay attention to the ST functions: ScrollAlarmLog_UP and ScrollAlarmLog_DOWN)</li>
+            <li>Customise as  desired</li>
+        </ol>
+        <p>&#160;</p>
+        <h5 style="mc-locked: unlocked;">Customise management</h5>
+        <p style="mc-locked: unlocked;">There are some minor customisations that can be made quite easily to this function:</p>
+        <ul>
+            <li style="mc-locked: unlocked;">Change the datatype of the stored variable:
+			<ol><li style="mc-locked: unlocked;">Change the corresponding datatype in the Input and Output of AlrmLogValues FB and in the CapData structure </li><li style="mc-locked: unlocked;">Change the format of the field of the variable in the Alrms_Log_Values screen</li></ol></li>
+            <li style="mc-locked: unlocked;">Change the number of stored variables:
+			<ol><li style="mc-locked: unlocked;">Add or remove variables from the AlrmLogValues FB</li><li style="mc-locked: unlocked;">Edit the CapData structure </li><li style="mc-locked: unlocked;">Edit the Trigger and AlrmLogViewChg sections to reflect your changes</li></ol></li>
+            <li style="mc-locked: unlocked;">Store the variable only when a certain alarm is activated:
+			<ol><li>Edit AlrmLogValTrig and add your logic to it, the variables connected to AlrmLogValues are stored when Trig is set to TRUE</li></ol></li>
+        </ul>
+        <p style="mc-locked: unlocked;">&#160;</p>
+        <h5 style="mc-locked: unlocked;">Release notes</h5>
+        <p style="mc-locked: unlocked;">The following are notes on the released versions of this demo:</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1" style="mc-locked: unlocked;">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0
+ <br />• CheckRetainMem_1.2.0
+ <br />• VersionChk_2_1.0.0<br />• Blackout_3_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows" style="mc-locked: unlocked;">• First official release<br /><br /><br /><b style="mc-locked: unlocked;">Fixed</b><br />-<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>-<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-<br />&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

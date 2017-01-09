@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment="Content not included in intranet (swdocs/) but create for all world es. doc about application mini Chiller"
+    Name="All_Customers"
+    BackgroundColor="#ee82ee"
+    OriginalName="World" />
+</CatapultConditionTagSet>

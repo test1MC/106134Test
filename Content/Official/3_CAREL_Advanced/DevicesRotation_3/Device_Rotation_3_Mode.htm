@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" MadCap:conditions="CAREL_Hq.Reserved" MadCap:lastBlockDepth="2" MadCap:lastHeight="879" MadCap:lastWidth="1500">
+    <head>
+        <link href="../../../Resources/Stylesheets/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <h4>Device_Rotation_3 -  "Mode" variable</h4>
+        <p>&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 01/02/2016 | Native revision 09/02/2016</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">&#160;</p>
+        <p class="CAREL_Internal_Use" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ffffff;&quot; class=&quot;mcFormatColor&quot;&gt;The use of this information should be exclusively internal CAREL Headquaters. &lt;/span&gt;&lt;/b&gt;">&#160;</p>
+        <p>&#160;</p>
+        <p>"Mode" parameter is inside the "CFG_DEVROT" structure of the "Conf" input pin.<br /></p>
+        <h5>Mode = 0</h5>
+        <p>Normal rotation according to block configuration.</p>
+        <p>&#160;</p>
+        <h5>Mode = 1</h5>
+        <p>Maintains always 2 devices ON per circuit, considering them as a single step.<br />This kind of control only works in equalised mode ("Conf.EqualizedCircPwr" = 1) with ON/OFF devices.</p>
+        <p>For 2 circuits x 6 compr, the normal activation sequence of the devices is:</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/DevicesRotation/Mode=1.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+        <h5>Mode = 2</h5>
+        <p>Steps request mode: control the devices rotation request by setting the steps number in input "PwrReq" (E.g: 1 step = 0.1 request; 7 steps = 0.7 request)</p>
+        <p>&#160;</p>
+        <h5>Mode = 3</h5>
+        <p>Maintains always 2 devices ON per circuit, but turns on the 3rd device in the same circuit.<br />This kind of control only works in equalised mode ("Conf.EqualizedCircPwr" = 1) with ON/OFF devices.</p>
+        <p>For 2 circuits x 6 compr, the normal activation sequence of the devices is:</p>
+        <p>
+            <img src="../../../Resources/Images/3_CAREL_Advanced/DevicesRotation/Mode=3.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4095" MadCap:lastWidth="942" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="EVD_Emb2" /><a name="top"></a>Appendix 2: differences between Mod_EVDEVO and EVD_Emb_2</h4>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 06/05/2015 | Native revision - 20/01/16</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/EVD_Emb/Mod_EVDEVO.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/EVD_Emb/EVD_Emb_2.jpg" class="OneHundredPercentThumbnail" />
+        </p>
+        <p>This section describes the most significant differences between Mod_EVDEVO and the new  EVD_Emb_2 function block.</p>
+        <h6>Differences in functions</h6>
+        <p>EVD_Emb_2 manages only one single-pole valve: there are no more references to valve A or B.</p>
+        <p>EVD_Emb_2 contains the control logic, whereas in Mod_EVDEVO the control logic is contained in the driver valve  firmware .</p>
+        <p>Functions present in Mod_EVDEVO but not implemented in EVD_Emb_2 are listed below:</p>
+        <ul>
+            <li>Digital input management (this should be performed externally to the function block);</li>
+            <li>Defrost delay management (this should be performed externally to the function block as it depends on DI);</li>
+            <li>Analogue positioner (this should be performed externally using the manual positioner);</li>
+            <li>Probe alarm management, such as backup probe and emergency valve position (this should be performed externally using the manual positioner).</li>
+        </ul>
+        <p>This has been left to the developer that can implement it as best suit to the application.</p>
+        <h6>Unchanged PINS</h6>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Mod_EVDEVO</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">EVD_Emb_2</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">InstDef_EVD</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">InstDef</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Input</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">En_EVD</td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">En_EVD_Emb</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Input</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">DrvReadyToGo_EVD</td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">VlvReadyToGo</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">Output</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Different PINS</h6>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Mod_EVDEVO</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2" style="text-align: center;">EVD_Emb_2</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2" style="text-align: center;">Type</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>DevAddr_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This information is managed from c.design</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>DevNo_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>The address is implicitly 1&#160; (only one valve is managed)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>pCOpLAN_Addr_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Protocols are managed from c.design</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>WorkAsSingle</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Not implemented&#160; (only one valve is managed)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>RfrgVlv_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This can be found  at: Params_EVDEMB.EVD.Regulation.GasTyp.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>CoolCap_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.SH_UnitCoolCap.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>SH_OptFilt_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.SH_FiltK.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>Dscg_SH_Set_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>This can be found</p>
+                        <p>Params_EVDEMB.EVD.Configuration.DscgSH_Set.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>DscgTempSet_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Configuration.DscgTempSet.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>MOP_InhibThrsh_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.MainRegulation.MOP_InhibThrsh.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>MOP_ThrshFastChg_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Not present (see “Frequently changing parameters”)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>RegSubTyp_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.RegSubTyp.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>S4_NTC_ThT_K_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Configuration.S4_ThT_ConstNTC</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>AlrmsAutoManRes_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Not present (The alarms are created through the Alarms Table in c.strategy and the management logic is left to the developer)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>En_FrequentChgParams_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Not present (see “Frequently changing parameters”)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>ResAlrm_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Not present</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>DefSuperParams_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td rowspan="2" class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Not present (see&#160; “EVD evolution default value installation procedure from function block”)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>DefParams_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>SuctTemp_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.SH_SuctTemp.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>EvapTemp_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.SH_EvapTemp.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>EvapP_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This can be foundt at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.SH_EvapP.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>SH_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.SH.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>S1_PrbVal_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Not present (in EVD_Emb is the global variable that is bound to the S1 input in c.design)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>S2_PrbVal_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Not present (in EVD_Emb is the global variable that is bound to the S2 input in c.design)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>S3_PrbVal_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Not present (in EVD_Emb is the global variable that is bound to the S3 input in c.design)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>S4_PrbVal_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Not present (in EVD_Emb is the global variable that is bound to the S4 input in c.design)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>S1_ValExtd_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Not implemented</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>S3_ValExtd_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Not implemented</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>Dscg_SH_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.DscgSH.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>DscgTemp_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>This can be foundt at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.DscgTemp.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>CondP_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.Variables.CondP.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>CondTemp_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>This can be found at:</p>
+                        <p>Params_EVDEMB.EVD.VariablesCondTemp.Val</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>Din1_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Not implemented</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>Din2_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Not implemented</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>RegAlrms_A_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td rowspan="3" class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>A series of alarms relating to control are contained inside the “Alarms” structure (see “EVD_Emb alarms management”)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>SysAlrms_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>Al_Offline_EVD</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <th class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">Mod_EVDEVO</th>
+                    <th class="TableStyle-02_Custom-BodyE-Default-DarkerRows">EVD_Emb_2</th>
+                    <th class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">Type</th>
+                    <th class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Note</th>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>DataIn</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Data collection used in algorithm (input)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>VlvID</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Valve identification number</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>S1</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>The global variable that is bound to the S1 input in c.design</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>S2</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>The global variable that is bound to the S2 input in c.design</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>S3</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>The global variable that is bound to the S3 input in c.design</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>S4</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>The global variable that is bound to the S4 input in c.design</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>En_ServicePosit</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Enable service positioner:</p>
+                        <p>(FALSE: disable, TRUE: enable)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>ServicePosit_perc</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Input</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Set position of service positioner as a percentage</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">
+                        <p>Data</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">
+                        <p>Data collection used in algorithm</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">
+                        <p>Alarms</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">
+                        <p>Contains alarms list</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows" style="text-align: center;">
+                        <p>-</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">
+                        <p>MaskEnableOn</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows" style="text-align: center;">
+                        <p>Output</p>
+                    </td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">
+                        <p>Mask Enable depending on active control</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="EVD_Emb2" />
+        </p>&#160;&#160;</body>
+</html>

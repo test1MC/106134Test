@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="5" MadCap:lastHeight="1517" MadCap:lastWidth="595" MadCap:ignoredWords="CAREL" xml:lang="en-us" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" MadCap:conditions="Translation.ToDo">
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="Originator" content="ImportDoc" />
+        <meta name="OriginalFile" content="Project_Template.doc" /><title></title>
+        <link rel="stylesheet" href="../../../Resources/Stylesheets/styles.css" />
+        <style>/*<![CDATA[*/
+a:link
+{
+	color: #0000ff;
+}
+a:visited
+{
+	color: #0000ff;
+}
+
+/*]]>*/</style>
+        <link href="../../../Resources/PageLayouts/CAREL.flpgl" rel="pagelayout" MadCap:pagelayoutType="temporary" />
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="Project Template" />Introductory guide</h4>
+        <p>
+            <img src="../../../Resources/Images/4_Third_Parties_Devices/KRIWAN_LIB/Kriwan_Logo.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5>Introduction</h5>
+        <p>HVAC/R compressors need to be protected. This is typically done with a compressor protection relay like the KRIWAN™ INT69. If the compressor protection relay trips, it is first necessary that the critical situation ends: e.g. the motor cools down. The compressor is stopped until this happens. After this there are two options: the compressor can be stopped only temporarily and after a certain time, e.g. 5 min, the compressor is activated again and can be restarted. The other option is that the compressor is locked permanently and a manual reset is necessary. <br /><br />For advanced maintenance of the compressor, additionally, it is possible to use these and many more data provided by </p>
+        <ul>
+            <li>the INT69 Diagnose: failure list, statistics about running time or switching frequency and oil management in a compressor </li>
+            <li>the INT280 Oil level regulator: oil status, failure list, statistics about running time or switching frequency of oil valve for  oil management of compressor motor</li>
+        </ul>
+        <p>and many more help to maintain and even prevent issues with the compressor. </p>
+        <p>In combination with the KRIWAN™ Modbus Gateway INT600DM, and a controller, the reset of a compressor can be more advanced.</p>
+        <p>&#160;</p>
+        <p>KRIWAN_LIB is a c.suite library that includes function blocks for Modbus communication between a c.pCO family controller and KRIWAN™ devices, <MadCap:annotation MadCap:createDate="2017-01-04T15:48:56.2622678+01:00" MadCap:creator="vittoriob" MadCap:initials="VB" MadCap:comment="Mattere link a schema di collegamento classico" MadCap:editor="vittoriob" MadCap:editDate="2017-01-04T15:49:09.5220378+01:00">using a KRIWAN™ gateway. </MadCap:annotation></p>
+        <p>&#160;</p>
+        <p>The KRIWAN™ supported devices are:</p>
+        <table style="width: 100%;mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Device</th>
+                    <th class="TableStyle-02_Custom-HeadE-Default-Header2">Description</th>
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2">F/FB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="3">INT69® protection module <br /><img src="../../../Resources/Images/4_Third_Parties_Devices/KRIWAN_LIB/INT69_DV.png" class="OneHundredPercentThumbnail" /></td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="3">Compressor motor monitoring</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows"><a href="INT69.htm">INT69</a>:  KRIWAN™ INT69® protection module via Modbus Master</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows"><a href="INT69_LOG.htm">INT69_LOG</a>:  KRIWAN™ INT69® protection module error data logger via Modbus Master</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows"><a href="INT69_UI.htm">INT69_UI</a>:  KRIWAN™ INT69® protection module summary mask management</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" rowspan="3">INT280®  Oil level regulator<br /><img src="../../../Resources/Images/4_Third_Parties_Devices/KRIWAN_LIB/INT280_DV.png" class="OneHundredPercentThumbnail" style="width: 115px;height: 120px;" /></td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" rowspan="3">Compressor oil and oil valve monitoring</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows"><a href="INT280.htm">INT280_OilLevelRegulator</a>: KRIWAN™ INT280®  Oil level regulator via Modbus Master </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows"><a href="INT280_LOG.htm">INT280_LOG</a>: KRIWAN™ INT280® Oil level regulator error data logger via Modbus Master</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows"><a href="INT280_UI.htm">INT280_UI</a>:  KRIWAN™ INT280® Oil level regulator summary mask management</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="2">INT600 DM® Gateway<br /><img src="../../../Resources/Images/4_Third_Parties_Devices/KRIWAN_LIB/INT600_DV.png" class="OneHundredPercentThumbnail" /></td>
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="2">Gateway between the Diagnose® protocol and Modbus protocol</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows"><a href="INT600.htm">INT600_Gateway</a>: KRIWAN™ INT600 DM® Gateway via Modbus Master</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows"><a href="INT600_LOG.htm">INT600_LOG</a>: KRIWAN™ INT600 DM® Gateway error data logger via Modbus Master</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Here there is an example on how it is possible to connect a c.pCO family controller to KRIWAN™ devices:</p>
+        <MadCap:snippetBlock src="_Kriwan_DemoConn.flsnp" />
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The KRIWAN™ DP-Modbus Gateway is not considered as a supported device, because it doesn't have a Modbus variable database to be exchanged with c.pCO family controller.<br /><img src="../../../Resources/Images/4_Third_Parties_Devices/KRIWAN_LIB/DP-Modbus_DV.png" class="OneHundredPercentThumbnail" /></p>
+        <p>
+            <MadCap:conceptLink term="Project Template" />
+        </p>&#160;</body>
+</html>

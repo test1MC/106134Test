@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1147" MadCap:lastWidth="1236" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h4>Gas Pressure &lt;-&gt; Temperature conversion tester Script</h4>
+        <p>&#160;</p>
+        <p>This script will allow you to test the gas conversion of PressToTemp and TempToPress Function Block</p>
+        <p>The files can be found in <a href="https://svncarel.carel.com/svn/csuite_help/trunk/c.library_ENG/script/test_gas_conversion">https://svncarel.carel.com/svn/csuite_help/trunk/c.library_ENG/script/test_gas_conversion</a></p>
+        <p>The ConversionTester application is needed (search it in storage)</p>
+        <h5>Prerequisites</h5>
+        <ul>
+            <li>Python 2.7.x freely available from <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>, remember to flag the add to PATH option during the installation customization</li>
+            <li>pymodbus python library: open windows cmd and paste:<br /><code><br />pip install --proxy=https://haproxy.carel.locale:8080 pymodbus</code></li>
+        </ul>
+        <p>&#160;</p>
+        <h5>Settings</h5>
+        <ul>
+            <li>Upload to a controller the ConversionTester application to a controller</li>
+            <li>Open the script with a text editor and change the ip variable at line 9 with the one of your controller</li>
+            <li>Execute run_test.bat</li>
+        </ul>
+        <p>the command line will show the result of the tests, if any error occurs you can check inside the "result" folder, each block has its own log for every gas, some log examples are provided in the folder</p>
+        <p>&#160;</p>
+        <h5>How to add a new gas</h5>
+        <ul>
+            <li>Export the gas properties (pressure &lt;-&gt; temperature) from refprop and put the .csv in the gas folder</li>
+            <li>Open the script and locate the TempToPress_REAL class</li>
+            <li>Copy a "test_*" method and rename it with the new gas name</li>
+            <li>Edit gas_number and gas_name accordingly</li>
+            <li>locate the PressToTemp_REAL class</li>
+            <li>
+                <p>Copy a "test_*" method and rename it with the new gas name</p>
+            </li>
+            <li>Edit gas_number and gas_name accordingly (pay attention if the new gas has a bubble point)</li>
+        </ul>
+        <h5 style="mc-locked: unlocked;">Release notes</h5>
+        <table class="TableStyle-04_Release_Notes" style="mc-table-style: url('../../Resources/TableStyles/04_Release_Notes.css'); width: 80%; margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1" style="mc-unlocked: unlocked;">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1" style="mc-unlocked: unlocked;">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">• pymodbus</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows">• First official release<br /><br /><b style="mc-locked: unlocked;">Fixed</b><br />-<br /><b style="mc-locked: unlocked;"><br />Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br />-<br /><br /></b><b>Documentation<br /></b>-<br /><br /></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

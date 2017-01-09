@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Index page in intranet"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/HTML5/Other/Index_SwDoc.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  Skin="(none)"
+  ConditionTagExpression="include[CAREL_Hq.Reserved or Google.Offline_No_GA]exclude[CAREL_World.Reserved or csuite.csuite_spec or Hidden.Hidden_Status or HTML.Output_HTLM or clibrary.Official or PDF.Output_PDF or Translation.LanceWIP or Wip.Hide or Wip.Show or World_Wide.All_Customers]"
+  OutputFolder="c:\_Flare_Outputs\">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/HTML5/Intranet_00_index.fldes" />
+  </Destinations>
+</CatapultTarget>

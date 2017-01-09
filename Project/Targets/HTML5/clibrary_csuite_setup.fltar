@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="c.suite setup"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/HTML5/c.Library_non-print.fltoc"
+  InsertMOTW="true"
+  EnableSitemap="false"
+  IncludeStopWords="true"
+  GenerateWebSafeImages="true"
+  WebSafeFileExtension="png"
+  MasterPage="/Content/Resources/MasterPages/MasterPage_csuite_setup.flmsp"
+  Skin="/Project/Skins/HTML5 CAREL c.suite.flskn"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  Medium="non-print"
+  PartialWordSearch="true"
+  TargetLanguage="en-us"
+  ExcludeUnreferencedContent="true"
+  OutputFile="c.library_index.htm"
+  OutputFolder="c:\_Flare_Outputs\"
+  ConditionTagExpression="include[clibrary.Official or csuite.csuite_spec or HTML.Output_HTLM or Translation.LanceWIP or Translation.ToDo or Wip.Show or World_Wide.All_Customers] exclude[CAREL_Hq.Reserved or CAREL_World.Reserved or Google.Offline_No_GA or Hidden.Hidden_Status or PDF.Output_PDF or Translation.ToDoInternal or Wip.Hide] "
+  MinimumWordSize="3"
+  PreMergeSearchDatabase="true"
+  SearchDatabaseChunkSize="10000">
+  <Destinations></Destinations>
+</CatapultTarget>

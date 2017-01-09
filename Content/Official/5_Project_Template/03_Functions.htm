@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4249" MadCap:lastWidth="1466" MadCap:ignoredWords="classi;tutte;elementi;Gestione;login;Nel;vengono;completamente;gestiti;da;senza;l'utilizzo;di;FB;Sono;presenti;titolo;maschera;Colore;maschere;Contenuto;Dispositivo;DEVICE1;Device1;dispositivo;DEVICE2;Device2;DEVICEN;Devicen;Conf;unità;UNITCFG;Unitcfg;UnitCfgRes;LightGreen;dei;parametri;Storico;ALRMLOGS;Alrms_Log;Alrms_NoLog;allarmi;Impostazioni;ora;DATETIME;DateTimeChange;DaylightSavingTime;LightCoral;Cambio;formato;configurazione;legale;solare;Lingua;STARTUP;WhiteCoral;Selezione;lingua;Porte;seriali;SERIALPORTS;SerialPorts;pwd;PWDMNG;PwdChg;Utente;Costruttore;Inizializzazione;AlrmInit;MistyRose;contatori;automatici;installazione;valori;Logout;Pwd_Logout;DarkGray;Premendo;il;tasto;Prg;si;potrà;quindi;accedere;al;attraverso;Login;qui;ci;dovrà;loggare;Ogni;utente;avrà;determinati;WhiteSmoke;permessi;che;verranno;classe;CL_DummyService;CL_DummyManuf;aggiungere;una;voce;un;è;necessario;agire;all'interno;delle;Aggiornare;numero;oggetti;dalle;variabili;globali;VAR_GLOBAL;alla;All'interno;sono;ogni;esempio;utilizzate;CL_MainTxtTOP;CL_MainTxtMIDDLE;CL_MainTxtBOTTOM;le;Il;stato;introdotto;poter;navigare;rapidamente;nelle;più;importanti;principale;contiene;collegamenti;OnOff;Informazioni;Allarmi;storico;Attraverso;tabella" xml:lang="en-us" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../Resources/TableStyles/Standard_table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="Originator" content="ImportDoc" />
+        <meta name="OriginalFile" content="Project_Template.doc" /><title></title>
+        <link rel="stylesheet" href="../../Resources/Stylesheets/styles.css" />
+        <style>
+a:link
+{
+	color: #0000ff;
+}
+a:visited
+{
+	color: #0000ff;
+}
+
+</style>
+        <link href="../../Resources/PageLayouts/CAREL.flpgl" rel="pagelayout" MadCap:pagelayoutType="temporary" />
+        <link href="../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="Project Template" />Functions </h4>
+        <h5>Introduction</h5>
+        <p>The following functions are included in the project for screen (mask) management:</p>
+        <ul>
+            <li>	Full menu management with relevant three-level password protections (User, Service and Manufacturer)</li>
+            <li>Quick Menu to quickly scroll the most important screens (three loops: On/Off, Set, Info)</li>
+            <li>Logout with automatic return to the main screen, backlight and terminal keypad off with automatic logout</li>
+            <li>Language change</li>
+        </ul>
+        <p style="margin-top: 0;margin-bottom: 0;text-align: left;"><i><MadCap:xref href="04_MenuMng.htm#Menu" title="Menu management" alt="Menu management">Menu management</MadCap:xref></i>
+        </p>
+        <p>Other functions are described below:</p>
+        <ul>
+            <li>Unit On/Off</li>
+            <li>Complete clock and time  zone management </li>
+            <li>Hardware (board type and size) and software information (OS and Boot version) </li>
+            <li>Application version control and default value installation </li>
+            <li>Application jump to pCO startup to read I/O</li>
+            <li>Alarm and log management (screensand logic)</li>
+            <li>Last unit blackout save and corresponding possibility to log each blackout duration as alarm</li>
+            <li>Preset Modbus Slave and CAREL Slave protocols</li>
+            <li>Specific parameter import/export </li>
+            <li>Alarm log export management</li>
+            <li>Retain memory write control</li>
+            <li>Device operating hour counter</li>
+            <li>Unit of Measure management</li>
+        </ul>
+        <h5><a name="On/Off"></a>Unit On/Off</h5>
+        <p>Unit OnOff and typical unit status can be managed from POU <b>OnOffUnitMng</b>:</p>
+        <ul>
+            <li>On</li>
+            <li>Off from alarm</li>
+            <li>Off from BMS</li>
+            <li>Off from time band</li>
+            <li>Off from remote On/Off</li>
+            <li>Off from display</li>
+            <li>manual mode on</li>
+        </ul>
+        <h5 align="left"><a name="Gestione"></a>Date/time and time  zone management</h5>
+        <p align="left">Date/time and time  zone are managed in a single loop called DATETIME.<br />It is also possible to change the date format (0: DD/MM/YY; 1: MM/DD/YY; 2: YY/MM/DD) from the same loop.</p>
+        <h5><a name="Informaz"></a>HW and SW information</h5>
+        <p style="font-size: 10pt;">The following information appears in the Quick Menu <b>Information</b> loop:</p>
+        <ul>
+            <li>application code and version</li>
+            <li>operating system and Boot version</li>
+            <li> board type and size </li>
+            <li>internal board temperature (not available for c.pCO mini)</li>
+            <li>number of Retain memory writes</li>
+            <li>program cycle length (in milliseconds and cycles per second)</li>
+            <li>operating hours</li>
+            <li>information on last blackout: date, time and duration</li>
+        </ul>
+        <h5><a name="Installa"></a>Default value installation</h5>
+        <p style="font-size: 10pt;">Default values are loaded via the .dev file loaded in c.pCO.</p>
+        <table style="width: 100%; margin-left: 0; margin-right: auto; mc-table-style: url('../../Resources/TableStyles/Standard_table.css'); mc-table-style-original: url('../../Resources/TableStyles/Standard_table.css');" class="TableStyle-Standard" cellspacing="0">
+            <col class="TableStyle-Standard-Column-Regular" />
+            <col class="TableStyle-Standard-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-Standard-Head-Header1">
+                    <th class="TableStyle-Standard-HeadE-Regular-Header1">Type</th>
+                    <th class="TableStyle-Standard-HeadD-Regular-Header1">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Standard-Body-Row1">
+                    <td class="TableStyle-Standard-BodyE-Regular-Row1">
+                        <p class="Tabelle">Manual installation</p>
+                    </td>
+                    <td class="TableStyle-Standard-BodyD-Regular-Row1">
+                        <p>From the <b>Settings menu, <b>Initialization</b><![CDATA[  ]]></b> open the screen that recalls the default installation procedure:</p>
+                        <p>it is possible to wipe the retain and NVRAM, singly or together. The operation will restart the target.</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">The manual wipe memory operation cannot be done with the unit on and requires a manufacturer access.</p>
+                        <p>Alternatively, default values can be installed by following the following steps from any screen: </p>
+                        <p><b>Enter + Alarm</b> <span style="font-family: 'Wingdings'">è</span> <b>Application</b> <span style="font-family: 'Wingdings'">è</span> <b>Wipe Retain</b></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Standard-Body-Row1">
+                    <td class="TableStyle-Standard-BodyB-Regular-Row1">
+                        <p class="Tabelle">Automatic installation </p>
+                    </td>
+                    <td class="TableStyle-Standard-BodyA-Regular-Row1">
+                        <p class="Tabelle">The <b>VersionChk</b> Function Block checks the application version and, if different from the previously loaded application, requires automatically  a retain memory wipe </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5><a name="Jump"></a>Application jump at c.pCO start-up</h5>
+        <p>The Startup jump was introduced to guarantee data consistency from I/O readings by the algorithms at pCO start-up.<br />By default it is set to 10 seconds; it can be changed in <b>Data Types</b>, <b>Defined words</b>, <b>STARTUP_JMP_T</b>. <br /><img src="../../Resources/Images/5_Project_Template/PT_StartupJmp.jpg" style="width: 547px; height: 125px;" class="OneHundredPercentThumbnail" /></p>
+        <p>To add the jump in other strategy pages, place the following code at the top of the page:</p>
+        <p>
+            <img src="../../Resources/Images/5_Project_Template/PT_Page_Jump.JPG" style="width: 243px; height: 90px;" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">To execute part of code also during the startup jump, place the code before the  startup jump management.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">This jump cannot guarantee data consistency from serial ports, each application will run the procedures that best meet these needs.</p>
+        <h5><a name="Allarmi"></a>Alarm and log management</h5>
+        <p style="font-size: 10pt;">Alarms are managed in the Alarm table in c.strategy.</p>
+        <p style="font-size: 10pt;">The following can be set for each alarm:</p>
+        <ul>
+            <li> Reset type: Automatic, manual, semi-automatic</li>
+            <li>Alarm trigger edge: positive or negative</li>
+            <li>Alarm description</li>
+            <li>Maximum number of automatic resets in the set time (for semi-automatic reset)</li>
+            <li>Two variables to sample, for both the alarm loop and log</li>
+        </ul>
+        <p style="font-size: 10pt; font-weight: normal;">The operating system fully manages saving tothe alarm log. The project template provides access to the log from both the Main menu and the alarm loop.</p>
+        <p style="font-size: 10pt; font-weight: normal;">It is possible to Enable/Disable the buzzer from the<b> SETTINGS</b> menu, under <b>Initialization</b>.<br /></p>
+        <h6>Adding an alarm</h6>
+        <p style="font-size: 10pt;">Follow the steps below to add an alarm:</p>
+        <ol>
+            <li>In the c.strategy alarm table, add the new alarm and set the parameters (type, edge, etc..): a structure made up of <i>AlarmName.</i><b style="font-weight: normal;font-style: italic;">Trigger</b> and <i>AlarmName.</i><b style="font-weight: normal;font-style: italic;">Active</b> will be created to be used in the algorithm and user interface.<br /><img src="../../Resources/Images/5_Project_Template/PT_Alarm_Table.jpg" class="OneHundredPercentThumbnail" /><br /></li>
+            <li>Change the AlrmNo class, aligning it with the number of alarms in the strategy table</li>
+            <li>Change the AlrmDescr class, adding the alarm description</li>
+        </ol>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">Match class indeces with alarm indeces in the alarm table.</p>
+        <ol MadCap:continue="true">
+            <li style="font-size: 10pt;">If variables are sampled with alarms, change NameVar1 and NameVar 2 classes indicating the sampled variable descriptions respectively for the alarm and log screens. Here too, follow the order between class indeces and the alarm table.</li>
+        </ol>
+        <h6>Alarm log export management</h6>
+        <p>It is possible to export the alarm logs to a csv file from the<b> Main menu</b>, <b>Unit Configuration</b> loop.</p>
+        <p>The file can be exported to the USB port or to the internal flash memory on the c.pCO, with the name <b>AL_EXPORT_XX</b>, where XX is the number of the file.<br /><img src="../../Resources/Images/5_Project_Template/PT_Alarm_Export.JPG" style="width: 172px; height: 85px;" class="OneHundredPercentThumbnail" /></p>
+        <h5><a name="Gestione2"></a>Blackout management</h5>
+        <p style="font-size: 10pt;">The <b>Blackout_2</b> function block is used to save the last pCO shutdown date and time and display the length in terms of days, hours and minutes (<b>Quick menu</b> <b>Information</b> loop).</p>
+        <p style="font-size: 10pt;">There is a variable in c.strategy to express the blackout time in minutes, useful for logging.</p>
+        <p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">Blackout FB uses NVRAM memory, by default addresses from 0 to 11: it is possible to change these using the  "AddrStart" input variable.</p>
+        <h5><a name="Protocol"></a>Protocols </h5>
+        <p style="font-size: 10pt;">Modbus Slave and CAREL Slave protocols are preset in c.design and display variables such as the application version (X, Y, Z, D, Beta, Demo) and global alarm reset.<br />Classes for <b>parity</b> and <b>stopbits</b> are prearranged in c.mask.</p>
+        <p style="font-size: 10pt;">Displayed variables are listed below:</p>
+        <p style="font-size: 10pt;">
+            <img src="../../Resources/Images/5_Project_Template/BmsVar.JPG" style="width: 250px; height: 93px;" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5><a name="Import/e"></a>Parameter import/export</h5>
+        <p>This function is used to import or export parameters set as DEV and containing initial values in DEV editor, from/to <b>Internal FLASH memory/USB pendrive</b>. The function is in the main menu, under <b>Unit Config</b>.</p>
+        <p><b><![CDATA[  ]]><img src="../../Resources/Images/5_Project_Template/PT_Params_ImpExp.JPG" style="width: 162px; height: 81px;" class="OneHundredPercentThumbnail" /></b><![CDATA[  ]]></p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;"> Import / export parameters cannot be done with the unit on.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">During this operation, the entire strategy code is jumped in order to avoid the watchdog call in case of long imp/exp.<br /></p>
+        <h5><a name="Controll"></a>Retain memory write check</h5>
+        <p>The <b>CheckRetainMem</b> function block checks the number of writes in the retain memory. When the set threshold is exceeded (<i>MaxWritingsNo</i>) for a specific number of times (<i>CountToTrig</i>) within a set time period (<b style="font-weight: normal; font-style: italic;">CheckT</b>), <i>MemError</i> will become TRUE.</p>
+        <h5 align="left"><a name="Hours"></a>Hours counter</h5>
+        <p align="left">Project Template is designed to manage operating hours on any device. For example, it manages unit ON hours using the <b>Hours counter </b>function block. </p>
+        <h5 align="left"><a name="Unit"></a>Unit of Measure</h5>
+        <p align="left">Project template provides a basic unit of measure management that allows the user to change the measure system in mask and protocol (for tERA/web editor).</p>
+        <p align="left">Default zones are:</p>
+        <ul>
+            <li>0: No conversion zone</li>
+            <li>1: International System [T(°C), P(kPa), …]</li>
+            <li>2: Imperial USA [T(°F), P(psi), …]</li>
+            <li>3: Imperial UK [T(°C), P(Bar), …]</li>
+            <li>4: Canadian [T(°F), P(psi), …]</li>
+            <li>5: Carel LON card</li>
+            <li>6: International System (Bar) [T(°C), P(Bar), …]</li>
+        </ul>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">To set a default zone, set a DEV value in the DEV editor for variables "STD_UOM_ZONE_UI" (for c.mask) or "STD_UOM_ZONE_WEB".</p>
+        <h6 align="left"><b>c.mask</b>
+        </h6>
+        <p align="left">In c.mask is present a loop in the <b>Settings Menu</b>, called "<b>UoM</b>".</p>
+        <p align="left">
+            <img src="../../Resources/Images/5_Project_Template/UoM_mask.PNG" class="OneHundredPercentThumbnail" />
+            <br />In this loop is possible to set the current Unit Of Measure zone for mask visualization:; after setting the zone, the c.mask task will be reboot.</p>
+        <p align="left" style="font-weight: bold;">How to manage variables in c.mask with the UoM:</p>
+        <ol>
+            <li align="left" style="font-weight: normal;">Add the variable in the mask</li>
+            <li align="left" style="font-weight: normal;">Add the variable "STD_UOM_ZONE_UI" on the right</li>
+            <li align="left" style="font-weight: normal;">Create a new class (starting from template classes "Temperature_C_UoM" or "Pressure_bar_UoM") and insert the UoM for all zones<br /><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">At position "0", set the default UoM of the application. For example, if the class is for a temperature, and the applications is developed in USA system, set UoM "°F" at position "0"</p></li>
+            <li align="left" style="font-weight: normal;">Assign the new class to variable "STD_UOM_ZONE_UI"</li>
+        </ol>
+        <h6 align="left"><b>c.design</b>
+        </h6>
+        <p align="left">It is possible also to change the tERA/web editor Unit of Measure Zone, always in <b>Settings Menu</b>, at "<b>UoM</b>" loop.</p>
+        <p align="left">
+            <img src="../../Resources/Images/5_Project_Template/UoM_cweb.PNG" class="OneHundredPercentThumbnail" />
+        </p>
+        <p align="left">&#160;</p>
+        <p align="left">&#160;</p>
+        <p>
+            <MadCap:conceptLink term="Project Template" />
+        </p>&#160;</body>
+</html>

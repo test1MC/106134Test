@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="579" MadCap:lastWidth="1423" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="Comp_BLDC_PowerPlus" />Appendix 2 : Power+ driver replacement </h4>
+        <p class="descriptionshort">How to replace a Power+ driver .</p>
+        <p>&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Native revision 15/11/2016</p>
+        <h5>Introduction</h5>
+        <p>The <b>InverterPowerPlus</b> function block allows automatic reconfiguration if replacing the Power+ inverter. The new device is recognised automatically by acquiring the serial code.</p>
+        <p>&#160;</p>
+        <h5>Procedure</h5>
+        <p>Proceed as follows for automatic reconfiguration when replacing the Power+:</p>
+        <ol>
+            <li>
+                <p>Make sure the parameter download procedure is enabled in the <b>inverterPowerPlus</b> function block configuration menu.</p>
+            </li>
+            <li>
+                <p>Power off the c.pCO and the Power+.</p>
+            </li>
+            <li>
+                <p>Replace the Power+ inverter.</p>
+            </li>
+            <li>
+                <p>Power on the pCO and the Power+..</p>
+            </li>
+        </ol>
+        <p>As soon as Modbus communication is established between the devices, the c.pCO checks the new serial number and compatibility of the new Power+ with the compressor used; if these two conditions are both ok, the procedure for setting the Power+ parameters to the default values for the selected compressor is started automatically.</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">Any changes made to the Power+ parameter settings and not saved using the procedure described in “Custom parameter management” will be lost when replacing the Power+.</p>
+        <p>  <![CDATA[ ]]></p>
+        <p>
+            <MadCap:conceptLink term="Comp_BLDC_PowerPlus" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

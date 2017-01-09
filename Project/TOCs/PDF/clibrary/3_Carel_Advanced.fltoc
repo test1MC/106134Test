@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="3_Carel_Advanced (senza idx in modo che non crei il pdf)"
+    BreakType="none"
+    StartSection="false"
+    PageNumberReset="continue">
+    <TocEntry
+      Title="Deprecated"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      ReplaceMergeNode="false">
+      <TocEntry
+        Title="Blackout"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/Blackout.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Blackout_2"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/Blackout_2.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DevicesRotation"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/DevicesRotation.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue" />
+      <TocEntry
+        Title="DevicesRotation Demo"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/DevicesRotation_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DevicesRotation_2"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/DevicesRotation_2.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DevicesRotation_2 Demo"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/DevicesRotation_2_Demo.htm"
+        BreakType="chapter"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="PID_Adv"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/PID_Adv.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="PrbAlrm"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/PrbAlrm.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="PrbAlrm Demo"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/PrbAlrm_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="TZMng"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/TZMng.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="VersionChk"
+        Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/VersionChk.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="AlarmFreeze"
+      Link="/Content/Official/3_CAREL_Advanced/AlarmFreeze.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Comp_BLDC"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="Comp_BLDC"
+        Link="/Content/Official/3_CAREL_Advanced/Comp_BLDC/Comp_BLDC.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Comp_BLDC Demo"
+        Link="/Content/Official/3_CAREL_Advanced/Comp_BLDC/_Comp_BLDC_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Comp_BLDC release notes"
+        Link="/Content/Official/3_CAREL_Advanced/Comp_BLDC/_Comp_BLDC_Release_Notes.htm" />
+      <TocEntry
+        Title="Comp_BLDC structure list"
+        Link="/Content/Official/3_CAREL_Advanced/Comp_BLDC/_Comp_BLDC_Structure_list.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="COMP_MNG_LIB"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      PageNumber="1">
+      <TocEntry
+        Title="CompStepless"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/CompStepless.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="CompVlvs"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/CompVlvs.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DefCompEnv"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/DefCompEnv.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DefCompInverter"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/DefCompInverter.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DefCompStep"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/DefCompStep.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DefCompStepless"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/DefCompStepless.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DefCompVlvs"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/DefCompVlvs.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DevAvblStatus"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/DevAvblStatus.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="EnvAlrm"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/EnvAlrm.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="EnvPwr"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/EnvPwr.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="MotIgn"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/MotIgn.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="RunStartUpDT_Alrm"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/RunStartUpDT_Alrm.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Change Log"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/_Change_Log.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Compressors models supported"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/_COMP_MNG_LIB_Compressors_models_supported.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="COMP_MNG_LIB Demo"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/_COMP_MNG_LIB_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="CompStep"
+        Link="/Content/Official/3_CAREL_Advanced/COMP_MNG_LIB/CompStep.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="Blackout_3"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="Blackout_3"
+        Link="/Content/Official/3_CAREL_Advanced/Blackout_3/Blackout_3.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Blackout_3_Flag"
+        Link="/Content/Official/3_CAREL_Advanced/Blackout_3/Blackout_3_Flag.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Blackout_3 Demo"
+        Link="/Content/Official/3_CAREL_Advanced/Blackout_3/_Blackout_3_Demo.htm"
+        BreakType="chapter"
+        PageNumberReset="reset"
+        AutoEndOnLeftPage="disabled"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="BLDC_TandemTrio"
+      Link="/Content/Official/3_CAREL_Advanced/BLDC_TandemTrio.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="CheckRetainMem"
+      Link="/Content/Official/3_CAREL_Advanced/CheckRetainMem.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="CircDestabil"
+      Link="/Content/Official/3_CAREL_Advanced/CircDestabil.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="DefrostCore"
+      Link="/Content/Official/3_CAREL_Advanced/DefrostCore.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="DevicesRotation_3"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="DevicesRotation_3"
+        Link="/Content/Official/3_CAREL_Advanced/DevicesRotation_3/DevicesRotation_3.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DevicesRotation_Flag"
+        Link="/Content/Official/3_CAREL_Advanced/DevicesRotation_3/DevicesRotation_3_Flag.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="DevicesRotation_3 Demo"
+        Link="/Content/Official/3_CAREL_Advanced/DevicesRotation_3/_DevicesRotation_3_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="NeutralZone_INT, NeutralZone_REAL"
+      Link="/Content/Official/3_CAREL_Advanced/NeutralZone_INT,NeutralZone_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="OilEqualization"
+      Link="/Content/Official/3_CAREL_Advanced/OilEqualization.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="OilRecovery"
+      Link="/Content/Official/3_CAREL_Advanced/OilRecovery.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PID_Incr"
+      Link="/Content/Official/3_CAREL_Advanced/PID_Incr.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PID_Seq"
+      Link="/Content/Official/3_CAREL_Advanced/PID_Seq.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PID_Adv_2"
+      Link="/Content/Official/3_CAREL_Advanced/PID_Adv_2/PID_Adv_2.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PID_Adv_2_Flag"
+      Link="/Content/Official/3_CAREL_Advanced/PID_Adv_2/PID_Adv_2_Flag.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PrbAlrm_2"
+      Link="/Content/Official/3_CAREL_Advanced/PrbAlrm_2/PrbAlrm_2.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PrbAlrm_2 Demo"
+      Link="/Content/Official/3_CAREL_Advanced/PrbAlrm_2/_PrbAlrm_Demo_2.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Pumps"
+      Link="/Content/Official/3_CAREL_Advanced/Pumps/Pumps.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PumpDown"
+      Link="/Content/Official/3_CAREL_Advanced/PumpDown.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="ReverseValve"
+      Link="/Content/Official/3_CAREL_Advanced/3_Deprecated/ReverseValve.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Rot_FIFO"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="Rot_FIFO Demo"
+        Link="/Content/Official/3_CAREL_Advanced/EASY_ROT_LIB/_EASY_ROT_LIB_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="MultiRot_FIFO"
+        Link="/Content/Official/3_CAREL_Advanced/EASY_ROT_LIB/MultiRot.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="PwrToStep"
+        Link="/Content/Official/3_CAREL_Advanced/EASY_ROT_LIB/PwrToStep.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="RotMng_FIFO"
+        Link="/Content/Official/3_CAREL_Advanced/EASY_ROT_LIB/RotMng.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="SingleRot_FIFO"
+        Link="/Content/Official/3_CAREL_Advanced/EASY_ROT_LIB/SingleRot.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="SerialStatus"
+      Link="/Content/Official/3_CAREL_Advanced/SerialStatus.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="SourceFan"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="SourceFan"
+        Link="/Content/Official/3_CAREL_Advanced/SourceFan/SourceFan.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="SourceFan Demo"
+        Link="/Content/Official/3_CAREL_Advanced/SourceFan/_SourceFan_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="TZ_MNG_LIB">
+      <TocEntry
+        Title="TZ_Read"
+        Link="/Content/Official/3_CAREL_Advanced/TZ_MNG_LIB/TZ_Read.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="TZ_Write"
+        Link="/Content/Official/3_CAREL_Advanced/TZ_MNG_LIB/TZ_Write.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Change Log"
+        Link="/Content/Official/3_CAREL_Advanced/TZ_MNG_LIB/_Change_Log.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="VersionChk_2"
+      Link="/Content/Official/3_CAREL_Advanced/VersionChk_2.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+  </TocEntry>
+</CatapultToc>

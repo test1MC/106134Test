@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Test"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  OutputFolder="c:\_Flare_Outputs\"
+  MasterToc="/Project/TOCs/Test.fltoc"
+  ConditionTagExpression="include[CAREL_Hq.Reserved or CAREL_World.Reserved or csuite.csuite_spec or HTML.Output_HTLM or Translation.LanceWIP or Translation.ToDo or Translation.ToDoInternal or Wip.Show or World_Wide.All_Customers] exclude[clibrary.Official or Google.Offline_No_GA or Hidden.Hidden_Status or PDF.Output_PDF or Wip.Hide] "
+  DefaultUrl="/Content/z_Reserved/04_Statistics/00_Tickets_Tracking.htm"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  MinifyJavaScript="false"
+  ChunkIndex="false"
+  ChunkTOC="false"
+  ChunkGlossary="false"
+  ChunkSearchDatabase="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

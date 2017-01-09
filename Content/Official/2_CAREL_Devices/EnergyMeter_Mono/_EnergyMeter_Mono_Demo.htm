@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1703" MadCap:lastWidth="1380" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>EnergyMeter_mono Demo</h4>
+        <p MadCap:conditions="CAREL_Hq.Reserved">&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 19/10/2016</p>
+        <p>
+            <img src="../../../Resources/Images/2_CAREL_Devices/emeter/mt100d2100.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <h5>Hardware and software requirements</h5>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">19/10/2016</td>
+                </tr>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">20/01/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">4.0.11</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">All c.pCO controllers</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">4.0.003</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Single-phase energy meter (emeter1)</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Firmware devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">1.4</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">Modbus Master</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>Project description</h5>
+        <p>Project aims:</p>
+        <ol>
+            <li>
+                <p>Show how an emeter1 can be managed inside a c.suite project</p>
+            </li>
+            <li>Test all the device’s functions</li>
+        </ol>
+        <p>With this demo it is possible to:</p>
+        <ol>
+            <li>
+                <p>Communicate via Modbus Master protocol with a single-phase energy meter (emeter1) </p>
+            </li>
+            <li>
+                <p>Access all status variables and parameters on emeter1 devices</p>
+            </li>
+        </ol>
+        <h5>Main default settings</h5>
+        <h6>Default emeter1 network address</h6>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');margin-left: 0;margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">NetAddr_EMMN</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">1</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Communication settings</h6>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Protocol</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">Modbus Master on FB1</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Baudrate</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">9600</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-LightRows">Stopbits</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">2</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Parity</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">None</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyB-Default-LightRows">Data length</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows">8</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>Release notes</h5>
+        <p>The following are notes on the released versions of this demo :</p>
+        <table style="margin-left: 0; margin-right: auto; width: 80%; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../../Resources/TableStyles/04_Release_Notes.css');" class="TableStyle-04_Release_Notes" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col style="width: 202px;" class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">2.0.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">- CAREL_BASIC_LIB 2.3.0<br />- CheckRetainMem 1.2.0<br />- VersionChk 1.0.0<br />- CAREL_BASIC_LIB_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows">Updated to library 2.0.2<b style="mc-locked: locked;"><br /><br />Fixed<br /></b>-<br /><br /><b style="mc-locked: locked;">Changed<br /></b>-<br /><br /><b style="mc-locked: locked;">Deprecated<br /></b>-<br /><br /><b style="mc-locked: locked;">Enhanced</b><br />-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-DarkerRows">1.0.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-DarkerRows">- CAREL_BASIC_LIB_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-DarkerRows">
+                        <p>• First official release</p>
+                        <p>
+                            <br />
+                        </p><b style="mc-locked: locked;">Fixed</b>
+                        <p>-</p><b style="mc-locked: locked;">Changed</b>
+                        <p>-</p><b style="mc-locked: locked;">Deprecated</b>
+                        <p>-</p><b style="mc-locked: locked;">Enhanced</b>
+                        <p class="p_1">-</p>
+                        <p class="p_1"><b>Documentation<br /></b>-</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

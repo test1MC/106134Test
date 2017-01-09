@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/PDF/Reserved_Carel_HQ.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/CAREL.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  ConditionTagExpression="include[CAREL_Hq.Reserved or csuite.csuite_spec or PDF.Output_PDF or Translation.LanceWIP]exclude[Google.Offline_No_GA or Hidden.Hidden_Status or HTML.Output_HTLM or Wip.Hide]"
+  OutputFolder="c:\_Flare_Outputs\"
+  InjectEmptyPages="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    MultiDocOutput="true" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="75"
+    PageMode="UseNone"
+    PageLayout="OneColumn"
+    CollapsedBookmarks="true"
+    DownsampleImages="true" />
+  <DocumentProperties
+    Author="Carel Industries S.p.A." />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF/Intranet_08_Reserved_CAREL_HQ.fldes" />
+  </Destinations>
+</CatapultTarget>

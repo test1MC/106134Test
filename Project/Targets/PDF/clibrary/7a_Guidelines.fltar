@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="7a_Guidelines"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterPageLayout="/Content/Resources/PageLayouts/CAREL.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  ConditionTagExpression="include[clibrary.Official or csuite.csuite_spec or PDF.Output_PDF or Translation.LanceWIP or Wip.Show]exclude[CAREL_Hq.Reserved or CAREL_World.Reserved or Google.Offline_No_GA or Hidden.Hidden_Status or HTML.Output_HTLM or Wip.Hide or World_Wide.All_Customers]"
+  MasterToc="/Project/TOCs/PDF/clibrary/7A_Guidelines_Applications.fltoc"
+  OutputFolder="c:\_Flare_Outputs\">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDF/Intranet_07_Guidelines.fldes" />
+  </Destinations>
+</CatapultTarget>

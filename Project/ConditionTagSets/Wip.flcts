@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment="Contents status = &quot;work in progress&quot; NOT present in targhets"
+    Name="Hide"
+    BackgroundColor="#ff4500"
+    OriginalName="Hide" />
+  <ConditionTag
+    Name="Show"
+    Comment="Contents status = &quot;work in progress&quot;  PRESENT in targhets"
+    OriginalName="Show"
+    BackgroundColor="#ffff00" />
+</CatapultConditionTagSet>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1929" MadCap:lastWidth="1397" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" MadCap:conditions="CAREL_Hq.Reserved">
+    <head>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>cSuite How to implement a library </h4>
+        <p>How to implement a stable or beta library</p>
+        <p class="CAREL_Internal_Use" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ffffff;&quot; class=&quot;mcFormatColor&quot;&gt;The use of this information should be exclusively internal CAREL Headquaters. &lt;/span&gt;&lt;/b&gt;">&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Native revision 15/11/2016</p>
+        <h5>INTRODUCTION</h5>
+        <p>The Comp_BLDC and InverterPowerPlus function block have the same versions.<br />The Comp_BLDC contains the InverterPowerPlus function block. For this reason, the sequence to be respect to increase the version is as follows:</p>
+        <ol>
+            <li>InverterPowerPlus function block</li>
+            <li>Comp_BLDC function block</li>
+        </ol>
+        <h5>
+            <br />InverterPowerPlus LIBRARY</h5>
+        <ol>
+            <li>
+                <p>Open the InverterPowerPlus project.</p>
+            </li>
+            <li>
+                <p>Increase the version in solution info. If the version is a Beta, add the letter B after the version. Use the right mouse button on Edit Solution Info to find the field to be modified.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/Edit solution info.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Increase the version in the Comments of InverterPowerPlus POU. If a  beta version, add the letter B after the version. Enter the modification in the comment field.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/InverterPowerPlus POU.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Open the InverterPowerPlus function block. The password is required.</p>
+            </li>
+            <li>
+                <p>Increase the version of InverterPowerPlus POU.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/InverterPowerPlus POU1.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>If entering a new compressor:</p>
+                <ul>
+                    <li>enter the electrical parameters in the LoadDefaultPSD1_PWRP POU. </li>
+                </ul>
+            </li>
+            <li>Build the solution.</li>
+            <li>
+                <p>Export the library. </p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/Export Library.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Show block library and Store as Carel Library</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/Show on block library.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>Follow the tutorial: How to create a template library</li>
+            <p class="CAREL_Internal_Use" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ffffff;&quot; class=&quot;mcFormatColor&quot;&gt;The use of this information should be exclusively internal CAREL Headquaters. &lt;/span&gt;&lt;/b&gt;">http://swdocs.carel.locale/HTML5/03_c.libraries/index.htm#Official/6_Generic_Demo&amp;Tutorials/Tutorial/Template_Library.htm%3FTocPath%3DGeneric%2520Demo%2520%2526%2520Tutorials%7CTutorials%7C_____2</p>
+            <p>&#160;</p>
+        </ol>
+        <h5>
+            <br />Comp_BLDC LIBRARY</h5>
+        <ol>
+            <li>
+                <p>Open the comp_BLDC project.</p>
+            </li>
+            <li>
+                <p>Increase the version in solution info. If the version is a Beta, add the letter B after the version. Use the right mouse button on Edit Solution Info to find the field to be modified.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/Edit solution info1.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Increase the version in the Comments of comp_BLDC POU. If a  beta version, add the letter B after the version. Enter the modification in the comment field.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/Comp_BLDC Comments POU.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Open the comp_BLDC function block. The password is required.</p>
+            </li>
+            <li>
+                <p>Increase the version of InverterPowerPlus POU.</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/Comp_BLDC POU.png" class="FiftyPercentThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Import the InverterPowerPlus library. The InverterPowerPlus library must have the same version as the CompBLDC library.</p>
+            </li>
+            <li>
+                <p>If entering  a new compressor:</p>
+                <ul>
+                    <li>enter the thermodynamic parameters in the CompDef_BLDC POU. </li>
+                </ul>
+            </li>
+            <li>Build the solution.</li>
+            <li>
+                <p>Export the library. </p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/Export Library1.png" class="FiftyPercentThumbnail" style="width: 71px;height: 47px;" />
+                </p>
+            </li>
+            <li>
+                <p>Show block library and Store as Carel Library</p>
+                <p>
+                    <img src="../../../Resources/Images/Reserved_CAREL_HQ/03_BLDC_Power_Plus_versioning/csuite/Show on block library1.png" class="FiftyPercentThumbnail" style="width: 42px;height: 46px;" />
+                </p>
+            </li>
+            <li>Follow the tutorial: How to create a template library</li>
+            <p class="CAREL_Internal_Use" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ffffff;&quot; class=&quot;mcFormatColor&quot;&gt;The use of this information should be exclusively internal CAREL Headquaters. &lt;/span&gt;&lt;/b&gt;">http://swdocs.carel.locale/HTML5/03_c.libraries/index.htm#Official/6_Generic_Demo&amp;Tutorials/Tutorial/Template_Library.htm%3FTocPath%3DGeneric%2520Demo%2520%2526%2520Tutorials%7CTutorials%7C_____2</p>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

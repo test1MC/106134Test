@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultBatchTarget
+  Version="1"
+  Comment="New Batch Target"
+  Guid="779e080b-f781-450c-9879-425a18144df6">
+  <Targets>
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="HTML5/clibrary_swdocs"
+      Type="HTML5"
+      Build="true"
+      Publish="true"
+      LastBuilt=""
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="HTML5/clibrary_for_c.suite"
+      Type="HTML5"
+      LastBuilt=""
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Other/Index_swdoc"
+      Type="HTML5"
+      LastBuilt=""
+      LastPublished="02/10/2015 13:48:15" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/1tool/cpcoe"
+      Type="PDF"
+      LastBuilt=""
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/1_Carel_Basic"
+      Type="PDF"
+      Build="false"
+      Publish="false"
+      LastBuilt="28/09/2015 15:17:32"
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/2_Carel_Devices"
+      Type="PDF"
+      Build="false"
+      Publish="false"
+      LastBuilt="28/09/2015 15:21:43"
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/3_Carel_Advanced"
+      Type="PDF"
+      Build="false"
+      Publish="false"
+      LastBuilt="28/09/2015 15:25:02"
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/4_Third_Parties_Devices"
+      Type="PDF"
+      Build="false"
+      Publish="false"
+      LastBuilt="28/09/2015 15:25:26"
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/5_Project_Template"
+      Type="PDF"
+      Build="false"
+      Publish="false"
+      LastBuilt="28/09/2015 15:25:37"
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/6_Generic_Demo&amp;Tutorials"
+      Type="PDF"
+      Build="false"
+      Publish="false"
+      LastBuilt="28/09/2015 15:25:58"
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/7a_Guidelines"
+      Type="PDF"
+      LastBuilt="28/09/2015 15:26:09"
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/7b_Guidelines"
+      Type="PDF"
+      LastBuilt="28/09/2015 15:26:23"
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/clibrary/Macro/All_7"
+      Type="PDF"
+      LastBuilt=""
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Other/Contributor_Guide"
+      Type="PDF"
+      LastBuilt=""
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/Reserved_Carel_HQ"
+      Type="PDF"
+      Build="false"
+      Publish="false"
+      LastBuilt=""
+      LastPublished="" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="PDF/World_Wide"
+      Type="PDF"
+      LastBuilt=""
+      LastPublished="" />
+  </Targets>
+</CatapultBatchTarget>

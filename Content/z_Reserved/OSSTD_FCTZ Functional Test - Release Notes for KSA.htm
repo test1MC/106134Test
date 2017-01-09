@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1037" MadCap:lastWidth="1476">
+    <head>
+        <link href="../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h4>c.pCO Functional Test -&#160;Release Notes</h4>
+        <p MadCap:conditions="CAREL_Hq.Reserved"><i>Last update: 24/11/2016</i>
+        </p>
+        <p>&#160;</p>
+        <p>Here below, the release notes of "OSSTD_FCTZ" c.pCO functional test:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/04_Release_Notes.css');border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;" class="TableStyle-04_Release_Notes" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.0.40B</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0<br />• VersionChk_2_1.0.0<br />• CheckRetainMem_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows" style="font-style: normal;"><b style="mc-locked: unlocked;">Fixed</b>
+                        <br />• Coil 62 <i>EnButtonTest</i> and DiscreteInput 98 <i>ButtonTest_OK</i> were missing from the Modbus Slave configuration. Now they have been added.<br /><br /><b style="mc-locked: unlocked;"><br />Changed<br /></b>• Minor changes in built-in buzzer test mask. Now it is necessary to set the value to YES or NO, if the buzzer is beeping or not.<b style="mc-locked: unlocked;"><br /><br />Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<b style="mc-locked: unlocked;"><br /><br /></b><b>Documentation<br /></b>-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-DarkerRows">1.0.39B</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-DarkerRows">• CAREL_BASIC_LIB_2.3.0<br />• VersionChk_2_1.0.0<br />• CheckRetainMem_1.2.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-DarkerRows">This version is compatible only with OS &gt;= 4.x.x&#160;<b style="mc-locked: unlocked;"><br /><br />Fixed</b><br />• Fixed Digital Input class in c.mask. Before, the value "0" was "Open contact" and "1" was "Close", now it has been correct in "0" = "Close" and "1" = "Open".<br />• Fixed hour change in "Settings" menu. Before, it was not possible to change Minutes and Hours, due to a class assignment bug; now it has been fixed.<br />• Minor fixes in alarm management.<br /><b style="mc-locked: unlocked;"><br />Changed<br />-</b><b style="mc-locked: unlocked;"><br /><br />Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>• Added information about Core type present on the target , in Loop "Information" of Quick menu: since from November 2016, an upgraded Core will be introduced in c.pCO and c.pCO mini controllers, this information will be useful to identify the type of core and, therefore, the correct OS to load. <b style="mc-locked: unlocked;"><br /></b>For more information about c.pCO Core Type, please read the OS 4.1.001 Relase Notes<b style="mc-locked: unlocked;"><br /><br /></b><b>Documentation<br /></b>-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h6>Useful information</h6>
+        <ul>
+            <li>ap1 files of c.pCO Functional Test <b>don't</b> contain  OS.</li>
+            <li>It is present a version of .ap1 file for each <u>c.pCO mini</u> model (B = Basic, E = Enhanced, HE = High End).</li>
+            <li>For <u>c.pCO</u>, use the "Large" .ap1 file for small/medium/large models, and "Xlarge" only for Extra Large  model</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

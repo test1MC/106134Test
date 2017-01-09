@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="4_Third_Parties_Devices (senza idx in modo che non crei il pdf)"
+    BreakType="none"
+    AutoEndOnLeftPage="disabled"
+    PageNumberReset="reset"
+    StartSection="false"
+    PageNumber="1">
+    <TocEntry
+      Title="Deprecated"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="EbmpapstFan"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1">
+        <TocEntry
+          Title="EbmpapstFan"
+          Link="/Content/Official/4_Third_Parties_Devices/Deprecated/EbmpapstFan.htm"
+          BreakType="chapter"
+          AutoEndOnLeftPage="disabled"
+          PageNumberReset="reset"
+          StartSection="false"
+          PageNumber="1"></TocEntry>
+        <TocEntry
+          Title="EbmpapstFan Demo"
+          Link="/Content/Official/4_Third_Parties_Devices/Deprecated/EbmpapstFan_Demo.htm"
+          BreakType="chapter"
+          AutoEndOnLeftPage="disabled"
+          PageNumberReset="reset"
+          StartSection="false"
+          PageNumber="1" />
+      </TocEntry>
+      <TocEntry
+        Title="ZiehlAbeggFan"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1">
+        <TocEntry
+          Title="ZiehlAbeggFan"
+          Link="/Content/Official/4_Third_Parties_Devices/Deprecated/ZiehlabeggFan.htm"
+          BreakType="chapter"
+          AutoEndOnLeftPage="disabled"
+          PageNumberReset="reset"
+          StartSection="false"
+          PageNumber="1"></TocEntry>
+        <TocEntry
+          Title="ZiehlAbeggFan Demo"
+          Link="/Content/Official/4_Third_Parties_Devices/Deprecated/ZiehlAbeggFan_Demo.htm"
+          BreakType="chapter"
+          AutoEndOnLeftPage="disabled"
+          PageNumberReset="reset"
+          StartSection="false"
+          PageNumber="1" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="EbmpapstFan_2"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="EbmpapstFan_2"
+        Link="/Content/Official/4_Third_Parties_Devices/EbmpapstFan_2/EbmpapstFan_2.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1"></TocEntry>
+      <TocEntry
+        Title="EbmpapstFan_2 Demo"
+        Link="/Content/Official/4_Third_Parties_Devices/EbmpapstFan_2/EbmpapstFan_2_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="RosenbergFan"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="Rosenberg_Fans"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue"></TocEntry>
+      <TocEntry
+        Title="Rosenberg_Fans_Demo"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="ZiehlAbeggFan_2"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="ZiehlAbeggFan_2"
+        Link="/Content/Official/4_Third_Parties_Devices/ZiehlabeggFan_2/ZiehlabeggFan_2.htm"
+        StartSection="false"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="continue" />
+      <TocEntry
+        Title="ZiehlAbeggFan_2 Demo"
+        Link="/Content/Official/4_Third_Parties_Devices/ZiehlabeggFan_2/ZiehlAbeggFan_Demo_2.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        StartSection="false"
+        PageNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="KRIWAN_LIB">
+      <TocEntry
+        Title="Introductory guide"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/__Introduction.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT69"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/INT69.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT_69_LOG"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/INT69_LOG.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT69_UI"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/INT69_UI.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT69 and INT69_LOG structures list"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/_INT69_DataTypesList.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT280_OilLevelRegulator"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/INT280.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT280_LOG"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/INT280_LOG.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT280_UI"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/INT280_UI.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT280 and INT280_LOG structures list"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/_INT280_DataTypesList.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT600_Gateway"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/INT600.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT600_LOG"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/INT600_LOG.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="INT600_Gateway and INT600_LOG structures list"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/_INT600_DataTypesList.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Change Log"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/_Change_Log.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="KRIWAN_LIB Demo"
+        Link="/Content/Official/4_Third_Parties_Devices/KRIWAN_LIB/_KRIWAN_LIB_Demo.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

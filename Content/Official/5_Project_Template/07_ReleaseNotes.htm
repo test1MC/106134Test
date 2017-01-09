@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="3760" MadCap:lastWidth="1466" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta name="Originator" content="ImportDoc" />
+        <meta name="OriginalFile" content="Project_Template.doc" /><title></title>
+        <link rel="stylesheet" href="../../Resources/Stylesheets/styles.css" />
+        <style>/*<![CDATA[*/
+a:link
+{
+	color: #0000ff;
+}
+a:visited
+{
+	color: #0000ff;
+}
+
+/*]]>*/</style>
+        <link href="../../Resources/PageLayouts/CAREL.flpgl" rel="pagelayout" MadCap:pagelayoutType="temporary" />
+        <link href="../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="Project Template" />Release notes</h4>
+        <p class="descriptionshort">The following are notes concerning the released Project Template versions</p>
+        <p>&#160;</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 100%; margin-left: 0; margin-right: auto; mc-table-style: url('../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" style="width: 72px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 200px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows" MadCap:conditions="">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.3.5</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0<br />• VersionChk_2_1.0.0<br />• Blackout_3_1.0.0<br />• CheckRetainMem_1.2.0<br />• TZ_MNG_LIB_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b>Fixed</b>
+                        <br />• Fixed comment in "GeneralMng" POU about wipe retain operation (CAREL_Ref Ticket #139).<br />• In time zone management, fixed wrong Timezone "GMT -2" in "GMT +2" (value 28) (CAREL_Ref Ticket #448)<br /><br /><b>Changed</b><br />-<br /><br /><b>Deprecated</b><br />-<br /><br /><b>Enhanced</b><br />• Improved Time zone class in c.mask: added number of UTC zone for each city (CAREL_Ref Ticket #466)<br />• Added information about Core  type present on the target , in Loop "Information" of Quick menu, : since from November 2016, an upgraded Core will be introduced in c.pCO and c.pCO mini controllers, this information will be useful to identify the type of core and, therefore, the correct OS to load.<br /><br /><b>Documentation</b><br /><none>• Improved paragraph <MadCap:xref href="04_MenuMng.htm#Editing2">"Editing a menu"</MadCap:xref></none> (CAREL_Ref Ticket #141).</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows" MadCap:conditions="">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">1.3.3</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">• CAREL_BASIC_LIB_2.3.0<br />• VersionChk_2_1.0.0<br />• Blackout_3_1.0.0<br />• CheckRetainMem_1.2.0<br />• TZ_MNG_LIB_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b>Fixed</b>
+                        <br />- <br /><br /><b>Changed</b><br />• Changed application cycle time from 0 ms to a fixed cycle time of 500 ms: a fixed cycle time allows other OS tasks (like Protocols, mask, logger and so on) to have more time slot for their execution. (See "Cycle Timing" in <a href="http://csuitedocs.carel.com/carelhelp/HTML5/4.0/02_cstrategy/c.strategy_index.htm#gloss_ISa5.htm#gloss_isa5_1021134466_resource" title="c.strategy Glossary" alt="c.strategy Glossary">c.strategy Glossary</a>)<br /><br />500 ms is a typical application cycle time that doesn't compromise the correct functioning of the application. (CAREL_Ref Ticket #296)<br />To change or remove the fixed cycle time, set the two Resource properties "Cycle time" (for the time) and "Trigger Cycles" (for the enable).<br /><br /><b>Deprecated</b><br />-<br /><br /><b>Enhanced</b><br />• Added UoM management for UI and tERA/Web editor. For more information, see documentation at chapter <MadCap:xref href="03_Functions.htm#Unit">"Unit of Measure"</MadCap:xref>, page "Functions"(CAREL_Ref Ticket #404)<br /><br /><b>Documentation</b><br />• Added information about how to update the Project Template or add your own template in "Creating a new solution from Project Template" (CAREL_Ref Ticket #121)<br />• Added chapter "Unit of Measure" at page "Functions"</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows" MadCap:conditions="">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.3.2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0<br />• VersionChk_2_1.0.0<br />• Blackout_3_1.0.0<br />• CheckRetainMem_1.2.0<br />• TZ_MNG_LIB_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b>Fixed</b>
+                        <br />• Deleted "R_TRIG" before memory wipe operation (c.strategy, GeneralMng POU, region "Wipe memory management"): it was not necessary<br />• Loop "Initialization" <span style="font-family: 'Wingdings'">è</span> mask "Default": added reset for the variables that enable the memories wipe, before entering the mask; before, if you set TRUE and press ESC, the variables were not reset<br />• Changed "BoardTempMsk" data type from UDINT to DINT: in case of negative values the temperature wasn't correctly displayed (Carel_ref #261)<br /><br /><b>Changed</b><br />-<br /><br /><b>Deprecated</b><br />-<br /><br /><b>Enhanced</b><br />• Improved time zone management: with the new library "TZ_MNG_LIB" (that replaces the deprecated "TZMng" library), is possible to read the current time zone. 
+Added confirmation when changing the new time zone<br />• Improved manual wipe memories management: added a confirmation pop-up text before wipe the memory<br /><br /><b>Documentation</b><br /><none>-</none></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows" MadCap:conditions="">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows"><b>1.3.1</b>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">• CAREL_BASIC_LIB_2.3.0<br />• VersionChk_2_1.0.0<br />• Blackout_3_1.0.0<br />• CheckRetainMem_1.2.0<br />• TZMng_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b>Fixed</b>
+                        <br />• Fixed Blackout management jumped at start-up<br /><br /><b>Changed</b><br />-<br /><br /><b>Deprecated</b><br />-<br /><br /><b>Enhanced</b><br />-<br /><br /><b>Documentation</b><br /><none>-<br /></none></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows" MadCap:conditions="">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows"><b>1.3.0</b>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">• CAREL_BASIC_LIB_2.3.0<br />• VersionChk_2_1.0.0<br />• Blackout_3_1.0.0<br />• CheckRetainMem_1.2.0<br />• TZMng_1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b>Fixed</b>
+                        <br />• Fixed wrong class "TimeZoneUI_1" for time zone management<br />• Fixed wrong time  zone strings in "TZMng" function block<br />• Fixed alarm management regarding the single alarm reset. Before, when an alarm was reset, the alarm loop wasn't updated with the next active alarm: now it has been fixed. (CAREL_REF #212)<br />• Fixed mask problem after a Global alarm reset or after the reset of the last alarm: now, after the reset, it shows correctly the "No alarms" mask<br />• Adapted function "Lang_UP" with an automatic recognition of the number of languages set in the terminal: before the number of languages was fixed at 5 (CAREL_REF #196)<br />• Limited the alarm log index to 64 logs: before, the index was increased even if the last alarm was the 64th (OS limit) (CAREL_REF #221)<br />• Set "KeybOnOff" as retain variable (CAREL_REF #223)<br /><br /><b>Changed</b><br />-<br /><br /><b>Deprecated</b><br />-<br /><br /><b>Enhanced</b><br />• Implemented the wipe retain function by application. It is now possible to wipe retain and NVRAM from settings menu, and when the application version is different from the one in the target, an automatic retain memory wipe is done  (CAREL_REF #198)<br />• Improved the Alarm management: there was 2 different classes for the active alarms and logged alarms, regarding the sampled variables.
+	Now there are only 2 classes for both management (deleted classes LogVar1_Real, LogVar2_Real, NameLogVar1, NameLogVar2). (CAREL_REF_ #202)<br />• Improved the program cycle visualization. Now the program cycle time is the maximum between the "__SYSVA_TCYCURRENT" (current cycle time) and "__SYSVA_TCYCYCTIME" (programmed cycle time) (CAREL_REF #211)<br />• Created class "DummyManufUnitOff" to avoid to modify the manufacturer parameter if the unit is On. (CAREL_REF #143)<br />• Added regions in c.mask ST code<br /><br /><b>Documentation</b><br /><none>-<br /></none></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows" MadCap:conditions="">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows"><b>1.2.1</b>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">
+                        <p>• CAREL_BASIC_LIB_2.3.0</p>
+                        <p>• VersionChk_2_1.1.0</p>
+                        <p>• Blackout_3_1.0.0</p>
+                        <p>• CheckRetainMem_1.1.0</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows"><b>Fixed</b>
+                        <br />-<br /><br /><b>Changed</b><br />• Updated library to the new library management of c.suite 2.5.x<br /><br /><b>Deprecated</b><br />-<br /><br /><b>Enhanced</b><br />-<br /><br /><b>Documentation</b><br /><none>-<br /></none></td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows"><b>1.1.0</b>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">
+                        <p>• CAREL_BASIC_LIB_2.3.0</p>
+                        <p>• VersionChk_1.1.0</p>
+                        <p>• Blackout_2_1.1.1</p>
+                        <p>• CheckRetainMem_1.1.0</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows">
+                        <p class="NotesTitle">Fixed</p>
+                        <p>• Changed alarm name prefixes from "mAl" to "Al" (CAREL_Ref #66)<br />• Delete prefix "CL" from classes (CAREL_Ref #63)<br />• Fixed class pCO_Type in all languages (CAREL_Ref #44)<br />• Fixed CheckRetainMem parameters: "CheckT" set to 1 minute and "MaxWritingsNo" to 30<br />• Fixed PrgCycleMs format too small (CAREL_REF #168)<br />• Fixed Import and Export searching for different files (CAREL_REF #147)</p>
+                        <p class="NotesTitle">Changed</p>
+                        <p>• Split the variable "UnitOnOff" in "UnitOn" and "UnitOff" for more clarity(CAREL_Ref #45)<br />• Changed "DefInst" variable name to"DefDone", and "EndDefInst" to"EndDefMsk" (CAREL_Ref #38)<br />• Changed password management: now the passwords are saved as Retain with initial value in DEV editor (CAREL_Ref #92)<br />• Changed NOT function with "IsNegation" pin function in c.strategy (CAREL_Ref #64)<br />• Replaced Blackout with Blackout_2 (CAREL_REF #174)</p>
+                        <p class="NotesTitle">Deprecated</p>
+                        <p>• Blackout<br />• DaylightSavingTime</p>
+                        <p class="NotesTitle">Enhanced</p>
+                        <p class="p_1">• Added application jump during parameter import/export (CAREL_Ref #69)<br />• Added alarm log export management (CAREL_Ref #68)<br />• Added classes for StopBit and Parity in c.mask (CAREL_Ref #37)<br />• Added the possibility to enable/disable the alarm buzzer (CAREL_Ref # 52)<br />• Improved the alarm reset management in c.strategy<br />• Modified the "ResetSingleAlarm" c.mask ST function in alarm management. Now it will also set to TRUE the ResetAlarmPGD1 variable (CAREL_Ref # 52)<br />• Modified the "CheckActiveAlarm" c.mask ST function in alarm management, now it will try to reset (globally) alarms if pressed for more than 3s, also if there are no active alarms (CAREL_Ref # 52)<br />• Added STD_UOM_ZONE_UI variable to be compliant with new demo (CAREL_REF # 160)<br />• Added Password access notification after the login (CAREL_REF #141)<br />• Added Time  zone Management (CAREL_REF #67)<br />• Added NVRAM Program as first program to execute<br /></p>
+                        <p class="NotesTitle">Documentation</p>
+                        <p class="p_1">• Updated "Create a new solution" page<br />• Updated old images with new ones<br />• Added "Menu structure" under "Menu management" page</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-DarkerRows">
+                        <p><b>1.0.1</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-DarkerRows">
+                        <p>• CAREL_BASIC_LIB_1.2.0</p>
+                        <p>• VersionChk_1.0.0</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-DarkerRows">
+                        <p class="NotesTitle">Fixed</p>
+                        <p>• Fixed Carel Slave protocol name mismatch with protocol type (CAREL_Ref #3)<br />• Fixed wrong classes in HourIn and SecondIn variables (CAREL_Ref #7)<br />• Fixed wrong board type information for c.pCO target (CAREL_Ref #4)<br />• Added ":" after sampled alarm variable names (CAREL_Ref #20, 16)<br />• Set missing Retain variables in DST Function Block, now the configuration is saved (CAREL_Ref #5)<br />• Aligned texts on the right in the screens(CAREL_Ref #22)<br />• Added c.pCO mini in board type info (CAREL_Ref #17)<br />• Put DUMMY field in screens that was missing (CAREL_Ref #21)<br />• Deleted unused images from c.mask resources (CAREL_Ref #27)<br />• Fixed import/export operation with unit on. Now the unit has to be switched off before importing/exporting parameters(CAREL_Ref #24)<br />• Fixed uncorrect assignment to SYSVA_MANUAL_BUZZER_ON/OFF variables in c.mask (CAREL_Ref #15)<br />• Fixed OnOff management unit that had a multiplexer with inverted pin (CAREL_Ref #8)<br /></p>
+                        <p class="NotesTitle">Changed</p>
+                        <p>• Changed "Demo" and "Beta" VersioChk variables to"EnDemo" and "EnBeta" in order to avoid POU name conflict (in case of import) (CAREL_Ref #6)<br />• Changed some Function names that were equal to global variable names (CAREL_Ref #13)<br />• Changed the title of the "Alrms_Res" screen to "Alarms" instead of "Data logger" (CAREL_Ref #25)<br />• Changed the name of sampled alarm variables to"Example1", "Example2",... (CAREL_Ref #19)</p>
+                        <p class="NotesTitle">Deprecated</p>
+                        <p>-</p>
+                        <p class="NotesTitle">Enhanced</p>
+                        <p class="p_1">• Set "StartupJmp" Initial value to TRUE in order to avoid screenproblems at startup (CAREL_Ref #11)<br />• Put fieldtext on password management to show description of the password in order to avoid the use of additional classes (CAREL_Ref #23)<br />• Modified the Quick menu in order to make it generic and easily editable (CAREL_Ref #2)<br />• Added comments in c.mask ST code about which classes to edit when customising the menu (CAREL_ref #12)<br />• Added comment in code.ST about how to simulate Project Template in c.mask<br />• Added Retain memory write error alarm as default alarm</p>
+                        <p class="NotesTitle">Documentation</p>
+                        <none>-&#160;</none>
+                    </td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">
+                        <p class="p_1"><b>1.0.0</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-LightRows">
+                        <p>• CAREL_BASIC_LIB_1.1.1</p>
+                    </td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-LightRows">
+                        <p>• First official release, Project Template includes all typical application functions. <br />It is an excellent base for new software application development. </p>
+                        <p class="NotesTitle">Fixed</p>
+                        <p>-</p>
+                        <p class="NotesTitle">Changed</p>
+                        <p>-</p>
+                        <p class="NotesTitle">Deprecated</p>
+                        <p>-</p>
+                        <p class="NotesTitle">Enhanced</p>
+                        <p class="p_1">-</p>
+                        <p class="NotesTitle">Documentation</p>
+                        <p class="p_1">-</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <MadCap:conceptLink term="Project Template" />
+        </p>&#160;</body>
+</html>

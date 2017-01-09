@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="18872" MadCap:lastWidth="740" MadCap:ignoredWords="behaviour" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA" xml:lang="en-us">
+    <head>
+        <link href="../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/03_Input_Output.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/Standard_table.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/styles.css" rel="stylesheet" /><title>GuideLines applications</title>
+    </head>
+    <body>
+        <h4 style="page-break-before: always;">
+            <MadCap:annotation MadCap:createDate="2015-09-07T16:04:21.8925424+02:00" MadCap:creator="vittoriob" MadCap:initials="VB" MadCap:comment="Da implementare un Proxy TOC, per creare il sommario, invece che utilizzare Taghet specifico e opzione in Advance\r\nSee also http://www.madcapsoftware.com/blog/2015/11/18/guest-post-creating-print-toc-index-glossary-manually-within-madcap-flare/" MadCap:editor="vittoriob" MadCap:editDate="2015-12-09T14:14:26.1521246+01:00">Guidelines for application development</MadCap:annotation>
+        </h4>
+        <p>&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 27/07/2015 | Native revision 17/08/15</p>
+        <h5><a name="Introduc"></a>Introduction</h5>
+        <p>The purpose of this document is to provide guidelines to be followed during the development of an application in c.suite.</p>
+        <h6>Advantages of applying these Guidelines (G.L.)</h6>
+        <ul style="list-style-type: square;">
+            <li><b>ADVANTAGES for the SOFTWARE ENGINEER:</b>
+            </li>
+            <ul>
+                <li>
+                    <p>Less development and debug time: if all developers apply the G.L, it will be easier and faster for everybody to understand and modify the projects developed by others (and yourself).</p>
+                </li>
+                <li>
+                    <p>Fewer bugs: impossible to forget important requirements, or run into typical bugs (check BlockExecutionOrder, Probe alarm, too many write cycles in the ‘T’ or ‘P’ memory, events or conditions not detected because of Equals (=) instead of Greater Than or Equal to (≥), etc.)</p>
+                </li>
+            </ul>
+            <li><b>ADVANTAGES for the CUSTOMER:</b>
+            </li>
+            <ul>
+                <li>
+                    <p>A general higher SW quality and reliability ensured by compliance with rules/procedures.</p>
+                </li>
+                <li>
+                    <p>Less development time, reduced time to market.</p>
+                </li>
+                <li>
+                    <p>Same Look&amp;Feel: the system modules apply the G.L. If your project applies the G.L. then the project screen and the module screen will look the same.</p>
+                </li>
+            </ul>
+        </ul>
+        <p style="text-align: left;">
+            <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 58px;height: 58px;vertical-align: text-top;float: left;" />MANDATORY requirement. If these items are not satisfied, the software will have immediate or future failures or will not be compliant with “internationally recognised” standards. Other requirements are also MANDATORY, but only for standard projects or Function Blocks or templates.</p>
+        <p>
+        </p>
+        <p><b>Some points are not applicable</b> (e.g.: screen layout could be different because the customer has their own screen layout, or variable names could be in French because the application is a custom application developed on behalf of a French customer, etc.)</p>
+        <p><b>You can add your own G.L.</b> Discuss them with CAREL, we will evaluate whether to include them in our standard.</p>
+        <p>
+        </p>
+        <h5 style="page-break-before: always;"><a name="1."></a>1. General</h5>
+        <ol start="1" style="page-break-inside: auto;">
+            <li> <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Comply with the rules described in the Custom Software Development Process, in particular:<br /></li>
+            <ul>
+                <li>Application Code &amp; Version. Always increase the “version” number.</li>
+                <li>
+                    <p>Requirement Specification  (written)</p>
+                </li>
+                <li>System test</li>
+                <li>Backup <MadCap:conditionalText MadCap:conditions="CAREL_Hq.Reserved">(StorageTool)</MadCap:conditionalText></li>
+            </ul>
+            <li>Use “Project_Template” to start a new Carel application.<br />Use “Project_Template” or a Standard application to start a Custom application.</li>
+            <li>
+                <p> <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> When a custom application is a modification of a standard application, the application code (OSSTD*****) must be changed.</p>
+            </li>
+            <li>
+                <p>All the main variables (used on the screens, exchanged via protocols, log…) must have a description. That description will be used for the documentation and 2cf. If the application becomes standard, it is mandatory to use English.</p>
+                <p class="suggestion" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Yellow;&quot; class=&quot;mcFormatColor&quot;&gt;Tip &lt;/span&gt;&lt;/b&gt;">It is suggested to begin the alarm description with Al+”alarm code”+description. This helps a lot on the supervision side.</p>
+            </li>
+            <li> <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Complete solution info in c.strategy with a minimum set of information:<br /><br /><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000004.png" style="width: 250px;height: 250px;" /></li>
+            <li>Delete unused objects: Variables, Classes, Resources , Documents, project library, POUs, DataTypes</li>
+            <li> <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Do not use parts of programs developed for other customers, unless the functions is 'standard'.<MadCap:conditionalText MadCap:conditions="CAREL_Hq.Reserved"> See <a href="http://ksa.carel.com/group/carel-software-community/documents/-/document_library/view/227385?_20_redirect=http%3A%2F%2Fksa.carel.com%2Fgroup%2Fcarel-software-community%2Fdocuments%2F-%2Fdocument_library%2Fview%2F227080%3F_20_redirect%3Dhttp%253A%252F%252Fksa.carel.com%252Fgroup%252Fcarel-software-community%252Fdocuments%253Fp_p_id%253D20%2526p_p_lifecycle%253D0%2526p_p_state%253Dnormal%2526p_p_mode%253Dview%2526p_p_col_id%253Dcolumn-1%2526p_p_col_count%253D1%2526%2523p_20%26%23p_20&amp;#p_20">Ethics.ppt</a></MadCap:conditionalText></li>
+            <li>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="CAREL_Hq.Reserved">In any circumstances when referring to devices or functions, use the terms defined in "<a href="http://ksa.carel.com/group/carel-software-community/documents/-/document_library/view/378201?_20_redirect=http%3A%2F%2Fksa.carel.com%2Fgroup%2Fcarel-software-community%2Fdocuments%2F-%2Fdocument_library%2Fview%2F207288%3F_20_redirect%3Dhttp%253A%252F%252Fksa.carel.com%252Fgroup%252Fcarel-software-community%252Fdocuments%253Fp_p_id%253D20%2526p_p_lifecycle%253D0%2526p_p_state%253Dnormal%2526p_p_mode%253Dview%2526p_p_col_id%253Dcolumn-1%2526p_p_col_count%253D1%2526%2523p_20%26%23p_20&amp;#p_20">Glossary.pdf</a>"</MadCap:conditionalText>
+                    <MadCap:conditionalText MadCap:conditions="CAREL_Hq.Reserved"> (i.e. use 'pressure switch' instead of 'pressostat'). </MadCap:conditionalText>The variable name must follow the rules in "<a href="http://ksa.carel.com/group/1tool/documents?_20_folderId=112180&amp;_20_displayStyle=list&amp;_20_viewEntries=1&amp;_20_viewFolders=1&amp;_20_struts_action=%2Fdocument_library%2Fview&amp;_20_action=browseFolder&amp;_20_entryEnd=20&amp;_20_folderEnd=20&amp;_20_expandFolder=0&amp;_20_entryStart=0&amp;_20_folderStart=0&amp;p_p_id=20&amp;p_p_lifecycle=0"><a href="http://ksa.carel.com/group/c.suite/documents?p_p_auth=0CC3Ou3a&amp;p_p_id=20&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_20_struts_action=%2Fdocument_library%2Fview&amp;_20_folderId=1003095&amp;#p_20">Variable Standard Naming</a></a>". Mandatory for standard applications.</p>
+            </li>
+            <li>
+                <p>Avoid using local variables with the same name in different program POU for different purposes! This can reduce the readability of the code and make debugging more difficult.</p>
+            </li>
+            <li>
+                <p>Do not use a variable with the same name with a local scope and with a global scope. This makes debugging more difficult (the compiler gives priority to Local)</p>
+            </li>
+            <li>
+                <p>For performance reasons, the declaration of the FB instance must be a Local variable</p>
+            </li>
+            <li>
+                <p>If an array is used only one time, do not declare it in the Data Type node, in order to avoid to many different data types</p>
+            </li>
+            <li>
+                <p>Pay attention to all ‘needs’ of the device/function, even if not explicitly mentioned in the Requirement Specifications.</p>
+            </li>
+            <p>Example: if needing to manage the water flow switch on a chiller unit, it is necessary to know its purpose, how it works, the behaviour/requirements of items in the context (water flow, pump, …): only in this way can it be deduced that the alarm must be delayed at pump start-up because the water takes time to start to ‘move’. <br />The alarm also needs to be delayed at runtime because there could be air bubbles in the pipe. Before starting the compressors, pump needs to be started and the start-up delay must elapse, as if starting compressors without water flow, the water in the evaporator will freeze.</p>
+            <li>Pay attention to the REAL variable type; this is the easiest data type for formulas and calculations, but remember not all values can be represented.<br /><br />Representation example:<br /><br /><table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0"><col class="TableStyle-02_Custom-Column-Default" /><col class="TableStyle-02_Custom-Column-Default" /><tbody><tr class="TableStyle-02_Custom-Body-LightRows"><td class="TableStyle-02_Custom-BodyE-Default-LightRows">Decimal Representation </td><td class="TableStyle-02_Custom-BodyD-Default-LightRows"><b>10.0</b></td></tr><tr class="TableStyle-02_Custom-Body-DarkerRows"><td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Binary Representation</td><td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">01000001001000000000000000000000</td></tr><tr class="TableStyle-02_Custom-Body-LightRows"><td class="TableStyle-02_Custom-BodyE-Default-LightRows">Hexadecimal Representation</td><td class="TableStyle-02_Custom-BodyD-Default-LightRows">0x41200000</td></tr><tr class="TableStyle-02_Custom-Body-DarkerRows"><td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">After casting to double precision (REAL value)</td><td class="TableStyle-02_Custom-BodyA-Default-DarkerRows"><b>10.0</b></td></tr></tbody></table><p></p><table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0"><col class="TableStyle-02_Custom-Column-Default" /><col class="TableStyle-02_Custom-Column-Default" /><tbody><tr class="TableStyle-02_Custom-Body-LightRows"><td class="TableStyle-02_Custom-BodyE-Default-LightRows">Decimal Representation </td><td class="TableStyle-02_Custom-BodyD-Default-LightRows"><b>10.4</b></td></tr><tr class="TableStyle-02_Custom-Body-DarkerRows"><td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Binary Representation</td><td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">01000001001001100110011001100110</td></tr><tr class="TableStyle-02_Custom-Body-LightRows"><td class="TableStyle-02_Custom-BodyE-Default-LightRows">Hexadecimal Representation</td><td class="TableStyle-02_Custom-BodyD-Default-LightRows">0x412266666</td></tr><tr class="TableStyle-02_Custom-Body-DarkerRows"><td class="TableStyle-02_Custom-BodyB-Default-DarkerRows">After casting to double precision (REAL value)</td><td class="TableStyle-02_Custom-BodyA-Default-DarkerRows"><b>10.399999618530273</b></td></tr></tbody></table><br />            Consider the behaviour when needing to compare different real variables.<br /><br /><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000018.png" style="width: 589px;height: 112px;" /><br /></li>
+        </ol>
+        <p>
+        </p>
+        <h5 style="page-break-before: always;margin-bottom: 0;margin-top: 1.5em;"><a name="2."></a>2. Programming style in the FBD strategy page</h5>
+        <p>When developing an application, always remember that the application may be  modified or debugged by any other c.suite developer, and therefore it must be developed  in a simple and linear way, avoiding unnecessary complexity (think simple!)</p>
+        <ol style="page-break-inside: auto;">
+            <li>
+                <p>Add remarks wherever possible for the algorithms, in particular the more complex ones.</p>
+            </li>
+            <li>
+                <p><![CDATA[  ]]><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Don’t use control strategies that are ‘program cycle’ dependent, because when changing to different hardware this causes incompatibility errors due to differences in the execution speed of the controllers (example: a strategy that opens a valve by 2% every program cycle instead every  ‘x’ seconds)</p>
+            </li>
+            <li>
+                <p><![CDATA[  ]]><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Don't implement strategies using 'approximate' timings (e.g.: send alarm reset variable via pLAN for 5s). Use a “feedback” check.</p>
+            </li>
+            <li>
+                <p>
+                    <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> The output of the Time_Counter  block must be compared using the Greater Than or Equal to (≥) or Greater Than (&gt;) block.<br /><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000005.png" style="width: 579px;height: 182px;" /><br /></p>
+            </li>
+            <li>
+                <p>When needing to activate a digital signal based on a threshold and an analogue signal, remember to use an hysteresis, in order to avoid continuous activation/deactivation of the output. Another alternative could be use a filter by time (delay)<br /><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000015.png" style="width: 560px;height: 149px;" /><br /></p>
+            </li>
+            <li>
+                <p>Carefully check strategies (FBD blocks and ST code) writing to retain memory. They should not write too often.<br />Retain memory has a limited number of write cycles (about 1,000,000). Once this limit is reached, the memory may be damaged.<br />Project Template contains a block called "CheckRetainMem" that triggers an alarm when exceeding the memory write threshold, estimated for 10 years.<br /><br />Example: If a retain memory is overwritten every minute, after about 2 years the memory may be damaged.<br />If needing to write to permanent memory often, consider using the NVRAM memory.<br /></p>
+            </li>
+            <li>
+                <p>	Where possible, use blocks of Carel libraries (CAREL_BASIC_LIB, …).</p>
+            </li>
+            <li>
+                <p>	FB objects are very powerful and convenient because they allow easy reuse of large strategies, making mistakes impossible during COPY/PASTE (unlike a simple COPY/PASTE of a group of single Blocks/Variables/Constant/Connections) and making it unnecessary to test the copied strategy.<br />The disadvantage of huge FBs is that they reduce the readability of the code if the FB is not widely used.</p>
+                <p>For this reason, it is advisable to create a new Function Block only if:</p>
+                <ul>
+                    <li>
+                        <p>It will be used at least 2 times in the same or different project  and it is ‘wide’</p>
+                    </li>
+                    <li>
+                        <p>It will be used several times in the same or different project  and it is NOT ‘wide’</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><![CDATA[  ]]><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> When implementing calculations or formulas, pay attention to special conditions such as overflow, division by 0 and array out of bound.</p>
+            </li>
+            <li>
+                <p>	Enumerators must comply with “EnumeratorConventions.xls”  (i.e. 0=OFF, 1=ON, 1=Monday, 2=Tuesday, …).</p>
+            </li>
+            <li>
+                <p>
+                    <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" />  Each Analogue Input must be associated with a ‘probe fault alarm’. The alarm screen should show the probe channel and the probe description. i.e.: U1 Inlet temperature probe broken or not connected.</p>
+            </li>
+            <li>
+                <p>Broken probe alarm: should have a delay (recommended 10s) and automatic reset. <br />Disabling alarm special cases: </p>
+                <ul style="list-style-type: square;">
+                    <li>suction pressure probe, with the circuit off, can give false alarms due to outside temperature conditions (I.E: Max pressure range 17.5 bar and R410, outside temperature is more than 30°C)</li>
+                    <li>airflow probe, with the unit off, there is no airflow then if using a 0-1V probe there will be a false alarm.</li>
+                </ul>
+            </li>
+            <li>
+                <p>  Automatic return to the main menu must be included. Allow a delay time of 5 minutes unless otherwise requested (this function is already implemented in the Project Templates and Standard Applications).</p>
+            </li>
+            <li>
+                <p><![CDATA[  ]]><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> On PGD1 terminals the display backlight is activated together with the ESC/UP/DOWN/ENTER button LEDs: unless otherwise indicated, activate when pressing any button and deactivate automatically 5 minutes after the last button was pressed (LED number 24, see "SetLedStatus" statement in c.mask).<br />(This function is already implemented in the Project Templates and Standard Applications).</p>
+            </li>
+            <li>
+                <p>	Reset alarms from supervisory system: use a 5 second pulse<br /><img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000007.png" style="width: 416px;height: 139px;" /></p>
+            </li>
+            <li>
+                <p>The version of the application must be managed by C.STRATEGY and sent to the supervisor system.<br />It is recommended to use the VersionChk_1 module.</p>
+            </li>
+            <li>
+                <p>Add the “PrototypeMng” FB.  This is strongly recommended for all customers.<br />Function Block and Documents are in KSA.</p>
+            </li>
+        </ol>
+        <p>
+        </p>
+        <h5 style="page-break-before: always"><a name="3."></a>3. Layout of the object in the strategy page</h5>
+        <p>General target: the strategy must be <u>easy to read</u> and <u>understand</u></p>
+        <table style="width: 100%; margin-left: 0; margin-right: auto; mc-table-style: url('../../Resources/TableStyles/02_Custom.css'); mc-table-style-original: url('../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <thead>
+                <tr class="TableStyle-02_Custom-Head-Header2">
+                    <th class="TableStyle-02_Custom-HeadD-Default-Header2" style="background-color: #bed230;">WRONG example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="text-align: center;">
+                        <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000009.png" style="width: 713px;height: 262px;" />
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="background-color: #bed230;text-align: center;"><b style="color: #ffffff;">CORRECT example</b>
+                    </td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td class="TableStyle-02_Custom-BodyA-Default-LightRows" style="text-align: center;">
+                        <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000008.png" style="width: 722px;height: 268px;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+        </p>
+        <ol style="page-break-inside: auto;">
+            <li>
+                <p>BLOCKS, VARIABLES and TEXT must be aligned in columns.</p>
+            </li>
+            <li>
+                <p>The paths of the connections must be "clean", without unnecessary segments and unnecessary crossing connections</p>
+            </li>
+            <li>
+                <p>Use REGION to highlight strategies of different functions to improve understanding and readability.</p>
+            </li>
+            <li>
+                <p>Similar strategies must always be designed in the same way, otherwise they will appear to run different functions (example: High and Low temperature alarm, Heating and Cooling stages, Fan no.1 and Fan no.2, etc.)</p>
+            </li>
+            <li>
+                <p>The content of the page must be easy to read and understand. Avoid pages with too many blocks. One program POU should be created for each routine, or alternatively, if the function is complex, it can be divided into consecutive pages (also see the GENERAL chapter).</p>
+            </li>
+            <li>
+                <p>The variables written by two or more blocks must use only one (the same) VARIABLE object. This requirement increases readability, otherwise it is not so clear that the blocks write to the same variable.<br /></p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <thead>
+                        <tr class="TableStyle-02_Custom-Head-Header2">
+                            <th class="TableStyle-02_Custom-HeadE-Default-Header2" style="text-align: center;">WRONG example</th>
+                            <th class="TableStyle-02_Custom-HeadD-Default-Header2" style="text-align: center;">CORRECT example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="text-align: center;">
+                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_0300000A.PNG" title="" alt="" style="width: 283px;height: 219px;" />
+                            </td>
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="text-align: center;">
+                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_0300000B.PNG" style="width: 431px;height: 135px;" />
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows" colspan="2" style="text-align: center;background-color: #ffffff;">Figure 3.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <br />
+                    <br />
+                </p>
+            </li>
+            <li>
+                <p>Naming Defined Words &amp; Type defs. All have to be in upper case only; to separate the individual word use the underscore character.<br />Without this distinction it becomes difficult to determine if you are:</p>
+                <ul>
+                    <li>
+                        <p>Calling a macro or making a function call</p>
+                    </li>
+                    <li>
+                        <p>Using a constant or a variable</p>
+                    </li>
+                </ul>
+                <table style="mc-table-style: url('../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <thead>
+                        <tr class="TableStyle-02_Custom-Head-Header2">
+                            <th class="TableStyle-02_Custom-HeadE-Default-Header2">WRONG example</th>
+                            <th class="TableStyle-02_Custom-HeadD-Default-Header2">CORRECT example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyB-Default-LightRows" style="text-align: center;">singletwin_EVD</td>
+                            <td class="TableStyle-02_Custom-BodyA-Default-LightRows" style="text-align: center;">SINGLE_TWIN_EVD</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&#160;</p>
+            </li>
+        </ol>
+        <h5><a name="4."></a>4. Variable names</h5>
+        <ol>
+            <li>
+                <p>Variable names must comply with “VariableStandardNaming.xls” requirements.<br />See the file in KSA: <a href="http://ksa.carel.com/group/1tool/documents?_20_folderId=112180&amp;_20_displayStyle=list&amp;_20_viewEntries=1&amp;_20_viewFolders=1&amp;_20_struts_action=%2Fdocument_library%2Fview&amp;_20_action=browseFolder&amp;_20_entryEnd=20&amp;_20_folderEnd=20&amp;_20_expandFolder=0&amp;_20_entryStart=0&amp;_20_folderStart=0&amp;p_p_id=20&amp;p_p_lifecycle=0"><a href="http://ksa.carel.com/group/c.suite/documents?p_p_auth=0CC3Ou3a&amp;p_p_id=20&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_20_struts_action=%2Fdocument_library%2Fview&amp;_20_folderId=1003095&amp;#p_20">Variable Standard Naming</a></a></p>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <p>The max number of characters is 32 (due to the limit of web page variable name length)</p>
+            </li>
+            <li>
+                <p>The names must be ‘self-explanatory’ and in English</p>
+            </li>
+            <li>
+                <p>Use  compound names to indicate variable meanings: e.g. "WInCondTemp" (temperature of water at condenser inlet)</p>
+            </li>
+            <li>
+                <p>Compound names should be "function-centric", so as to locate the most important function where the variable is assigned a value or used</p>
+            </li>
+            <li>
+                <p>Always choose the most understandable composition, respecting  the proposed sequence where possible.</p>
+            </li>
+            <li>
+                <p>The last row item has to be used whenever there are two variables that, having the same meaning - same name, differ as regards the unit of measure (e.g. CompSpeed_rps and CompSpeed_rpm).</p>
+            </li>
+            <li>
+                <p>Present vocabulary can grow as needed, but each improvement needs to be shared.</p>
+            </li>
+            <li>
+                <p>The abbreviation of every word has the first letter in capitals</p>
+            </li>
+            <li>
+                <p>For variables regarding the pCO* inputs/outputs, avoid using the same names as the inputs, e.g. B1, B2 etc. Always assign names that are coherent with the function of the input/output (e.g. Inlet_Temp, Outlet_Temp).</p>
+            </li>
+            <li>
+                <p>One exception can be applications that feature different I/O configurations (multi-platform).</p>
+            </li>
+            <li>
+                <p>When names are abbreviated, maintain the plural.<br />e.g.: Correct: En_Compressors should become En_Comps, Wrong: En_Comp.</p>
+            </li>
+        </ul>
+        <h5><a name="5."></a>5. Block execution order</h5>
+        <ol>
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Pay careful attention to the “Block execution order”. This must follow the process flow: failure to observe the correct order means creating delays of a number of program cycles in the results.<br /><br />The execution order of a program POU works from <b>left to right</b> and from <b>top to bottom</b>. See the example:<br /><br /></li>
+            <table style="margin-left: 0;margin-right: auto;">
+                <col />
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">
+                            <img src="../../Resources/Images/7_Guidelines/Application/GU_App_0300000C.png" style="width: 577px;height: 537px;" />
+                            <br />Figure 5.1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Avoid using the "Manual execution order". Only use it in extreme cases and add remarks to warn the user.</li>
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Pay attention when using timer blocks (e.g. PT, TOn, …) inside a JUMP that could skip execution when the count is running.</li>
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> At power on jump all the functions that must have consistent data with the inputs. Typically:<br /><ul><li><p>Digital and Analogue outputs (local and to serial line)</p></li><li><p>Alarms</p></li><li><p>PID loop</p></li></ul><p>Device function blocks (cpCOe, EVD_EVO, ... ) have to be executed during the start-up phase, due to device initialisation and variable acquisition.</p><p class="warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Red;&quot; class=&quot;mcFormatColor&quot;&gt;Warning &lt;/span&gt;&lt;/b&gt;">All functions using inputs coming from networks (BMS, Fieldbus, …) must be disabled until the data becomes reliable.</p></li>
+        </ol>
+        <p>
+        </p>
+        <h5 style="page-break-before: always"><a name="6."></a>6. Program POUs</h5>
+        <ol style="page-break-inside: auto;">
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> The program sequence must follow the ideal sequence of logical functions in a typical HVACR application program.
+
+			<p>Using this defined structure allows the programmer to follow the process flow inside an HVACR unit: each moment of every process is easy identifiable and locatable, making it easier to build the application and to share it with other people.</p><p>The structure refers to the strategy program POU sequence: sheets can be omitted or added as needed, respecting the functional structure shown.</p><p>This method can be easy extended to other types of application program.<br /></p><p>Here are the main items referring to a chiller unit:<br /></p></li>
+            <table style="mc-table-style: url('../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+                <col class="TableStyle-02_Custom-Column-Default" style="width: 47px;" />
+                <col class="TableStyle-02_Custom-Column-Default" />
+                <col class="TableStyle-02_Custom-Column-Default" />
+                <tbody>
+                    <tr class="TableStyle-02_Custom-Body-LightRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-LightRows" rowspan="12" style="text-align: center;background-color: #ffffff;">
+                            <img src="../../Resources/Images/7_Guidelines/Application/GU_App_3.png" style="width: 34px;height: 381px;" />
+                        </td>
+                        <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">General management</td>
+                        <td class="TableStyle-02_Custom-BodyD-Default-LightRows" rowspan="12" style="background-color: #ffffff;"><b>Example:</b>
+                            <br />
+                            <img src="../../Resources/Images/7_Guidelines/Application/GU_App_0300000D.png" style="width: 217px;height: 397px;" />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">
+							Input
+						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-LightRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">Alarm Management</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">
+							Scheduler /On-Off Unit Management
+
+						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-LightRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">Unit Start-up
+						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">Main functions: Main control						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-LightRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">Main functions: Dependent control						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">Capacity management: (Device Rotation)
+						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-LightRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">Capacity management: (Compressor mngt.)
+						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">Capacity management: Other device mngt.
+						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-LightRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-LightRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">Output
+						</td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                        <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" style="background-color: #109c00;color: #ffffff;font-weight: bold;text-align: center;">
+                            <p>Other management</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-02_Custom-Body-LightRows">
+                        <td class="TableStyle-02_Custom-BodyA-Default-LightRows" colspan="3" style="background-color: #ffffff;text-align: center;">Figure 6.1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <li>The program POU names must be ‘self-explanatory’ and in English. </li>
+        </ol>
+        <p>&#160;</p>
+        <h5 style="page-break-before: always"><a name="7."></a>7. Programming style in the user interface</h5>
+        <ol style="page-break-inside: auto">
+            <li>
+                <p style="text-align: left;">
+                    <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> All applications must have an ‘information’ screen including: application code/version/date, BOOT and OS version/date. Use the standard screen proposed by CAREL:</p>
+                <p style="text-align: left;">
+                    <br />
+                </p>
+                <table style="margin-left: 0;margin-right: auto;">
+                    <col />
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">
+                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_0300000E.png" style="width: 242px;height: 120px;" />
+                                <br />Figure 7.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>The first line of the screen is a ‘title’ in ‘negative’ style (white text on black background) (pGD1)<br />The text starts from column “1” (range is 0-21 for pGD1)<br /></p>
+                <table style="mc-table-style: url('../../Resources/TableStyles/Standard_table.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/Standard_table.css');" class="TableStyle-Standard" cellspacing="0">
+                    <col class="TableStyle-Standard-Column-Regular" />
+                    <col class="TableStyle-Standard-Column-Regular" style="width: 221px;" />
+                    <col class="TableStyle-Standard-Column-Regular" />
+                    <tbody>
+                        <tr class="TableStyle-Standard-Body-Row1">
+                            <td style="text-align: center;font-weight: bold;background-color: #bed230;" class="TableStyle-Standard-BodyE-Regular-Row1">CORRECT example</td>
+                            <td colspan="2" style="text-align: center;font-weight: bold;background-color: #bed230;" class="TableStyle-Standard-BodyD-Regular-Row1">WRONG&#160;examples</td>
+                        </tr>
+                        <tr class="TableStyle-Standard-Body-Row1">
+                            <td class="TableStyle-Standard-BodyE-Regular-Row1" style="text-align: center;">
+                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_0300000E.png" style="width: 205px;height: 102px;" />
+                            </td>
+                            <td class="TableStyle-Standard-BodyE-Regular-Row1" style="text-align: center;">
+                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_0300000F.png" style="width: 208px;height: 103px;" />
+                                <br />Title starts from col.0 instead of 1</td>
+                            <td class="TableStyle-Standard-BodyD-Regular-Row1" style="text-align: center;">
+                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000010.png" style="width: 206px;height: 103px;" />
+                                <br />Title is not ‘negative’</td>
+                        </tr>
+                        <tr class="TableStyle-Standard-Body-Row1">
+                            <td class="TableStyle-Standard-BodyA-Regular-Row1" style="text-align: center;background-color: #ffffff;" colspan="3">Figure 7.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>The name of the screen must be in English and must describe the content:<br />e.g.: “Reg_Probe”, “Set_Scheduler”</p>
+            </li>
+            <li>
+                <p> Proper structure of a screen:</p>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+                    <col class="TableStyle-02_Custom-Column-Default" />
+                    <thead>
+                        <tr class="TableStyle-02_Custom-Head-Header2">
+                            <th class="TableStyle-02_Custom-HeadD-Default-Header2" style="padding: 0px;">
+                                <table style="width: 100%;">
+                                    <col />
+                                    <col />
+                                    <tbody>
+                                        <tr>
+                                            <td>CORRECT example</td>
+                                            <td>WRONG&#160;examples</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="padding: 0px;">
+                                <table style="width: 100%;">
+                                    <col />
+                                    <col />
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: center;">
+                                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000011.png" style="width: 279px;height: 135px;" />
+                                            </td>
+                                            <td style="text-align: center;">
+                                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000013.png" style="width: 312px;height: 134px;" />
+                                                <br />Figure 7.9</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-style: normal;">The TEXT must be aligned to the LEFT (see Figure 7.9 - 1)</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-style: normal;">When abbreviating words, do not leave spaces between the dot “.” and the start of the next word. 
+Correct example: “Room.temp.“, Wrong example: “Room. temp. “(see Figure 7.9 – 2 )
+</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-style: normal;">The abbreviations must be easy to read. Avoid poor abbreviations like: “temperature”<span style="font-family: 'Wingdings'">è</span>“tmp” or “pressure”<span style="font-family: 'Wingdings'">è</span>“prs” (see Figure 7.9 – 3)
+<br />Words must be abbreviated with care. Truncate a word only if it is really necessary, because truncated words are harder to understand or read.
+</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-style: normal;">There must not be any ‘strange’ punctuation marks at the end of the parameter description, such as arrows “Room.temp.--&gt;21.0°C” or dots “Room.temp......21.0°C”. (see Figure 7.9 - 4)</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-style: normal;">The FIELD text must be aligned to the RIGHT, without spaces. (see Figure 7.9 - 6)</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-style: normal;">There must not be spaces between the unit of measureand the fields. (see Figure 7.9 – 7 )</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-style: normal;">The first letter, and only the first, of the parameter description must be in upper case. (see Figure 7.9 - 8)</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-style: normal;">
+                                <ul style="list-style-type: square;">
+                                    <li style="font-style: normal;"> The texts used in the “Classes” properties for OUTPUT fields must be as follows: <br />the first letter in upper case and the other letters in lower case. (e.g.: “Monday;Tuesday, …”)
+</li>
+                                    <li style="font-style: normal;"> The texts used in the “Classes” properties for INPUT/OUTPUT fields must be as follows:
+<br />all upper case. (e.g.: “MONDAY;TUESDAY, …”)
+</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-style: normal;">
+                                <p>
+                                    <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> The unit of measure must be written as defined in the standards and according to rules listed in the table below.
+<br />The most widely-used units of measure are:
+ <i style="font-weight: bold;">°C, °F, K, bar, barg, psi, psig, kPa, s, min, h, N, m, J, kg, lb</i>. (see Figure 7.9 - 5). 
+<br />If needing to use a unit of measure not listed above and in doubt about how to write it, search the internet. <br /></p>
+                                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/03_Input_Output.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0">
+                                    <col class="TableStyle-03_Input_Output-Column-Variable" />
+                                    <col class="TableStyle-03_Input_Output-Column-Type" style="width: 166px;" />
+                                    <col class="TableStyle-03_Input_Output-Column-UM" style="width: 145px;" />
+                                    <thead>
+                                        <tr class="TableStyle-03_Input_Output-Head-Header1">
+                                            <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Description</th>
+                                            <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">CORRECT <br />example</th>
+                                            <th class="TableStyle-03_Input_Output-HeadD-UM-Header1">WRONG<br />example</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                                            <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows" style="font-style: normal;">The name of the UOM must be written in lowercase, without ‘accent’ symbols or any other graphical sign. </td>
+                                            <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows" style="text-align: center;">‘bar’</td>
+                                            <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows" style="text-align: center;">‘Bar’</td>
+                                        </tr>
+                                        <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                                            <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" style="font-style: normal;background-color: #d3d3d3;">The name of the UOM must be written singular</td>
+                                            <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows" style="background-color: #d3d3d3;text-align: center;">‘3.0bar’</td>
+                                            <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows" style="background-color: #d3d3d3;text-align: center;">‘3.0bars’</td>
+                                        </tr>
+                                        <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                                            <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows" style="font-style: normal;">The symbol of UOM must not be followed by the ‘dot’ character</td>
+                                            <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows" style="text-align: center;">‘s’</td>
+                                            <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows" style="text-align: center;">‘s.’</td>
+                                        </tr>
+                                        <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                                            <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows" style="font-style: normal;background-color: #d3d3d3;">The symbol of UOM must always follow the numeric values.  (see Figure 7.2)</td>
+                                            <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows" style="background-color: #d3d3d3;text-align: center;">‘1.5bar’</td>
+                                            <td class="TableStyle-03_Input_Output-BodyD-UM-DarkerRows" style="background-color: #d3d3d3;text-align: center;">‘bar 1.5’</td>
+                                        </tr>
+                                        <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                                            <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows" style="font-style: normal;background-color: #edf0f1;">The product of two or more UOMs must be indicated by the ‘.’ character at half height or by a space between symbols</td>
+                                            <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows" style="background-color: #edf0f1;text-align: center;">‘N•m’ or ‘N m’</td>
+                                            <td class="TableStyle-03_Input_Output-BodyD-UM-LightRows" style="background-color: #edf0f1;text-align: center;">‘Nxm’ or ‘Nm’</td>
+                                        </tr>
+                                        <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                                            <td class="TableStyle-03_Input_Output-BodyB-Variable-DarkerRows" style="font-style: normal;background-color: #d3d3d3;">The quotient of two UOMs must be indicated by the ‘/’ character or by the negative exponent</td>
+                                            <td class="TableStyle-03_Input_Output-BodyB-Type-DarkerRows" style="background-color: #d3d3d3;text-align: center;">‘J/s’ or ‘J s-1’</td>
+                                            <td class="TableStyle-03_Input_Output-BodyA-UM-DarkerRows" style="background-color: #d3d3d3;text-align: center;">‘J\s’ or ‘J:s’</td>
+                                        </tr>
+                                    </tbody>
+                                </table><![CDATA[
+]]></td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-LightRows" style="font-style: normal;">
+                                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> INPUT/OUTPUT fields must have proper limits and format (dimensions and signs)</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                            <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" style="font-style: normal;">	Each Analogue/Digital Input/Output must have a value/status on the “Inputs and Outputs” screens</td>
+                        </tr>
+                        <tr class="TableStyle-02_Custom-Body-LightRows">
+                            <td class="TableStyle-02_Custom-BodyA-Default-LightRows" style="font-style: normal;">Recommended font is "CAREL_TERM_INT"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h5 style="page-break-before: always">8. Unit of measure management</h5>
+        <p>Concept:</p>
+        <ul>
+            <li>
+                <p>Developers work with their natural mindset in c.strategy</p>
+            </li>
+            <li>
+                <p>Where needed, variables are tagged with their UoM</p>
+            </li>
+            <li>
+                <p>c.mask / c.design allows automatic conversions</p>
+            </li>
+        </ul>
+        <p style="text-align: left;">
+            <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000014.png" style="width: 712px; height: 254px;" class="SeventyFivePercent" />
+        </p>
+        <ol>
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> All the variables used outside of c.strategy must contain the correct unit of measure property (variables in c.mask, protocol, I/O, etc..)<br /></li>
+            <li>
+                <p>
+                    <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> In c.strategy all values must be expressed in the same unit of measure.</p>
+                <p class="note" MadCap:conditions="CAREL_Hq.Reserved" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">
+                    <MadCap:annotation MadCap:createDate="2015-08-28T10:23:57.6235193+02:00" MadCap:creator="Gianluca.Carraro" MadCap:initials="GC" MadCap:comment="Condizione per KSA (Clienti e Filiali)\r\nDopo conversazione con Loris abbiamo deciso di tenere la nota solo interna" MadCap:editor="Gianluca.Carraro" MadCap:editDate="2015-08-28T10:24:47.0964661+02:00"> Standard applications and libraries must be developed in International System units</MadCap:annotation>
+                </p>
+            </li>
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> The values that express temperature 'differential' should be expressed in DeltaDegreesKelvin</li>
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> All the fields on the screen for temperature/pressure must have the format that can show the maximum value:<br />For temperature values: °F<br />For Pressure values: psi</li>
+            <li>
+                <img src="../../Resources/Images/7_Guidelines/Application/GU_App_03000001.png" style="width: 14px;height: 14px;" /> Every variable used on the screen must show the unit of measure beside it. This is possible using a global retain variable STD_UOM_ZONE_UI with the right UoM class.</li>
+        </ol>
+        <p>&#160;</p>
+        <h5 style="page-break-before: avoid;"><a name="9."></a>9. Programming style in "ST": naming convention</h5>
+        <p><b>Root Causes and Effects</b>
+        </p>
+        <p>The ST programming language has some very powerful features, which can be misused to make programs hard to understand, and do things that are widely recognised as bad software engineering. Any process put into place must minimise the likelihood that this will occur.</p>
+        <ol>
+            <li>
+                <p>The variable names must follow the rules defined in "<a href="http://ksa.carel.com/group/1tool/documents?_20_folderId=112180&amp;_20_displayStyle=list&amp;_20_viewEntries=1&amp;_20_viewFolders=1&amp;_20_struts_action=%2Fdocument_library%2Fview&amp;_20_action=browseFolder&amp;_20_entryEnd=20&amp;_20_folderEnd=20&amp;_20_expandFolder=0&amp;_20_entryStart=0&amp;_20_folderStart=0&amp;p_p_id=20&amp;p_p_lifecycle=0"><a href="http://ksa.carel.com/group/c.suite/documents?p_p_auth=0CC3Ou3a&amp;p_p_id=20&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_20_struts_action=%2Fdocument_library%2Fview&amp;_20_folderId=1003095&amp;#p_20">Variable Standard Naming</a></a>"</p>
+            </li>
+            <li>
+                <p>Naming Functions: Function names should consist of a VERB-NOUN pair that when combined provide some meaningful information about what the function does.<br />The name must be Pascal case.<br /><br />The name of the a function to import/export some parameters could be:<br />Correct Example: "ImpExpParam"<br />Wrong Example: "ParamMng"</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h5 style="page-break-before: always"><a name="10."></a>10. Programming style in "ST": indentation</h5>
+        <p>The purpose of indentation is to give the programmer an accurate picture of the control flow of a function at a glance.<br />A programmer should not have to struggle or rely on comments to find the beginning and end of a block.<br />Tabs should be used as indentation characters.<br />The use of spaces, while offering some benefits, is subject to errors when blocks are nested two or three levels deep. Spaces are also tedious to type.<br />A tab stop of four is a good trade-off between adequate white space and code density.<br />Programmers should attempt to limit line length to 80 characters.<br />If indentation of control structures is such that space is running out, then this is probably an indication of a lack of sufficient functional decomposition.</p>
+        <p>Indentation of Basic Flow Control Statements (<b>IF / FOR / WHILE / DO WHILE</b>)</p>
+        <ol style="page-break-inside: auto">
+            <li>
+                <p><b>IF Statement</b>
+                </p><pre xml:space="preserve">
+		IF  Mode = DEFROST THEN
+		   (* Do something *)
+		ELSE 
+		   (* Do something else *)
+		END_IF;</pre>
+                <p>The compound “IF” statement has been the subject of much controversy. The  suggested method for indenting compound “IF” statements is:</p><pre xml:space="preserve">
+		IF FlowRate &lt; MaxFlow THEN 
+		   (* do normal *)
+		   Regulation := NORMAL;
+		ELSIF FlowRate &gt; MaxFlow + 100 THEN
+		   (* do something *)
+		   Regulation := VERY_FAST;
+		ELSIF FlowRate &gt; MaxFlow + 200 THEN
+		   (* do something *)
+		   Regulation := STOP;
+		ELSE
+		   (* do last thing *)
+		   Regulation := FAST; 
+		END_IF;</pre>
+                <p>This indentation style shows all of the do_xxxx functions at the same indentation level. With every other example of indentation, this implies that they are not dependent on each other. This is clearly not the case, as demonstrated by the reformatted version below:</p><pre xml:space="preserve">
+		IF FlowRate &lt; MaxFlow THEN 
+		   (* do normal *)
+		   Regulation := NORMAL;
+		ELSE
+		   IF FlowRate &gt; MaxFlow + 100 THEN
+		      (* do something *)
+		      Regulation := VERY_FAST;
+		   ELSE
+		      IF FlowRate &gt; MaxFlow + 200 THEN
+		         (* do something *)
+		         Regulation := STOP;
+		      ELSE
+		         (* do last thing *) 
+		         Regulation := FAST; 
+		      END_IF; 
+		   END_IF;
+		END_IF;
+		</pre>
+            </li>
+            <li>
+                <p><b>FOR Statement</b>
+                    <br />All “FOR” loops should resemble the following:</p><pre xml:space="preserve">
+		FOR Index := 0 TO 100 BY 2 DO 
+			Channel[index]:= ON;
+		END_FOR;</pre>
+                <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">Index must be DINT type</p>
+            </li>
+            <li><b>WHILE Statement</b><![CDATA[
+]]><br />“WHILE” loops should not be filled with extraneous statements, except for “priming read” type assignments. The basic content of the “FOR” loop should be a logical compare:&gt;
+		<pre xml:space="preserve">
+		WHILE Move &lt; MAXLENGTH DO
+		   ChangePosition(Move); 
+		   Move := Move + NewStep;
+		END_WHILE</pre><p>When complex looping conditions are required, parenthesis should be used to signal the programmer's intent:
+				</p><pre xml:space="preserve">
+		WHILE ((Value_A &lt;&gt; Value_B) AND ((Value_C = Value_D)) DO
+		   DoSomething();
+		END_WHILE;
+</pre><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">the WHILE statement always gives a warning message after compiling</p></li>
+            <li>
+                <p><b>CASE Statement</b>
+                    <br />The first rule of switch statements is brevity. Switch statements that go on for page after page with individual cases that span pages is a sure sign that the function needs further decomposition.<br />While there is no effective way to limit the number of cases in a switch, the number of statements in each case should be limited to seven lines or less, counting the break and a blank line after the break. In other words, if the function of the case cannot be handled in five lines, the case should probably be a function.</p>
+                <p>The following is an example of a correctly coded switch statement:</p><pre xml:space="preserve">
+		CASE Action OF
+		   1:(* fill tank*)
+		     OpenInValve := ON;
+		     Pump := ON;
+
+		   2:(* empty tank*)
+		     OpenInValve:= ON;
+		     Pump := ON;  
+		END_CASE;</pre>
+            </li>
+        </ol>
+        <p xml:space="preserve">&#160;</p>
+        <h5><a name="11."></a>11. Programming style in "ST": other</h5>
+        <ol>
+            <li>
+                <p><b>WHILE/REPEAT vs FOR statement</b>
+                    <br />It is recommended
+to use a FOR statement instead of WHILE and REPEAT with the aid of the EXIT statement. This avoids watchdogs, because if the condition is not achieved, the loop finish after "n" cycles.</p>
+            </li>
+            <li>
+                <p><b>Parenthesis<br /></b>The ST language provides the programmer a rich set of operators. It also burdens programmers with the task of remembering all the precedence rules. <br /><br />Consider the following:</p><pre>		result := myvalue / value1  * value2;</pre>
+                <p>Which operator is performed first? Better yet, which operator did the programmer intend to be performed first?</p>
+                <p>The answer to the first question is easily determined by finding that binary operator precedence chart in the IEC1131-3 specification</p>
+                <p>The second question is harder to determine without asking the programmer who wrote the code, or completely reverse engineering the function that this line appears in, to fully understand the task that it is trying to accomplish.</p>
+                <p>These rules also apply to Boolean operations such as:</p><pre xml:space="preserve">
+		WHILE ((Value_A OR Value_B) AND ((Value_C OR Value_D)) DO
+		   (* do something *)
+		END_WHILE
+</pre>
+            </li>
+            <li>Every function/function block must have a header with the description:<br /><br /><i>(*&#160; ---------------------------------------------------------------------</i><br style="font-style: italic;" /><i>Description:</i><br style="font-style: italic;" /><i>a general description of the F/FB behavior</i><br style="font-style: italic;" /><i>the main output of the F/FB</i><br style="font-style: italic;" /><i>&#160;&#160;&#160; --------------------------------------------------------------------- *)<br /><p class="note" style="font-style: normal;" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">See "GuideLines_F_FB_Development" in <a href="http://ksa.carel.com/group/c.suite/documents?p_p_auth=0CC3Ou3a&amp;p_p_id=20&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_20_struts_action=%2Fdocument_library%2Fview&amp;_20_folderId=1003095&amp;#p_20">KSA</a></p><br /></i></li>
+            <li><b>Comments</b>
+                <br />Comments are a great tool. Unfortunately, they are often used to compensate for bad programming practices that otherwise would be unacceptable. Comments should be reserved to explain the programmer’s intent, and not to make poorly-written code easier to understand.<br />Comments should convey useful information about the program and not attempt to teach ST to the programmer reading the code. The following are examples of comments that are essentially a waste of keystrokes.
+				<pre xml:space="preserve">
+		x := x * x; (* Square x *)
+		y := y - 5; (* subtract 5 from y *)</pre><p>
+	These comments explain the mechanism of what is being done, and not the intent.<br />Put another way, they explain the “how” and not the “why”.<br />The following example shows the proper use of comments:</p><pre xml:space="preserve">
+		(* Find the first active probe after a failure *)
+		Find :=0;
+		WHILE ((ActiveProbe  MAXPROBE) AND (Find  1)) DO  
+		   IF ProbeList[ActiveProbe] = ON THEN
+		      Find := 1;
+		   ELSE
+		      ActiveProbe := ActiveProbe + 1;
+		   END_IF;   
+		END_WHILE;
+</pre></li>
+            <li>
+                <p>In medium/high complexity strategies written in ST, implement the error management described in the “Error_Management*.txt” file</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h5><a name="12."></a>12. c.design</h5>
+        <ol>
+            <li>
+                <p><b>Protocol</b>
+                    <br />Each application needs to have a Modbus BMS protocol implemented. All variables are 16 bit (size=1) to allow communication with most BMS systems. <br />Exceptions are: consumption counter, energy counter and other special values. <br />As a suggestion of which variables toexport in a protocol: I/O, Command (on/off, alarm reset, reset alarm logger, ..), unit status, SW info, Service settings/info , Set points.</p>
+            </li>
+            <li>
+                <p><b>tERA / Web</b> <br />All of the most important variables must have the protocol flag and R/W properties in the tERA/WEB area. The selection of the variables could be the same as the protocol selection or a subset.</p>
+            </li>
+            <li>
+                <p><b>Log</b>
+                    <br />The configuration must have a ready LOG , store the main I/Os, set point, unit status. The log should be kept for at least 10 days. This boosts upload of the log inside the c.pCO and will be helpful to analyse the unit.</p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+        <h5><a name="13"></a>13 Release notes</h5>
+        <p>Following are notes on this document released versions:</p>
+        <table class="TableStyle-04_Release_Notes" style="mc-table-style: url('../../Resources/TableStyles/04_Release_Notes.css'); width: 80%; margin-left: 0; margin-right: auto; " cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Dependecies-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-LightRows">1.0.0</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Dependecies-LightRows">• First official release</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h5 style="page-break-before: always" MadCap:conditions="Hidden.Hidden_Status"><a name="11_Revision"></a>Internal revisions</h5>
+        <table style="mc-table-style: url('../../Resources/TableStyles/02_Custom.css');mc-table-style-original: url('../../Resources/TableStyles/02_Custom.css');margin-left: 0;margin-right: auto;" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tr class="TableStyle-02_Custom-Body-LightRows" MadCap:conditions="Hidden.Hidden_Status">
+                <td class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">
+                    <p>Revision</p>
+                </td>
+                <td class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">
+                    <p>Date</p>
+                </td>
+                <td class="TableStyle-02_Custom-BodyE-Default-LightRows" MadCap:conditions="">
+                    <p>Author</p>
+                </td>
+                <td class="TableStyle-02_Custom-BodyD-Default-LightRows" MadCap:conditions="">
+                    <p>Notes</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-02_Custom-Body-DarkerRows" MadCap:conditions="Hidden.Hidden_Status">
+                <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">
+                    <p>1.0</p>
+                </td>
+                <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">
+                    <p>17/08/15</p>
+                </td>
+                <td class="TableStyle-02_Custom-BodyE-Default-DarkerRows" MadCap:conditions="">
+                    <p>Simone Armano - Gianluca Carraro</p>
+                </td>
+                <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows" MadCap:conditions="">
+                    <p>First official release</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

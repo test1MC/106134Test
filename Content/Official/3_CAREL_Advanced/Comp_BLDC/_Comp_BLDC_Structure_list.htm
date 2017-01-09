@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="7081" MadCap:lastWidth="1558" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/03_Input_Output.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:concept term="Comp_BLDC_PowerPlus" /><a name="top"></a>Comp_BLDC structure list </h4>
+        <p class="descriptionshort">Complete structure list of Comp_BLDC block.</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">&#160;</p>
+        <p MadCap:conditions="CAREL_Hq.Reserved">Last update 06/10/2015 | Native revision - 09/02/16</p>
+        <p>&#160;</p>
+        <h6>BLDC_MiscMng_Struct</h6>
+        <p>Miscellaneous management parameters:</p>
+        <table style="width: 80%; mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" style="width: 20px;" />
+            <col class="TableStyle-03_Input_Output-Column-Description" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Data type</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UOM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Mng_CompTyp
+    
+    
+    
+    
+    
+    
+    
+    
+					</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor model
+
+
+
+
+
+
+
+				</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Mng_CompTypPrev</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor model (previous value)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Mng_ReservedFnMHI_MOP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Function reserved for MHI (MOP mng)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Mng_PwrpMotTyp</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Power+ compressor model 
+				</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Mng_PwrpAddr</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">UDINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">PowerPlus address</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Mng_ModbusTimeout
+				</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UDINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">s</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Modbus communication timeout</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Mng_ModbusCmdDelay
+		</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">UDINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">ms</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Modbus command delay</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Time_MinOnT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor min on time</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Time_MinOffT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor min off time</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Time_MinOnOnSameT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UINT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor min on-on time</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows">Time_ResSafT</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Description-LightRows">Compressor timing reset</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>BLDC_CfgEnvCtrl_Struct</h6>
+        <p>Envelope control  configuration :</p>
+        <table style="width: 80%; mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" style="width: 60px;" />
+            <col class="TableStyle-03_Input_Output-Column-Description" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Data type</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UOM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Speed_StartUpSpeed</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Start up speed</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Speed_MaxSpeedRpsCustom</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">rps</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Max speed custom</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Speed_MinSpeedRpsCustom</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">rps</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Min speed custom</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Speed_MaxDescendSpeedRate</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">rps/s</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Max. decrease speed rate (in control) </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Speed_MaxRisingSpeedRate</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">rps/s</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Max. increase speed rate (in control)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Speed_SwitchOffSpeedRate</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">rps/s</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Decrease max speed rate (= max allowed value, to stop compressor)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Speed_MaxSlowdownSpeedRate</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">rps/s</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Decrease speed rate (to come back inside envelope)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Speed_MinSpeedControlled</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Min speed permitted to control compressor working conditions inside
+				envelope</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Speed_MaxGoUpSpeedRate</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">rps/s</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Max. increase speed rate (going to target speed in defrost)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">StartUp_MaxDeltaP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">bar/psi</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Max. permitted Delta P to start up</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">StartUp_EnEqualBPVlv</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Enable bypass equalisation solenoid valve </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">StartUp_EVDEqualMaxT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Maximum of EVD propening time to equalise pressure</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">StartUp_EVDEqualPreopen</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Pre-opening of EVD in case of pre-start to equalise pressure</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">StartUp_DeltaPVariation</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">bar/psi</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Min. variation of Delta P to consider compressor started</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">SartUp_DeltaPDelay</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Delay to check increase in DeltaP to validate compressor started</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">StartUp_RestartDelay</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Restart delay after a start failure</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">StartUp_Attempts</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Max Number of starting attempts</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">StartUp_DeltaPPercStartEVD</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Percentage of minimum Delta P allowed to start EVD control</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">EvdReg_SubTypeRegMode</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Evd control SubType<br />0=null <br />1=SSH<br />2=DSH&#160; <br />3= DLT</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">EvdReg_DscgTempNTCT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Time constant for discharge temp sensor</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">EvdReg_DscgSHSetP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Discharge SH set point (sent to EVD)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">EvdReg_DTDscgSHRegOn</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Set  point offset for discharge superheat control activation</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">EvdReg_DTDscgSHHyst</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Hysteresis for discharge superheat control deactivation</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">EvdReg_DscgTempSetP</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Discharge temp set point (sent to EVD)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">EvdReg_DTDLTRegOn</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Set point offset for discharge superheat control activation</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">EvdReg_DTDLTHyst</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Hysteresis  for discharge limit temp. control deactivation</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_SuctPMin</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">barg</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Custom envelope low suction pressure limit </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_DscgPMax</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">barg</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Custom envelope high discharge pressure limit </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_EnvOutMaxT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Out of envelope alarm delay time</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_LowDeltaPAlrmDelay</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Low Delta P alarm delay</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_SuctTSaturationThrshZone1b1c</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Sat. suction temp. threshold from zone 1b (Max120rps) to zone 1c (Max90rps
+				SIAM only)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_MaxSpeedZone1c</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">rps</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Max Speed in rps for Zone 1c (SIAM Scroll)&#160; N.B.: integer rps!</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_EnMopLowCompRatio</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Enable MOP control in low compression ratio condition</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_EnSpeedUpMode</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Enable speed up mode to control zones 5, 6, 7, 8 (to come back into zone
+				1)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_DscgTempCtrlThrshZone1a</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Discharge gas temperature control threshold for Zone 1a (SIAM scroll
+		only)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_DscgTempAlrmThrshZone1a</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Discharge gas limit temperature for Zone 1a (SIAM Scroll only)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_DscgTempCtrlThrsh</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Discharge gas temperature control threshold (SIAM scroll only: for zone 1b)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_DscgTempAlrmThrsh</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Discharge gas limit temperature (SIAM Scroll only: for Zone 1b)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_DscgTempLimDistance</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Action distance from high temperature limit (to reduce speed rate)</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_DscgTempPause</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Pause between speed reductions when discharge temp. is over control limit</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_DscgTempSpeedReduction</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Speed reduction percentage when discharge temp is over control limit</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_OutEnvMaxTSpecif</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Out of envelope alarm delay time to be used when specified by VAR_INPUT</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_DscgTempDTActionPauseRes</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Value of discharge temp. increase that requires a new action</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">CstmEnv_MaxspeedXrps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">rps</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">
+                        <p>Dynamic maximum speed limit (rps). This variable is used to reduce the normal limit Speed_MaxSpeedRpsCustom. If this variable is different than 0.0 then the normal Speed_MaxSpeedRpsCustom is bypassed by CstmEnv_MaxSpeedXrps (Default value is 0.0rps).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">This variable is a retain flag. Remove the retain flag for frequent writing to preserve retain memory.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">CstmEnv_MinspeedXrps</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">rps</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">
+                        <p>Dynamic minimum speed limit (rps). This variable is used to reduce the normal limit Speed_MaxSpeedRpsCustom. If this variable is different than 0.0 then the normal Speed_MaxSpeedRpsCustom is bypassed by CstmEnv_MaxSpeedXrps (Default value is 0.0rps).</p>
+                        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">This variable is a retain flag. Remove the retain flag for frequent writing to preserve retain memory.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">PmpDwn_En</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Enable pump down procedure </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">PmpDwn_SuctPThrsh</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Suction pressure threshold for pump down</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-DarkerRows">PmpDwn_MaxT</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Description-DarkerRows">Maximum pump down time</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h6>BLDC_EVDtoBLDC_Struct</h6>
+        <p>Evd data to BLDC:</p>
+        <table style="width: 80%; mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0">
+            <col class="TableStyle-03_Input_Output-Column-Variable" />
+            <col class="TableStyle-03_Input_Output-Column-Type" />
+            <col class="TableStyle-03_Input_Output-Column-UM" />
+            <col class="TableStyle-03_Input_Output-Column-Description" />
+            <thead>
+                <tr class="TableStyle-03_Input_Output-Head-Header1">
+                    <th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Data type</th>
+                    <th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UOM</th>
+                    <th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">S1ValExtd</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">EVD probe S1 extended  value </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">S3ValExtd</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">EVD probe S3 extended value </td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">DscgSH</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Discharge superheat</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">DscgTemp</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Discharge temperature</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> RegStatus</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">EVD control status</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-DarkerRows">
+                    <td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">StepsPosition</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td>
+                    <td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">EEV actual steps position</td>
+                </tr>
+                <tr class="TableStyle-03_Input_Output-Body-LightRows">
+                    <td class="TableStyle-03_Input_Output-BodyB-Variable-LightRows">Enabled</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-Type-LightRows">BOOL</td>
+                    <td class="TableStyle-03_Input_Output-BodyB-UM-LightRows">-</td>
+                    <td class="TableStyle-03_Input_Output-BodyA-Description-LightRows">EVD enabled</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>&#160;&#160;<h6>BLDC_BLDCtoEvd_Struct</h6><p>Bldc data to EVD:</p><table style="width: 80%; mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0"><col class="TableStyle-03_Input_Output-Column-Variable" /><col class="TableStyle-03_Input_Output-Column-Type" /><col class="TableStyle-03_Input_Output-Column-UM" /><col class="TableStyle-03_Input_Output-Column-Description" /><thead><tr class="TableStyle-03_Input_Output-Head-Header1"><th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th><th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Data type</th><th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UOM</th><th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th></tr></thead><tbody><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">   Rfrg
+    
+    
+					</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Refrigerant gas type  <br />1=R134a
+
+				<br />2=R404A <br />3=R407C <br />4=R410A<p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;"><br />Gas numbering has been offset by one position forward for EVD_Emb_* driver firmware (i.e.: 1:R22...19: R407A)<br /></p></td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">DscgSHSet
+				</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Discharge SH set point</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">DscgTempSet</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Discharge temperature set point				</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">MOPInhThrsh
+					</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Value of MOP inhibition threshold
+				</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">MOPThrshFastChange</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">MOP sliding threshold</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">RegSubTyp
+					</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">
+				EVD control subtype</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">S4NTCThermalT
+					</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows"> 
+				S4-Discharge probe thermal time k</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyB-Variable-DarkerRows">    CircCoolCap</td><td class="TableStyle-03_Input_Output-BodyB-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyB-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyA-Description-DarkerRows">
+						Current circuit cooling capacity for EVD valve
+		</td></tr></tbody></table>&#160;&#160;<h6>BLDC_Info_Struct</h6><p>Generic information about BLDC:</p><table style="width: 80%; mc-table-style: url('../../../Resources/TableStyles/03_Input_Output.css');" class="TableStyle-03_Input_Output" cellspacing="0"><col class="TableStyle-03_Input_Output-Column-Variable" style="width: 250px;" /><col class="TableStyle-03_Input_Output-Column-Type" style="width: 100px;" /><col class="TableStyle-03_Input_Output-Column-UM" style="width: 100px;" /><col class="TableStyle-03_Input_Output-Column-Description" /><thead><tr class="TableStyle-03_Input_Output-Head-Header1"><th class="TableStyle-03_Input_Output-HeadE-Variable-Header1">Variable</th><th class="TableStyle-03_Input_Output-HeadE-Type-Header1">Data type</th><th class="TableStyle-03_Input_Output-HeadE-UM-Header1">UOM</th><th class="TableStyle-03_Input_Output-HeadD-Description-Header1">Description</th></tr></thead><tbody><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>FBVersion_X</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">UINT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Debug: FB version x</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>FBVersion_Y</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UINT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Debug: FB version y</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>FBVersion_Z</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">UINT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Debug: FB version z</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>FBVersion_Beta</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UINT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Debug: FB version beta</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>EnvTyp_SiamScroll</span></td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope type: Siam scroll</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>EnvTyp</span>_SiamRotary</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope type: Siam rotary</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>  <![CDATA[ ]]></span>EnvTyp_SiamScrollVI</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope type: Siam scroll Vapour Injection</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">EnvTyp_ToshibaDN</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope type: Toshiba DN</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> <span>Info_H</span>TZone</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">High discharge temperature zone</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>  <![CDATA[ ]]></span>Info_HTZone_1a</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">High discharge temperature zone 1a</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Time_A</span>bleToOn</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor enabled to switch ON</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>  <![CDATA[ ]]></span>Time_AbleToOff</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor enabled to switch OFF</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> Time_FrcdOnByT</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor forced On by timing</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> Time_FrcdOffByT</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor forced Off by timing</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Time_CntDwn</span>TSaf</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">UINT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor safety timing countdown</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Time_CntDwn</span>TMinOn</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">UINT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor min on timing countdown</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Info_C</span>ompCall</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor called</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> Info_CompOn</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor running</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> Info_CompOnTimed</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor running considering min time on</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Info_C<span>o</span>mpPwrPercMin</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor minimum capacity percentage threshold</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Info_C<span>ompPwrPercRqstON</span></td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">&#160;</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Capacity request percentage over minimum capacity percentage threshold</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Info_C<span>ompRequest</span></td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">%</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Compressor capacity request</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>  <![CDATA[ ]]></span>Time_CntDwnOutEnv</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Out of envelope timing countdown</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Time_CntDwnStartFail</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">&#160;</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Countdown after start failure before new start attempts</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> EnvTyp_SiamScrollR407C</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope type: Siam scroll R407C</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>EnvTyp</span>_MHIR407C</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope type: MHI R407C</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>  <![CDATA[ ]]></span>EnvTyp_Sanyo_Dalian</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope type: Sanyo Dalian</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>EnvPX1</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex P1 x value</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>EnvPX2</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex P2 x value</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>EnvPX3</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex P3 x value</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>EnvPX4</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex P4 x value</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>EnvPX5</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex P5 x value</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>EnvPX6</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex P6 x value</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>EnvPX7</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex P7 x value</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>EnvPX8</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex P8 x value</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>EnvPY1</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex P1 y value</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>EnvPY2</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex P2 y value</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>EnvPY3</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex P3 y value</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>EnvPY4</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex P4 y value</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>EnvPY5</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex P5 y value</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>EnvPY6</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex P6 y value</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Dbg_</span>EnvPY7</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Envelope vertex P7 y value</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Dbg_</span>EnvPY8</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope vertex P8 y value</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> <span>Mng_Tes</span>tMode</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Manage test mode</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> <span>EnvTyp</span>_SiamComp</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope Type: Siam compressor</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Info_R</span>eqSpeedToPWRP</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">%</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Required speed to PowerPlus </td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Press_DscgP_Bar</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Bar</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Relative discharge pressure </td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> Press_SuctP_Bar</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Bar</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Relative suction pressure </td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Press_DeltaP</span></td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Bar</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Current pressure delta </td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> Press_RatioP</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Current pressure ratio</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> Press_DscgP_kPa</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">kPa</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Absolute discharge pressure </td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> Press_SuctP_kPa</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">kPa</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Absolute suction pressure </td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> <span>UI_</span>HighStartupDeltaP</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Show high Delta P status - inhibit start (blinking)</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> UI_EqualizationStatus</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Show pressure equalisation status (blinking)</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> Info_MaxDscgTempThrsh</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Max discharge temp threshold (alarm)</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Info_N</span>umAttemptsStart</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">&#160;</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Number of startup attempts</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> Info_HighDscgTempThrsh</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">High discharge temp threshold (control)</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> <span>Info_A</span>ctiveDscgHTLim</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Show active value of discharge temp. alarm limit (depending on working
+		zone)</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>  <![CDATA[ ]]></span>Info_SIAM_90rpsZone</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">rps</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Working zone 1c - max speed 90  (Siam only)</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Info_S<span>tartUpCondition</span></td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">&#160;</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">And of conditions for compressor running</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Info_S<span>tartUpDiffPressReached</span></td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">&#160;</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Startup minimum diff. pressure check done</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Info_Thrsh_DscgHigh</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Bar</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">High discharge pressure limit</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Info_Thrsh_MaxRatio</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">&#160;</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Maximum compressor ratio limit</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Info_Thrsh_MaxRatioQ</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Bar</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Maximum compressor ratio limit offset</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Info_Thrsh_MinDP</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Bar</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Low pressure difference limit</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Info_Thrsh_MinRatio</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">&#160;</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Minimum compressor ratio limit</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Info_Thrsh_SuctHigh</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">Bar</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">High suction pressure limit</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Info_Thrsh_SuctLow</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">Bar</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Low suction pressure limit</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Info_WorkingCondition</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">&#160;</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Compressor running and profiling startup is done</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"> Time_CntDwn<span>DeltaPAlrm</span></td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Low pressure difference alarm timing countdown</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">UI_LowDeltaP</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Show low pressure difference condition</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>UI_</span>EnEVD_Prestart</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Show pre-opening status of EVD enabled (for pressure equalisation)</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>  <![CDATA[ ]]></span>Info_EnBLDC</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Enable Comp_BLDC Function block</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>Info_E</span>nvZone</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">INT</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Current envelope zone</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"><span>Info_D</span>scgTemp</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Current discharge temperature</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows"><span>  <![CDATA[ ]]></span>Info_DscgSH</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">REAL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">Current discharge superheat</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows"><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows"> EnvTyp_MHIR134A</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">Envelope type: MHI R134a</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows" MadCap:conditions=""><td class="TableStyle-03_Input_Output-BodyE-Variable-DarkerRows">Info_ResetSemiauto</td><td class="TableStyle-03_Input_Output-BodyE-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-DarkerRows">BLDC semiautomatic alarm reset command</td></tr><tr class="TableStyle-03_Input_Output-Body-LightRows" MadCap:conditions=""><td class="TableStyle-03_Input_Output-BodyE-Variable-LightRows">Info_ResetRetryExpired</td><td class="TableStyle-03_Input_Output-BodyE-Type-LightRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyE-UM-LightRows">-</td><td class="TableStyle-03_Input_Output-BodyD-Description-LightRows">BLDC semiautomatic alarm reset retry expired</td></tr><tr class="TableStyle-03_Input_Output-Body-DarkerRows" MadCap:conditions=""><td class="TableStyle-03_Input_Output-BodyB-Variable-DarkerRows">Info_ResetRetryWaiting</td><td class="TableStyle-03_Input_Output-BodyB-Type-DarkerRows">BOOL</td><td class="TableStyle-03_Input_Output-BodyB-UM-DarkerRows">-</td><td class="TableStyle-03_Input_Output-BodyA-Description-DarkerRows">BLDC waiting semiautomatic alarm reset</td></tr></tbody></table>&#160;&#160;<h6>BLDC_AlarmMng_Struct</h6><p>Alarm management with semiautomatic reset:</p><table style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0"><col class="TableStyle-02_Custom-Column-Default" style="width: 139px;" /><col class="TableStyle-02_Custom-Column-Default" /><col class="TableStyle-02_Custom-Column-Default" /><col class="TableStyle-02_Custom-Column-Default" /><thead><tr class="TableStyle-02_Custom-Head-Header2" MadCap:conditions=""><th class="TableStyle-02_Custom-HeadE-Default-Header2">Variable</th><th class="TableStyle-02_Custom-HeadE-Default-Header2">Data types</th><th class="TableStyle-02_Custom-HeadE-Default-Header2">UOM</th><th class="TableStyle-02_Custom-HeadD-Default-Header2">Description</th></tr></thead><tbody><tr class="TableStyle-02_Custom-Body-LightRows" MadCap:conditions=""><td class="TableStyle-02_Custom-BodyE-Default-LightRows">TimeThrs</td><td class="TableStyle-02_Custom-BodyE-Default-LightRows">UDINT</td><td class="TableStyle-02_Custom-BodyE-Default-LightRows">min</td><td class="TableStyle-02_Custom-BodyD-Default-LightRows">Time frame duration in which automatic reset attempts are counted.</td></tr><tr class="TableStyle-02_Custom-Body-DarkerRows" MadCap:conditions=""><td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">RetryThrs</td><td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">DINT</td><td class="TableStyle-02_Custom-BodyE-Default-DarkerRows">-</td><td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">Maximum number of alarm event reset attempts that can be run within the time frame indicated in "<i>TimeThrs</i>".
+</td></tr><tr class="TableStyle-02_Custom-Body-LightRows" MadCap:conditions=""><td class="TableStyle-02_Custom-BodyB-Default-LightRows">ResetTyp_BLDC_Alrm</td><td class="TableStyle-02_Custom-BodyB-Default-LightRows">BOOL</td><td class="TableStyle-02_Custom-BodyB-Default-LightRows">-</td><td class="TableStyle-02_Custom-BodyA-Default-LightRows">Reset type: 0=Manual - 1=Semiautomatic</td></tr></tbody></table><p>&#160;</p><p>&#160;</p><p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">For details on types of structures named PWRP_ *, refer to the block <MadCap:xref href="../../2_CAREL_Devices/InverterPowerPlus/InverterPowerPlus.htm#Inverter">"InverterPowerPlus"</MadCap:xref></p><p>&#160;</p><p><MadCap:conceptLink term="Comp_BLDC_PowerPlus" /></p><p>&#160;</p></body>
+</html>

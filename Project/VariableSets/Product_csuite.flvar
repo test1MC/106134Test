@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="Versione_sw"
+    Comment="Versione software"
+    Definition="Some text"
+    OriginalName="Prodotto_versione_sw"
+    EvaluatedDefinition="4.0.x">4.0.x</Variable>
+  <Variable
+    Name="Nome"
+    Comment="Non usare nelle frasi, altrimenti i traduttori non capiscono natura del soggetto della frase"
+    Definition="Some text"
+    OriginalName="Prodotto_nome">c.suite</Variable>
+</CatapultVariableSet>

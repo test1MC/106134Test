@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="1_Carel_Basic (senza idx in modo che non crei il pdf)"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    PageNumberReset="reset"
+    StartSection="false"
+    PageNumber="1">
+    <TocEntry
+      Title="Add_blocks">
+      <TocEntry
+        Title="BlinkOnOff_INT_2"
+        Link="/Content/Official/1_CAREL_Basic/BlinkOnOff_INT_2.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="Change_Log"
+      Link="/Content/Official/1_CAREL_Basic/_Change_Log.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1"></TocEntry>
+    <TocEntry
+      Title="Gas_Types_Supported"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1"
+      Link="/Content/Official/1_CAREL_Basic/_Gas_types_supported.htm" />
+    <TocEntry
+      Title="AbsHumidity_INT, AbsHumidity_REAL"
+      Link="/Content/Official/1_CAREL_Basic/AbsHumidity_INT,AbsHumidity_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="And2Com, And5Com, And10Com"
+      Link="/Content/Official/1_CAREL_Basic/And2Com,And5Com,And10Com.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="BarToPsi_INT, BarToPsi _REAL"
+      Link="/Content/Official/1_CAREL_Basic/BarToPsi_INT,BarToPsi_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="BlinkOnOff_INT"
+      Link="/Content/Official/1_CAREL_Basic/Deprecated/BlinkOnOff_INT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="CelToFahrDelta_INT, CelToFahrDelta_REAL"
+      Link="/Content/Official/1_CAREL_Basic/CelToFahrDelta_INT,CelToFahrDelta_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="CelToFahr_INT, CelToFahr_REAL"
+      Link="/Content/Official/1_CAREL_Basic/CelToFahr_INT,CelToFahr_REAL.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="CntDwnSafT"
+      Link="/Content/Official/1_CAREL_Basic/CntDwnSafT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="CompensSetp_INT, CompensSetp_REAL"
+      Link="/Content/Official/1_CAREL_Basic/CompensSetp_INT,CompensSetp_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="ConvHourToMin_INT"
+      Link="/Content/Official/1_CAREL_Basic/ConvHourToMin_INT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="ConvMinToHour_INT"
+      Link="/Content/Official/1_CAREL_Basic/ConvMinToHour_INT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Conv_INT, Conv_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Conv_INT,Conv_REAL.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      PageNumber="1"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false" />
+    <TocEntry
+      Title="Counter4_INT, Counter8_INT"
+      Link="/Content/Official/1_CAREL_Basic/Counter4_INT,Counter8_INT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="CurrDateTime"
+      Link="/Content/Official/1_CAREL_Basic/CurrDateTime.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="DelayOnOff_INT"
+      Link="/Content/Official/1_CAREL_Basic/DelayOnOff_INT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="DewPoint_INT, DewPoint_REAL"
+      Link="/Content/Official/1_CAREL_Basic/DewPoint_INT,DewPoint_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="DigitConv_INT"
+      Link="/Content/Official/1_CAREL_Basic/DigitConv_INT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Enthalpy_INT, Enthaply_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Enthalpy_INT,Enthaply_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Eq_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Eq_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="FahrToCelDelta_INT, FahrToCelDelta_REAL"
+      Link="/Content/Official/1_CAREL_Basic/FahrToCelDelta_INT,FahrToCelDelta_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="FahrToCel_INT, FahrToCel_REAL"
+      Link="/Content/Official/1_CAREL_Basic/FahrToCel_INT,FahrToCel_REAL.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="FlipFlop"
+      Link="/Content/Official/1_CAREL_Basic/FlipFlop.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="GasSatPress_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Deprecated/GasSatPress_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      PageNumber="1"
+      StartSection="false" />
+    <TocEntry
+      Title="GasSatTemp_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Deprecated/GasSatTemp_REAL.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      PageNumber="1"
+      StartSection="false" />
+    <TocEntry
+      Title="Grad_INT, Grad_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Grad_INT,Grad_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="HoursCounter_INT, HoursCounter"
+      Link="/Content/Official/1_CAREL_Basic/HoursCounter.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      PageNumber="1"
+      StartSection="false" />
+    <TocEntry
+      Title="HysterAdv_INT, HysterAdv_REAL"
+      Link="/Content/Official/1_CAREL_Basic/HysterAdv_INT,HysterAdv_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="InPolygon_INT"
+      Link="/Content/Official/1_CAREL_Basic/Deprecated/InPolygon_INT.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Interpolate_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Interpolate_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Limit_INT, Limit_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Limit_INT,Limit_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Loge_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Loge_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Max_INT, Max_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Max_INT,Max_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Min_INT, Min_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Min_INT,Min_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Mux5_INT"
+      Link="/Content/Official/1_CAREL_Basic/Mux5_INT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Not2, Not5, Not10"
+      Link="/Content/Official/1_CAREL_Basic/Not2,Not5,Not10.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PressToTemp_INT"
+      Link="/Content/Official/1_CAREL_Basic/PressToTemp_INT.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PressToTemp_REAL"
+      Link="/Content/Official/1_CAREL_Basic/PressToTemp_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PsiToBar_INT, PsiToBar _REAL"
+      Link="/Content/Official/1_CAREL_Basic/PsiToBar_INT,PsiToBar _REAL.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="PulseCounter_INT"
+      Link="/Content/Official/1_CAREL_Basic/PulseCounter_INT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Range, Range_INT, Range_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Range, Range_INT,Range_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      PageNumber="1"
+      StartSection="false" />
+    <TocEntry
+      Title="RangeUniv, RangeUniv_INT, RangeUniv_REAL"
+      Link="/Content/Official/1_CAREL_Basic/RangeUniv,RangeUniv_INT,RangeUniv_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="RealToInt, RealToDint, RealToUdint, RealToUint"
+      Link="/Content/Official/1_CAREL_Basic/RealToInt,RealToDint,RealToUdint.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      PageNumber="1"
+      StartSection="false" />
+    <TocEntry
+      Title="REdge, FEdge"
+      Link="/Content/Official/1_CAREL_Basic/REdge,FEdge.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      PageNumber="1"
+      StartSection="false" />
+    <TocEntry
+      Title="RelHumidity_INT, RelHumidity_REAL"
+      Link="/Content/Official/1_CAREL_Basic/RelHumidity_INT,RelHumidity_REAL.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      PageNumber="1"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false" />
+    <TocEntry
+      Title="RFTrig"
+      Link="/Content/Official/1_CAREL_Basic/RFTrig.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      PageNumber="1"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false" />
+    <TocEntry
+      Title="Round_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Round_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      PageNumber="1"
+      StartSection="false" />
+    <TocEntry
+      Title="Scaler_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Scaler_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="SchedDailyTime_INT, SchedDailyTime"
+      Link="/Content/Official/1_CAREL_Basic/SchedDailyTime_INT,SchedDailyTime.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="SecToTime"
+      Link="/Content/Official/1_CAREL_Basic/SecToTime.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Sel_BOOL, Sel_INT, Sel_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Sel_BOOL,Sel_INT,Sel_REAL.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Sign_REAL"
+      Link="/Content/Official/1_CAREL_Basic/Sign_REAL.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="TempToPress_INT"
+      Link="/Content/Official/1_CAREL_Basic/TempToPress_INT.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="TempToPress_REAL"
+      Link="/Content/Official/1_CAREL_Basic/TempToPress_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="TimeCounter_INT"
+      Link="/Content/Official/1_CAREL_Basic/TimeCounter_INT.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="TimeToSec"
+      Link="/Content/Official/1_CAREL_Basic/TimeToSec.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="UnitMeasTempDelta_INT, UnitMeasTempDelta_REAL"
+      Link="/Content/Official/1_CAREL_Basic/UnitMeasTempDelta_INT_Real.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="UnitMeasTemp_INT, UnitMeasTemp _REAL"
+      Link="/Content/Official/1_CAREL_Basic/UnitMeasTemp_INT,UnitMeasTemp.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="UnitMeas_P_INT, UnitMeas_P _REAL"
+      Link="/Content/Official/1_CAREL_Basic/UnitMeas_P_INT,UnitMeas_P.htm"
+      BreakType="chapter"
+      PageNumberReset="reset"
+      AutoEndOnLeftPage="disabled"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="VapourSatPress_REAL"
+      Link="/Content/Official/1_CAREL_Basic/VapourSatPress_REAL.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="WeekDay_UINT"
+      Link="/Content/Official/1_CAREL_Basic/WeekDay_UINT.htm"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Deprecated"
+      BreakType="chapter"
+      AutoEndOnLeftPage="disabled"
+      PageNumberReset="reset"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="GasSatPress_REAL"
+        Link="/Content/Official/1_CAREL_Basic/Deprecated/GasSatPress_REAL.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="GasSatTemp_REAL"
+        Link="/Content/Official/1_CAREL_Basic/Deprecated/GasSatTemp_REAL.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="InPolygon_INT"
+        Link="/Content/Official/1_CAREL_Basic/Deprecated/InPolygon_INT.htm"
+        BreakType="chapter"
+        AutoEndOnLeftPage="disabled"
+        PageNumberReset="reset"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1885" MadCap:lastWidth="1448" MadCap:fileTags="AuthorFileTags.CAREL INDUSTRIES&#160;SpA">
+    <head>
+        <link href="../../../Resources/TableStyles/02_Custom.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/04_Release_Notes.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>Unit of measure Demo</h4>
+        <p>
+            <img src="../../../Resources/Images/6_Generic_Demo&amp;Tutorials/Demo/UoM_mainpage.png" class="FiftyPercentThumbnail" />
+        </p>
+        <h5 style="mc-locked: locked;">Hardware and software requirements</h5>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/02_Custom.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../../Resources/TableStyles/02_Custom.css');" class="TableStyle-02_Custom" cellspacing="0">
+            <col class="TableStyle-02_Custom-Column-Default" style="width: 114px;" />
+            <col class="TableStyle-02_Custom-Column-Default" />
+            <tbody>
+                <tr MadCap:conditions="CAREL_Hq.Reserved" class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Last update</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">08/08/2016</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows" MadCap:conditions="CAREL_Hq.Reserved">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Native revision</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">05/10/15</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">c.suite version</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.0.41</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Hardware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">c.pCO mini</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">O.S.</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">≥3.0.001</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-DarkerRows">Devices</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-DarkerRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-LightRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyE-Default-LightRows">Devices firmware</td>
+                    <td class="TableStyle-02_Custom-BodyD-Default-LightRows">-</td>
+                </tr>
+                <tr class="TableStyle-02_Custom-Body-DarkerRows">
+                    <td style="mc-locked: unlocked;" class="TableStyle-02_Custom-BodyB-Default-DarkerRows">Protocols</td>
+                    <td class="TableStyle-02_Custom-BodyA-Default-DarkerRows">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Demo/Test application toperform conversions  between different units of measure</p>
+        <p>&#160;</p>
+        <h5>Project aims</h5>
+        <p>The project manages conversions between the following units of measure: </p>
+        <ul>
+            <li> International System [T(°C), P(kPa), …]</li>
+            <li> Imperial USA [T(°F), P(psi), …]</li>
+            <li> Imperial UK [T(°F), P(psi), …]</li>
+            <li> Canadian [T(°F), P(psi), …]</li>
+            <li>Carel LON card</li>
+            <li>International System (Bar)</li>
+        </ul>
+        <p>&#160;</p>
+        <h5>Project description</h5>
+        <p>The project can be used to change the units of measure relating to the values of: </p>
+        <ul>
+            <li>Ambient temperature, from an NTC probe connected to U1</li>
+            <li>Ambient set point, set by screen</li>
+            <li>Differential, set by screen</li>
+            <li>Suction pressure, set by screen</li>
+        </ul>
+        <p>UoM conversion zone can be changed by the "STD_UOM_ZONE_UI" variable.</p>
+        <p>&#160;</p>
+        <p>The "STD_UOM_ZONE_UI" variable sets the conversion zone for the User Interface: this is a Retain variable, but needs to be initialised every time c.pco starts.<br />The initialization code has to be set in the Timed Loop of ST code in c.mask.</p><pre>
+        IF FirstCycleDone = FALSE THEN
+          FirstCycleDone := TRUE;
+          SetUoMZone (STD_UOM_ZONE_UI);
+        END_IF;
+        </pre>
+        <p class="note" MadCap:conditions="CAREL_Hq.Reserved" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">See also UoM configuration  from <a href="UoM_presentation.ppt">UoM_presentation.ppt</a></p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note &lt;/span&gt;&lt;/b&gt;">See also UoM presentation available in <a href="http://ksa.carel.com/group/c.suite/demo-tutorial?p_p_auth=dr1NDxWv&amp;p_p_id=20&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_20_struts_action=%2Fdocument_library%2Fview&amp;_20_folderId=1272299&amp;_20_entryStart=0&amp;_20_entryEnd=20&amp;_20_folderStart=0&amp;_20_folderEnd=20&amp;#p_20" target="_blank">KSA</a></p>
+        <h5 style="mc-locked: locked;"><a name="Release_Notes"></a>Release notes</h5>
+        <p style="mc-locked: locked;">Following are notes on this demo of released versions</p>
+        <table class="TableStyle-04_Release_Notes" style="width: 80%; margin-left: 0; margin-right: auto; mc-table-style: url('../../../Resources/TableStyles/04_Release_Notes.css'); mc-table-style-original: url('../../../Resources/TableStyles/04_Release_Notes.css');" cellspacing="0">
+            <col class="TableStyle-04_Release_Notes-Column-Release" />
+            <col class="TableStyle-04_Release_Notes-Column-Dependecies" style="width: 202px;" />
+            <col class="TableStyle-04_Release_Notes-Column-Notes" />
+            <thead>
+                <tr class="TableStyle-04_Release_Notes-Head-Header1">
+                    <th class="TableStyle-04_Release_Notes-HeadE-Release-Header1">Release</th>
+                    <th class="TableStyle-04_Release_Notes-HeadE-Dependecies-Header1">Dependencies</th>
+                    <th class="TableStyle-04_Release_Notes-HeadD-Notes-Header1">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-04_Release_Notes-Body-LightRows">
+                    <td class="TableStyle-04_Release_Notes-BodyE-Release-LightRows">1.0.0.2</td>
+                    <td class="TableStyle-04_Release_Notes-BodyE-Dependecies-LightRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyD-Notes-LightRows"><b>Fixed</b>
+                        <br />-<br /><br /><b style="mc-locked: unlocked;">Changed<br /></b>- Updated Demo for c.suite version 3.0.41<br /><br /><b style="mc-locked: unlocked;">Deprecated</b><br />-<br /><br /><b style="mc-locked: unlocked;">Enhanced<br /></b>-<br /><br /><b>Documentation<br /></b>-</td>
+                </tr>
+                <tr class="TableStyle-04_Release_Notes-Body-DarkerRows">
+                    <td class="TableStyle-04_Release_Notes-BodyB-Release-DarkerRows">1.0.0.1</td>
+                    <td class="TableStyle-04_Release_Notes-BodyB-Dependecies-DarkerRows">-</td>
+                    <td class="TableStyle-04_Release_Notes-BodyA-Notes-DarkerRows">
+                        <p>• First official release</p>
+                        <p style="mc-locked: locked;"><b style="mc-locked: unlocked;">Fixed</b>
+                        </p>
+                        <p>-</p><b style="mc-locked: locked;">Changed</b>
+                        <p>-</p><b style="mc-locked: locked;">Deprecated</b>
+                        <p>-</p><b style="mc-locked: locked;">Enhanced</b>
+                        <p class="p_1">-</p>
+                        <p class="p_1"><b>Documentation<br /></b>-</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

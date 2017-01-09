@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject Version="1" SourceControlBound="false" xml:lang="en-us" Comment="This template contains several starter topics and other files. It has been designed to maximize single-sourcing capabilities, allowing you to produce both online and print-based output from the same files and content.  This template includes several features that you might use in online output, others that you might use in print output, and still others that are useful in both. This template starts you out with an HTML5 target and a skin that has responsive output. This means the content display changes automatically depending on the device (browser, tablet, or mobile phone). It also includes multiple PDF targets for generating user guides with different content in different sizes; some with crop and registration marks set, some without. You can add other kinds of targets if you like." MasterToc="/Project/TOCs/HTML5/c.Library_non-print.fltoc">
+    <Synchronize>
+        <Mapping ProjectPath="Content/Resources/External/" ExternalPath="file:///C:/SVN/csuite_help/External_Resources/" />
+        <Mapping ProjectPath="Content/Official/FAQs.htm" ExternalPath="file:///C:/SVN/csuite_help/trunk/c.mask_ENG/Content/Topic/FAQs.htm" />
+    </Synchronize>
+</CatapultProject>

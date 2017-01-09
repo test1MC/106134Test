@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="737" MadCap:lastWidth="772" MadCap:ignoredWords="carel">
+    <head>
+        <link href="../TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2>&#160;</h2>
+        <MadCap:breadcrumbsProxy />
+        <MadCap:bodyProxy />
+        <div class="FooterTable">
+            <MadCap:dropDown class="Footer" MadCap:conditions="Hidden.Hidden_Status">
+                <MadCap:dropDownHead>
+                    <MadCap:dropDownHotspot class="Footer">
+                        <MadCap:annotation MadCap:createDate="2015-01-27T16:07:31.0489545+01:00" MadCap:creator="vittoriob" MadCap:initials="VB" MadCap:comment="Future use" MadCap:editor="vittoriob" MadCap:editDate="2015-01-27T16:07:45.8574352+01:00">PDF DOWNLOADS</MadCap:annotation>
+                    </MadCap:dropDownHotspot>
+                </MadCap:dropDownHead>
+                <MadCap:dropDownBody class="FooterTopicMaster">
+                    <table style="mc-table-style: url('../TableStyles/Simple.css');margin-left: 0;margin-right: auto;" class="TableStyle-Simple" cellspacing="0">
+                        <col class="TableStyle-Simple-Column-Column1" style="width: 30px;" />
+                        <col class="TableStyle-Simple-Column-Column1" />
+                        <tbody>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                    <p>&#160;</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                    <p class="FooterTopicMaster"><a href="http://docs.madcapsoftware.com/FlareV10/UserGuideA7X9.pdf" target="_blank" class="footermaster">PDF Guide </a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                    <p>&#160;</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                    <p class="FooterTopicMaster"><a href="http://docs.madcapsoftware.com/FlareV10/UserGuideB7X9.pdf" target="_blank" class="footermaster">PDF Guide B</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                    <p>&#160;</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                    <p class="FooterTopicMasterLastLine"><a href="http://webhelp.madcapsoftware.com/flare10/Default.htm#PDF_Guides/PDF_Guides.htm" target="_blank" class="footermaster">More PDF Guides…</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </MadCap:dropDownBody>
+            </MadCap:dropDown>
+            <MadCap:dropDown class="Footer">
+                <MadCap:dropDownHead>
+                    <MadCap:dropDownHotspot class="Footer">CONTACTS AND SUPPORT LINKS</MadCap:dropDownHotspot>
+                </MadCap:dropDownHead>
+                <MadCap:dropDownBody class="FooterTopicMaster">
+                    <table style="mc-table-style: url('../TableStyles/Simple.css');margin-left: 0;margin-right: auto;width: 557px;" class="TableStyle-Simple" cellspacing="0">
+                        <col class="TableStyle-Simple-Column-Column1" style="width: 29px;" />
+                        <col class="TableStyle-Simple-Column-Column1" />
+                        <tbody>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                    <p class="FooterTopicMasterLastLineLeftPadding">
+                                        <img src="../Images/_System/BulletWhite.png" alt="" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                    <p class="FooterTopicMaster">Knowledge Sharing Area&#160; | &#160;&#160;<a href="http://ksa.carel.com/">http://ksa.carel.com/</a></p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                    <p class="FooterTopicMasterLeftPadding">
+                                        <img src="../Images/_System/BulletWhite.png" alt="" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                    <p class="FooterTopicMasterLastLine">Technical Support&#160;&#160; |&#160;&#160;<a href="mailto:c.suitesupport@carel.com?subject=c.library bug: ">csuitesupport@carel.com</a></p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                    <p class="FooterTopicMasterLastLineLeftPadding">
+                                        <img src="../Images/_System/BulletWhite.png" alt="" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                    <p class="FooterTopicMaster">General&#160;information |&#160;&#160; <a href="mailto:carel@carel.com?subject=c.library info:">carel@carel.com</a></p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                    <p class="FooterTopicMasterLastLineLeftPadding">
+                                        <img src="../Images/_System/BulletWhite.png" alt="" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                    <p class="FooterTopicMaster">After&#160;sales |&#160;&#160; <a href="mailto:aftersales@carel.com?subject=Info required: ">aftersales@carel.com</a></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </MadCap:dropDownBody>
+            </MadCap:dropDown>
+            <MadCap:dropDown class="Footer" MadCap:conditions="Hidden.Hidden_Status">
+                <MadCap:dropDownHead>
+                    <MadCap:dropDownHotspot class="Footer">FOLLOW THE DOC TEAM</MadCap:dropDownHotspot>
+                </MadCap:dropDownHead>
+                <MadCap:dropDownBody class="FooterTopicMaster">
+                    <p class="FooterTopicMasterLastLine"><a href="https://twitter.com/#!/MadCapDocTeam" target="_blank"><img src="../Images/_System/Twitter.png" class="Hyperlinked" alt="" /></a><a href="http://www.facebook.com/madcapdocteam" target="_blank"><img src="../Images/_System/Facebook.png" class="Hyperlinked" alt="" style="width: 31px;height: 31px;" /><MadCap:annotation MadCap:createDate="2015-01-27T16:08:30.2988789+01:00" MadCap:creator="vittoriob" MadCap:initials="VB" MadCap:comment="Not used" MadCap:editor="vittoriob" MadCap:editDate="2015-01-27T16:08:35.2963786+01:00"></MadCap:annotation></a>
+                    </p>
+                </MadCap:dropDownBody>
+            </MadCap:dropDown>
+            <MadCap:dropDown class="Footer">
+                <MadCap:dropDownHead>
+                    <MadCap:dropDownHotspot class="Footer">COMPANY INFORMATION</MadCap:dropDownHotspot>
+                </MadCap:dropDownHead>
+                <MadCap:dropDownBody class="FooterTopicMaster">
+                    <table style="mc-table-style: url('../TableStyles/Simple.css');margin-left: 0;margin-right: auto;" class="TableStyle-Simple" cellspacing="0">
+                        <col class="TableStyle-Simple-Column-Column1" style="width: 29px;" />
+                        <col class="TableStyle-Simple-Column-Column1" />
+                        <col class="TableStyle-Simple-Column-Column1" />
+                        <tbody>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                    <p class="FooterTopicMasterLastLineLeftPadding">
+                                        <img src="../Images/_layout/ContactIcon.png" alt="" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                    <p class="FooterTopicMaster"><MadCap:variable name="Azienda.NomeCompleto" />
+                                    </p>
+                                    <p class="FooterTopicMaster"><MadCap:variable name="Azienda.Legale_IndirizzoLinea1" />
+                                    </p>
+                                    <p class="FooterTopicMaster"><MadCap:variable name="Azienda.Legale_IndirizzoLinea2" />
+                                    </p>
+                                    <p class="FooterTopicMaster"><MadCap:variable name="Azienda.Legale_IndirizzoLinea3" />
+                                    </p>
+                                    <p class="FooterTopicMasterLastLine"><a href="http://www.carel.com/" target="_blank" class="footermaster">www.carel.com</a>
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                    <p class="FooterTopicMasterLeftPadding"><MadCap:variable name="Azienda.Tel.Commerciale" />
+                                    </p>
+                                    <p class="FooterTopicMasterLeftPadding"><MadCap:variable name="Azienda.Tel.Fax" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </MadCap:dropDownBody>
+            </MadCap:dropDown>
+            <MadCap:dropDown class="Footer">
+                <MadCap:dropDownHead>
+                    <MadCap:dropDownHotspot class="Footer">PRODUCT INFORMATION</MadCap:dropDownHotspot>
+                </MadCap:dropDownHead>
+                <MadCap:dropDownBody class="Final">
+                    <table style="mc-table-style: url('../TableStyles/Simple.css');margin-left: 0;margin-right: auto;" class="TableStyle-Simple" cellspacing="0">
+                        <col class="TableStyle-Simple-Column-Column1" style="width: 29px;" />
+                        <col class="TableStyle-Simple-Column-Column1" />
+                        <tbody>
+                            <tr class="TableStyle-Simple-Body-Row1">
+                                <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                    <p class="FooterTopicMasterLeftPadding">
+                                        <img src="../Images/_layout/InfoIcon.png" alt="" />
+                                    </p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                    <p class="FooterTopicMaster"><MadCap:variable name="Product_csuite.Nome" /> <MadCap:variable name="Product_csuite.Versione_sw" /></p>
+                                    <p class="FooterTopicMaster"><span style="color: #ffffff;">User manual <MadCap:variable name="ManualeUtente.Codice" /> </span> - <MadCap:variable name="System.ShortDate" /> - <MadCap:variable name="System.ShortTime" /></p>
+                                    <p class="FooterTopicMasterLastLine"><MadCap:variable name="Azienda.Copyright_short" />&#160;<MadCap:variable name="Azienda.NomeRagioneSociale" /></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </MadCap:dropDownBody>
+            </MadCap:dropDown>
+        </div>
+        <!-- Statistics for CAREL intranet http://swdocs/ -->
+        <script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-53443041-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+    </body>
+</html>
